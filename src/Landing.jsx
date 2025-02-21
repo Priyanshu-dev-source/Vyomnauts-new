@@ -25,28 +25,28 @@
 //   const eventsY = useTransform(scrollY, [1000, 1500], [0, -50]);
 
 //   const projects = [
-//     { 
-//       title: "CanSat 2023-24", 
+//     {
+//       title: "CanSat 2023-24",
 //       description: "The CANSAT India competition challenges student teams to design and launch miniaturized satellites, providing hands-on experience in aerospace engineering.",
 //       image: pimg1
 //     },
-//     { 
-//       title: "Project Trishul", 
+//     {
+//       title: "Project Trishul",
 //       description: "India's first-ever rocket competition, where our team showcases innovative design and engineering excellence in rocketry.",
 //       image: pimg2
 //     }
 //   ];
 
 //   const events = [
-//     { 
-//       title: "Solar Observation", 
-//       date: "Sept 2024", 
+//     {
+//       title: "Solar Observation",
+//       date: "Sept 2024",
 //       description: "Join us for an exciting solar observation session using specialized equipment.",
 //       image: e4
 //     },
-//     { 
-//       title: "Space Education Outreach", 
-//       date: "August 2024", 
+//     {
+//       title: "Space Education Outreach",
+//       date: "August 2024",
 //       description: "Inspiring the next generation of space enthusiasts through interactive workshops.",
 //       image: e5
 //     }
@@ -55,10 +55,10 @@
 //   return (
 //     <>
 //       {isFirstVisit && <Preloader onLoadingComplete={() => setIsLoading(false)} />}
-      
+
 //       <AnimatePresence>
 //         {(!isLoading || !isFirstVisit) && (
-//           <motion.div 
+//           <motion.div
 //             className="relative min-h-screen overflow-x-hidden"
 //             initial={{ opacity: 0 }}
 //             animate={{ opacity: 1 }}
@@ -66,7 +66,7 @@
 //           >
 //             {/* Animated Background */}
 //             <div className="fixed inset-0 w-full h-screen">
-//               <div 
+//               <div
 //                 className="absolute inset-0 w-full h-full bg-cover bg-center"
 //                 style={{
 //                   backgroundImage: `url(https://res.cloudinary.com/dnnl72vrp/image/upload/v1738686682/space2_yl8bj8.jpg)`,
@@ -75,7 +75,7 @@
 //                 }}
 //               />
 //               <AnimatePresence mode='wait'>
-//                 <motion.div 
+//                 <motion.div
 //                   key={img2}
 //                   className="absolute inset-0 w-full h-full bg-cover bg-center"
 //                   style={{
@@ -87,7 +87,7 @@
 //                     opacity: 1,
 //                     scale: [1, 1.7, 1],
 //                   }}
-//                   exit={{ 
+//                   exit={{
 //                     opacity: 0,
 //                     transition: { duration: 1 }
 //                   }}
@@ -109,7 +109,7 @@
 //               <Description />
 
 //               {/* Projects Section */}
-//               <motion.section 
+//               <motion.section
 //                 style={{ y: projectsY }}
 //                 className="min-h-screen px-8 py-16"
 //               >
@@ -124,8 +124,8 @@
 //                       className="group bg-slate-950/60 backdrop-blur-md rounded-xl overflow-hidden"
 //                     >
 //                       <div className="aspect-video overflow-hidden">
-//                         <img 
-//                           src={project.image} 
+//                         <img
+//                           src={project.image}
 //                           alt={project.title}
 //                           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
 //                         />
@@ -134,7 +134,7 @@
 //                         <h3 className="text-2xl font-semibold text-white mb-4">{project.title}</h3>
 //                         <p className="text-gray-300 leading-relaxed">{project.description}</p>
 //                         <Link to ="/projects">
-//                         <motion.button 
+//                         <motion.button
 //                           whileHover={{ scale: 1.05 }}
 //                           className="mt-6 px-6 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors"
 //                         >
@@ -148,7 +148,7 @@
 //               </motion.section>
 
 //               {/* Events Section */}
-//               <motion.section 
+//               <motion.section
 //                 style={{ y: eventsY }}
 //                 className="min-h-screen px-8 py-16"
 //               >
@@ -164,8 +164,8 @@
 //                     >
 //                       <div className="flex flex-col md:flex-row">
 //                         <div className="md:w-1/3">
-//                           <img 
-//                             src={event.image} 
+//                           <img
+//                             src={event.image}
 //                             alt={event.title}
 //                             className="w-full h-full object-cover"
 //                           />
@@ -175,7 +175,7 @@
 //                           <p className="text-purple-400 mb-4">{event.date}</p>
 //                           <p className="text-gray-300 leading-relaxed">{event.description}</p>
 //                           <Link to={"/events"}>
-//                           <motion.button 
+//                           <motion.button
 //                             whileHover={{ scale: 1.05 }}
 //                             className="mt-6 px-6 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors"
 //                           >
@@ -229,11 +229,11 @@
 
 // export default LandingPage;
 // import React, { useState, useEffect } from 'react';
-// import { 
-//   Rocket, 
-//   ChevronDown, 
-//   Users, 
-//   Calendar, 
+// import {
+//   Rocket,
+//   ChevronDown,
+//   Users,
+//   Calendar,
 //   Star,
 //   Satellite,
 //   Telescope,
@@ -285,8 +285,8 @@
 
 //   return (
 //     <div className={`w-${size} h-${size} rounded-full relative`}>
-//       <img 
-//         src={image} 
+//       <img
+//         src={image}
 //         alt={`${type} planet`}
 //         className="w-full h-full object-cover rounded-full"
 //         style={{ animation: 'pulse-slow 4s infinite ease-in-out' }}
@@ -326,7 +326,7 @@
 //   return (
 //     <div style={orbitStyle} className="pointer-events-none">
 //       <div style={bodyStyle} className="relative">
-//         <div className="absolute -inset-8 bg-yellow-500/5 blur-xl rounded-full" 
+//         <div className="absolute -inset-8 bg-yellow-500/5 blur-xl rounded-full"
 //              style={{ animation: 'goldPulse 4s infinite ease-in-out' }} />
 //         <Planet type={type} size={size} />
 //       </div>
@@ -352,7 +352,7 @@
 //       date: new Date(2025, 3, 18 ),
 //       image: `${img}`
 //     },
-    
+
 //     {
 //       name: "Lunar Base Alpha",
 //       description: "First permanent human settlement on the Moon",
@@ -396,11 +396,11 @@
 //                 {projects[currentProject].description}
 //               </p>
 //             </div>
-            
+
 //             <div className="grid grid-cols-4 gap-6">
 //               {Object.entries(timeLeft).map(([unit, value]) => (
-//                 <div 
-//                   key={unit} 
+//                 <div
+//                   key={unit}
 //                   className="bg-black/50 rounded-xl p-4 text-center transform hover:scale-105 transition-transform border border-yellow-500/30"
 //                 >
 //                   <div className="text-3xl font-bold text-yellow-400">
@@ -413,10 +413,10 @@
 //               ))}
 //             </div>
 //           </div>
-          
+
 //           <div className="relative group">
-//             <img 
-//               src={projects[currentProject].image} 
+//             <img
+//               src={projects[currentProject].image}
 //               alt={projects[currentProject].name}
 //               className="rounded-xl w-full h-96 object-cover transform group-hover:scale-105 transition-transform duration-300"
 //             />
@@ -445,13 +445,13 @@
 //   return (
 //     <div className="relative min-h-screen bg-gradient-to-b from-slate-950 via-indigo-950 to-slate-950 text-gray-200 overflow-hidden">
 //       <StarsBackground />
-      
+
 //       {/* Solar System */}
 //       <div className="fixed inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0, opacity: 0.7 }}>
 //         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-900/20 via-slate-900/20 to-transparent" />
-        
+
 //         {/* Sun */}
-//         <div className="fixed top-1/2 left-1/2 w-24 h-24 -mt-12 -ml-12 rounded-full" 
+//         <div className="fixed top-1/2 left-1/2 w-24 h-24 -mt-12 -ml-12 rounded-full"
 //              style={{ animation: 'pulse-slow 4s infinite ease-in-out' }}>
 //           <img src={suni} alt="Sun" className="rounded-full w-full h-full object-cover" />
 //         </div>
@@ -466,7 +466,7 @@
 //       <Navbar />
 
 //       <div className="min-h-screen flex flex-col items-center justify-center relative z-10 mt-20">
-//         <div 
+//         <div
 //           className="text-center px-6 max-w-full mx-auto"
 //           style={{
 //             transform: `translateY(${scrollPosition * 0.5}px)`,
@@ -476,13 +476,13 @@
 //           <div className="w-full relative z-10">
 //             <Description />
 //           </div>
-          
+
 //           <div className="mt-60">
 //             <ProjectCountdown />
 //           </div>
 //         </div>
 
-//         <div className="absolute bottom-10 w-full text-center" 
+//         <div className="absolute bottom-10 w-full text-center"
 //              style={{ animation: 'bounce 1s infinite' }}>
 //           <ChevronDown className="mx-auto h-8 w-8 text-cyan-400" />
 //         </div>
@@ -498,8 +498,8 @@
 //     ].map((feature, index) => (
 //       <div
 //         key={feature.title}
-//         className="text-center transform hover:scale-105 transition-transform p-6 rounded-lg 
-//           bg-black border border-[#FFD700]/20 
+//         className="text-center transform hover:scale-105 transition-transform p-6 rounded-lg
+//           bg-black border border-[#FFD700]/20
 //           hover:border-[#FFD700]/40 backdrop-blur-sm"
 //       >
 //         <feature.icon className="h-12 w-12 mx-auto mb-4 text-[#FFD700]" />
@@ -508,7 +508,7 @@
 //       </div>
 //     ))}
 //   </div>
-  
+
 // </div>
 // <div className='mt-8 -px-6'>
 //     <Footer/>
@@ -556,23 +556,18 @@
 
 // export default SpaceClubLanding;
 // SpaceClubLanding.jsx
-import React, { useState, useEffect } from 'react';
-import { 
-  Rocket, 
-  ChevronDown, 
-  Star, 
-  Satellite, 
-  Telescope 
-} from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Rocket, ChevronDown, Star, Satellite, Telescope } from "lucide-react";
 import img1 from "./assets/trishul2.png";
 import img from "./assets/trishul-1.png";
-import Navbar from './Navbar';
-import VerticalSpaceCards from './Description';
-import Footer from './Footer';
+import Navbar from "./Navbar";
+import VerticalSpaceCards from "./Description";
+import Footer from "./Footer";
+import { motion } from "framer-motion";
 
 const NavLink = ({ href, children }) => (
-  <a 
-    href={href} 
+  <a
+    href={href}
     className="text-white hover:text-yellow-400 transition-colors duration-300"
   >
     {children}
@@ -588,7 +583,7 @@ const StarsBackground = () => {
     const handleMouseMove = (e) => {
       setMousePosition({
         x: (e.clientX / window.innerWidth) * 5,
-        y: (e.clientY / window.innerHeight) * 5
+        y: (e.clientY / window.innerHeight) * 5,
       });
     };
 
@@ -596,28 +591,29 @@ const StarsBackground = () => {
       setScrollPosition(window.scrollY * 0.05);
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none">
       {/* Enhanced Background Gradient */}
-      <div 
-        className="absolute inset-0 bg-gradient-to-b from-black via-orange-900/10 to-black 
+      <div
+        className="absolute inset-0
+        bg-gradient-to-b from-black via-orange-900/10 to-black 
                    opacity-90 transition-all duration-1000"
-        style={{ 
+        style={{
           transform: `translateY(${scrollPosition * 0.1}px)`,
-          opacity: 1 - (scrollPosition * 0.0003)
+          opacity: 1 - scrollPosition * 0.0003,
         }}
       />
 
       {/* Animated Particle Layers */}
-      <div 
+      {/* <div 
         className="absolute inset-0 transition-transform duration-500"
         style={{ transform: `translate(${-mousePosition.x * 0.1}px, ${-mousePosition.y * 0.1}px)` }}
       >
@@ -644,10 +640,10 @@ const StarsBackground = () => {
             />
           );
         })}
-      </div>
+      </div> */}
 
       {/* Cosmic Dust Effect */}
-      <div 
+      {/* <div 
         className="absolute inset-0 transition-transform duration-700"
         style={{ transform: `translate(${-mousePosition.x * 0.2}px, ${-mousePosition.y * 0.5}px)` }}
       >
@@ -674,10 +670,10 @@ const StarsBackground = () => {
             />
           );
         })}
-      </div>
+      </div> */}
 
       {/* Energy Wave Effect */}
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <div 
           className="absolute inset-0 bg-gradient-radial from-yellow-500/20 via-orange-500/10 to-transparent" 
           style={{ 
@@ -685,7 +681,7 @@ const StarsBackground = () => {
             transform: `translate(${-mousePosition.x * 0.05}px, ${-mousePosition.y * 0.05}px)`
           }} 
         />
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -693,14 +689,23 @@ const StarsBackground = () => {
 // Feature Card Component
 const FeatureCard = ({ Icon, title, text }) => (
   <div className="relative group">
-    <div className="absolute -inset-1  bg-gradient-to-t from-blue-900/30 to-slate-400/10
-                    rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-700" />
-    <div className="relative p-8 rounded-xl bg-gradient-to-t from-blue-900/30 to-slate-400/10 border-2 border-yellow-500/50 
+    <div
+      className="absolute -inset-1  
+    bg-gradient-to-t from-blue-900/30 to-slate-400/10
+                    rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-700"
+    />
+    <div
+      className="relative p-8 rounded-xl bg-gradient-to-t from-blue-900/30 to-slate-400/10 border-2 border-yellow-500/50 
                     hover:border-orange-400/80 transition-all duration-500
-                    transform hover:scale-105 hover:shadow-[0_0_40px_rgba(255,165,0,0.3)]">
+                    transform hover:scale-105 hover:shadow-[0_0_40px_rgba(255,165,0,0.3)]"
+    >
       <Icon className="h-12 w-12 mb-6 text-amber-500" />
-      <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-yellow-300 via-orange-300 to-yellow-300 
-                     bg-clip-text text-transparent">{title}</h3>
+      <h3
+        className="text-2xl font-bold mb-4 bg-gradient-to-r from-yellow-300 via-orange-300 to-yellow-300 
+                     bg-clip-text text-transparent"
+      >
+        {title}
+      </h3>
       <p className="text-white/90">{text}</p>
     </div>
   </div>
@@ -712,16 +717,17 @@ const ProjectCountdown = () => {
     days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0
+    seconds: 0,
   });
 
   const projects = [
     {
       name: "Rocketry India 2025",
-      description: "Experience our next-generation Rocket 'Trishul' designed to launch on 18th April 2025",
+      description:
+        "Experience our next-generation Rocket 'Trishul' designed to launch on 18th April 2025",
       date: new Date(2025, 3, 18),
-      image: img
-    }
+      image: img,
+    },
   ];
 
   useEffect(() => {
@@ -731,9 +737,11 @@ const ProjectCountdown = () => {
 
       setTimeLeft({
         days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        hours: Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        ),
         minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-        seconds: Math.floor((distance % (1000 * 60)) / 1000)
+        seconds: Math.floor((distance % (1000 * 60)) / 1000),
       });
     }, 1000);
 
@@ -741,15 +749,25 @@ const ProjectCountdown = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
-      <div className=" bg-gradient-to-r from-slate-700/40 via-gray-900/50 border-2 border-yellow-500/50 rounded-3xl p-4 sm:p-8 lg:p-12 backdrop-blur-lg
+    <motion.div
+      initial={{ y: 10, opacity: 0, filter: "blur(50px)" }}
+      whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+      transition={{ duration: 0.3, delay: 0.2 }}
+      className="w-full max-w-6xl mx-auto px-4 sm:px-6"
+    >
+      <div
+        className=" bg-gradient-to-r from-slate-700/40 via-gray-900/50 border-2
+       border-yellow-500/50 rounded-3xl p-4 sm:p-8 lg:p-12 backdrop-blur-lg
                     shadow-[0_0_50px_rgba(255,165,0,0.15)] hover:shadow-[0_0_70px_rgba(255,165,0,0.25)]
-                    transition-all duration-500">
+                    transition-all duration-500"
+      >
         <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
           <div className="space-y-6 md:space-y-8">
             <div>
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-yellow-300 via-orange-300 to-yellow-300
-                            bg-clip-text text-transparent mb-2 sm:mb-4">
+              <h3
+                className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-yellow-300 via-orange-300 to-yellow-300
+                            bg-clip-text text-transparent mb-2 sm:mb-4"
+              >
                 {projects[0].name}
               </h3>
               <p className="text-base sm:text-lg text-white/90">
@@ -777,28 +795,85 @@ const ProjectCountdown = () => {
           </div>
 
           <div className="relative group mt-6 md:mt-0">
-            <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500/50 to-orange-500/50 
-                          rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-500" />
+            <div
+              className="absolute -inset-1
+             bg-gradient-to-r from-yellow-500/50 to-orange-500/50 
+                          rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-500"
+            />
             <img
               src={projects[0].image}
               alt={projects[0].name}
-              className="relative rounded-xl w-full h-[200px] sm:h-[300px] lg:h-[400px] object-cover
+              className="relative rounded-xl w-full h-[200px] sm:h-[300px] lg:h-[400px] object-contain
                         transform group-hover:scale-105 transition-transform duration-500"
             />
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 // Main Component
 const SpaceClubLanding = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [satelliteY, setSatelliteY] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setSatelliteY();
+      console.log(scrollY);
+      // Increase sensitivity for faster initial movement
+      setScrollPosition(Math.min(scrollY * 4, 2500)); // Increases speed at start, max movement 800px
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="relative min-h-screen bg-gradient-to-r from-slate-700/40 via-gray-900/50 to-blue-900/60 text-white overflow-hidden">
+    <div
+      id="hero-section"
+      className="bg-black relative min-h-screen
+      text-white overflow-hidden"
+    >
+      {/* <div
+        id="satellite"
+        className="z-10 absolute right-[-400px] top-[200px] transition-transform duration-100 ease-linear"
+        style={{
+          transform: `translateX(${-scrollPosition * 0.8}px) translateY(${
+            scrollPosition * 0.15
+          }px)`,
+        }}
+      >
+        <img
+          height={"400px"}
+          width={"400px"}
+          src="/assets/sat.png"
+          alt="Not found"
+        />
+      </div> */}
+      <div
+        id="satellite"
+        className="z-10 absolute right-[-400px] top-[200px] transition-transform duration-100 ease-linear"
+        style={{
+          transform: `translateX(${-scrollPosition * 0.8}px) translateY(${
+            scrollPosition * 0.15
+          }px)`,
+        }}
+      >
+        <img
+          className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[400px] h-auto"
+          src="/assets/sat12.png"
+          alt="Not found"
+        />
+      </div>
+
       <StarsBackground />
       <Navbar />
-      <VerticalSpaceCards/>
+      <VerticalSpaceCards />
       <div className="min-h-screen flex flex-col items-center justify-center relative z-10 mt-20">
         <div className="text-center px-6 max-w-6xl mx-auto space-y-24">
           <ProjectCountdown />
@@ -812,62 +887,81 @@ const SpaceClubLanding = () => {
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="grid md:grid-cols-3 gap-12">
           {[
-            { Icon: Telescope, title: 'Observation', text: 'Access to advanced telescopes and imaging equipment for deep space observation' },
-            { Icon: Star, title: 'Research', text: 'Participate in groundbreaking astronomical research projects and discoveries' },
-            { Icon: Satellite, title: 'Technology', text: 'Learn about cutting-edge space technology and satellite systems' }
+            {
+              Icon: Telescope,
+              title: "Observation",
+              text: "Access to advanced telescopes and imaging equipment for deep space observation",
+            },
+            {
+              Icon: Star,
+              title: "Research",
+              text: "Participate in groundbreaking astronomical research projects and discoveries",
+            },
+            {
+              Icon: Satellite,
+              title: "Technology",
+              text: "Learn about cutting-edge space technology and satellite systems",
+            },
           ].map((feature) => (
             <FeatureCard key={feature.title} {...feature} />
           ))}
         </div>
       </div>
 
-      <Footer/>
-      
+      <Footer />
+
       <style jsx global>{`
-       @keyframes particleFloat {
-  0%, 100% { 
-    opacity: 0.4; 
-    transform: translate(0, 0) rotate(0deg); 
-  }
-  25% { 
-    opacity: 0.8;
-    transform: translate(3px, -3px) rotate(20deg); /* Less movement */
-  }
-  50% { 
-    opacity: 0.2;
-    transform: translate(-2px, 4px) rotate(40deg); /* Less movement */
-  }
-  75% { 
-    opacity: 0.6;
-    transform: translate(-4px, -2px) rotate(60deg); /* Less movement */
-  }
-}
+        @keyframes particleFloat {
+          0%,
+          100% {
+            opacity: 0.4;
+            transform: translate(0, 0) rotate(0deg);
+          }
+          25% {
+            opacity: 0.8;
+            transform: translate(3px, -3px) rotate(20deg); /* Less movement */
+          }
+          50% {
+            opacity: 0.2;
+            transform: translate(-2px, 4px) rotate(40deg); /* Less movement */
+          }
+          75% {
+            opacity: 0.6;
+            transform: translate(-4px, -2px) rotate(60deg); /* Less movement */
+          }
+        }
 
-@keyframes cosmicDust {
-  0%, 100% { 
-    opacity: 0.3; 
-    transform: scale(1) rotate(0deg); 
-  }
-  50% { 
-    opacity: 0.7; 
-    transform: scale(1.1) rotate(45deg); /* Less scaling & rotation */
-  }
-}
+        @keyframes cosmicDust {
+          0%,
+          100% {
+            opacity: 0.3;
+            transform: scale(1) rotate(0deg);
+          }
+          50% {
+            opacity: 0.7;
+            transform: scale(1.1) rotate(45deg); /* Less scaling & rotation */
+          }
+        }
 
-@keyframes energyWave {
-  0%, 100% { 
-    opacity: 0.1; 
-    transform: scale(1) rotate(0deg); 
-  }
-  50% { 
-    opacity: 0.3; 
-    transform: scale(1.02) rotate(2deg); /* Minimal movement */
-  }
-}
-
+        @keyframes energyWave {
+          0%,
+          100% {
+            opacity: 0.1;
+            transform: scale(1) rotate(0deg);
+          }
+          50% {
+            opacity: 0.3;
+            transform: scale(1.02) rotate(2deg); /* Minimal movement */
+          }
+        }
 
         .bg-gradient-radial {
-          background: radial-gradient(circle at center, var(--tw-gradient-from) 0%, var(--tw-gradient-via) 50%, var(--tw-gradient-to) 100%);
+          background: radial-gradient(
+            circle at center,
+            var(--tw-gradient-from) 0%,
+            var(--tw-gradient-via) 50%,
+            var(--tw-gradient-to) 100%
+          );
         }
 
         html {
@@ -915,7 +1009,7 @@ const SpaceClubLanding = () => {
         }
 
         .link-underline::after {
-          content: '';
+          content: "";
           position: absolute;
           width: 0;
           height: 2px;
@@ -930,7 +1024,7 @@ const SpaceClubLanding = () => {
         }
 
         .link-underline::after {
-          content: '';
+          content: "";
           position: absolute;
           width: 0;
           height: 2px;
@@ -978,9 +1072,13 @@ class ErrorBoundary extends React.Component {
       return (
         <div className="min-h-screen flex items-center justify-center bg-black">
           <div className="text-center p-8 rounded-lg border-2 border-yellow-500/30">
-            <h2 className="text-2xl font-bold text-yellow-400 mb-4">Something went wrong</h2>
-            <p className="text-yellow-100/80 mb-6">Please try refreshing the page</p>
-            <button 
+            <h2 className="text-2xl font-bold text-yellow-400 mb-4">
+              Something went wrong
+            </h2>
+            <p className="text-yellow-100/80 mb-6">
+              Please try refreshing the page
+            </p>
+            <button
               onClick={() => window.location.reload()}
               className="px-6 py-2 bg-yellow-500/20 hover:bg-yellow-500/30 
                        border border-yellow-500/50 rounded-lg transition-colors"
@@ -1034,7 +1132,7 @@ class ErrorBoundary extends React.Component {
 //               }}
 //             />
 //           ))}
-          
+
 //           {/* Stars */}
 //           {[...Array(50)].map((_, i) => (
 //             <div
@@ -1053,7 +1151,7 @@ class ErrorBoundary extends React.Component {
 //       </div>
 //     ))}
 //   </div>
-  
+
 // </div>
 // <div className='mt-8 -px-6'>
 //     <Footer/>
@@ -1168,7 +1266,7 @@ class ErrorBoundary extends React.Component {
 //   const [scrollPosition, setScrollPosition] = useState(0);
 //   const headerRef = useRef(null);
 //   const sectionRef = useRef(null);
-  
+
 //   useEffect(() => {
 //     const handleScroll = () => {
 //       setScrollPosition(window.pageYOffset);
@@ -1187,7 +1285,7 @@ class ErrorBoundary extends React.Component {
 //       {/* Header Section */}
 //       <header ref={headerRef} className="w-full h-screen relative overflow-hidden">
 //         <div className="absolute inset-0 bg-black/5 z-20"></div>
-        
+
 //         {/* Navigation */}
 //         <nav className="absolute top-0 left-0 w-full py-4 z-30 bg-gradient-to-b from-black/5 to-transparent">
 //           <div className="max-w-[70rem] px-8 mx-auto flex justify-between items-center">
@@ -1204,42 +1302,42 @@ class ErrorBoundary extends React.Component {
 //         </nav>
 
 //         {/* Parallax Elements */}
-//         <h1 
+//         <h1
 //           className="absolute z-30 w-full text-center text-5xl md:text-6xl font-semibold text-white top-1/2 -translate-y-1/2"
 //           style={translateStyle(0.1)}
 //         >
 //           Discover.
 //         </h1>
 
-//         <img 
+//         <img
 //           src={img1}
 //           alt="Person"
 //           className="absolute -bottom-[100px] -left-[70px] w-[650px] z-20"
 //           style={translateStyle(-0.25)}
 //         />
-        
-//         <img 
+
+//         <img
 //           src={img2}
 //           alt="Mountain 1"
 //           className="absolute -bottom-[100px] right-0 w-[1500px] z-[19]"
 //           style={translateStyle(-0.2)}
 //         />
-        
-//         <img 
+
+//         <img
 //           src={img3}
 //           alt="Mountain 2"
 //           className="absolute -bottom-[100px] left-0 w-[1100px] z-[18]"
 //           style={translateStyle(0.4)}
 //         />
-        
-//         <img 
+
+//         <img
 //           src={img4}
 //           alt="Mountain 3"
 //           className="absolute bottom-[150px] right-0 w-[900px] z-[17]"
 //           style={translateStyle(0.3)}
 //         />
-        
-//         <img 
+
+//         <img
 //           src={img5}
 //           alt="Sky"
 //           className="absolute bottom-[250px] right-0 w-[2100px]"
@@ -1251,7 +1349,7 @@ class ErrorBoundary extends React.Component {
 //       <section ref={sectionRef} className="w-full bg-[#151515] relative">
 //         <div className="absolute bottom-full h-[300px] w-full left-0 z-20 bg-gradient-to-t from-[#151515] to-transparent"
 //              style={{ height: `${scrollPosition * 0.5 + 300}px` }}></div>
-        
+
 //         <div className="max-w-[70rem] mx-auto p-12 grid md:grid-cols-2 gap-8 items-center min-h-screen">
 //           <div className="text-white space-y-4 transform -translate-y-12 opacity-0 transition-opacity duration-500"
 //                style={{ opacity: scrollPosition / 800 }}>
@@ -1261,15 +1359,15 @@ class ErrorBoundary extends React.Component {
 //                    style={{ width: `${(scrollPosition / 800) * 30}%` }}></div>
 //             </h3>
 //             <p className="text-base md:text-lg">
-//               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis quos expedita ipsa, 
-//               a quidem inventore voluptates debitis accusamus tenetur qui et voluptas dicta, culpa earum, 
+//               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis quos expedita ipsa,
+//               a quidem inventore voluptates debitis accusamus tenetur qui et voluptas dicta, culpa earum,
 //               doloribus odio consectetur consequuntur soluta quasi nobis!
 //             </p>
 //           </div>
 
 //           <div className="transform translate-y-12 opacity-0 transition-opacity duration-500"
 //                style={{ opacity: scrollPosition / 800 }}>
-//             <img 
+//             <img
 //               src={img}
 //               alt="Content"
 //               className="w-full rounded-lg shadow-lg"

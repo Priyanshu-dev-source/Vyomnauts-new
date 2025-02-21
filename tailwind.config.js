@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
+      fontFamily:{
+        audioWide: ["Audiowide", "cursive"],
+        calibri: ["Calibri", "sans-serif"]
+      },
       keyframes: {
         'gradient-shift': {
           '0%, 100%': { 'background-position': '0% 50%' },
