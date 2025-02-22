@@ -557,8 +557,8 @@
 // export default SpaceClubLanding;
 // SpaceClubLanding.jsx
 import React, { useState, useEffect } from "react";
-import { Rocket, ChevronDown, Star, Satellite, Telescope } from "lucide-react";
-import img1 from "./assets/trishul2.png";
+import { ChevronDown, Star, Satellite, Telescope } from "lucide-react";
+// import img1 from "./assets/trishul2.png";
 import img from "./assets/trishul-1.png";
 import Navbar from "./Navbar";
 import VerticalSpaceCards from "./Description";
@@ -611,77 +611,6 @@ const StarsBackground = () => {
           opacity: 1 - scrollPosition * 0.0003,
         }}
       />
-
-      {/* Animated Particle Layers */}
-      {/* <div 
-        className="absolute inset-0 transition-transform duration-500"
-        style={{ transform: `translate(${-mousePosition.x * 0.1}px, ${-mousePosition.y * 0.1}px)` }}
-      >
-        {[...Array(100)].map((_, i) => {
-          const colors = [
-            'rgba(255, 255, 255, 0.8)',  // White
-            'rgba(255, 200, 0, 0.8)',    // Yellow
-            'rgba(255, 140, 0, 0.8)',    // Orange
-            'rgba(255, 165, 0, 0.8)'     // Golden
-          ];
-          return (
-            <div
-              key={`particle-${i}`}
-              className="absolute rounded-full"
-              style={{
-                width: Math.random() * 2 + 1 + 'px',
-                height: Math.random() * 2 + 1 + 'px',
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                background: colors[Math.floor(Math.random() * colors.length)],
-                animation: `particleFloat ${Math.random() * 15 + 10}s infinite ease-in-out ${Math.random() * 5}s`,
-                boxShadow: '0 0 8px currentColor'
-              }}
-            />
-          );
-        })}
-      </div> */}
-
-      {/* Cosmic Dust Effect */}
-      {/* <div 
-        className="absolute inset-0 transition-transform duration-700"
-        style={{ transform: `translate(${-mousePosition.x * 0.2}px, ${-mousePosition.y * 0.5}px)` }}
-      >
-        {[...Array(50)].map((_, i) => {
-          const colors = [
-            'rgba(255, 200, 0, 0.6)',    // Yellow
-            'rgba(255, 140, 0, 0.6)',    // Orange
-            'rgba(255, 255, 255, 0.6)',  // White
-            'rgba(255, 165, 0, 0.6)'     // Golden
-          ];
-          return (
-            <div
-              key={`dust-${i}`}
-              className="absolute"
-              style={{
-                width: '3px',
-                height: '3px',
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                background: colors[Math.floor(Math.random() * colors.length)],
-                animation: `cosmicDust ${Math.random() * 20 + 15}s infinite ease-in-out ${Math.random() * 5}s`,
-                boxShadow: '0 0 12px currentColor'
-              }}
-            />
-          );
-        })}
-      </div> */}
-
-      {/* Energy Wave Effect */}
-      {/* <div className="absolute inset-0">
-        <div 
-          className="absolute inset-0 bg-gradient-radial from-yellow-500/20 via-orange-500/10 to-transparent" 
-          style={{ 
-            animation: 'energyWave 30s infinite',
-            transform: `translate(${-mousePosition.x * 0.05}px, ${-mousePosition.y * 0.05}px)`
-          }} 
-        />
-      </div> */}
     </div>
   );
 };
@@ -713,6 +642,7 @@ const FeatureCard = ({ Icon, title, text }) => (
 
 // Project Countdown Component
 const ProjectCountdown = () => {
+  
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -750,22 +680,23 @@ const ProjectCountdown = () => {
 
   return (
     <motion.div
-      initial={{ y: 10, opacity: 0, filter: "blur(50px)" }}
-      whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
-      transition={{ duration: 0.3, delay: 0.2 }}
+      initial={{ x: -300, opacity: 0, filter: "blur(50px)" }}
+      whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
+      transition={{ duration: 0.8, delay: 0.2 }}
       className="w-full max-w-6xl mx-auto px-4 sm:px-6"
     >
       <div
         className=" bg-gradient-to-r from-slate-700/40 via-gray-900/50 border-2
-       border-yellow-500/50 rounded-3xl p-4 sm:p-8 lg:p-12 backdrop-blur-lg
-                    shadow-[0_0_50px_rgba(255,165,0,0.15)] hover:shadow-[0_0_70px_rgba(255,165,0,0.25)]
+       border-blue-500 rounded-3xl p-4 sm:p-8 lg:p-12 backdrop-blur-lg
+                    shadow-[rgb(73,92,140)] hover:shadow-[0_0_70px_rgba(59,130,246,7.25)]
                     transition-all duration-500"
       >
         <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
           <div className="space-y-6 md:space-y-8">
             <div>
               <h3
-                className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-yellow-300 via-orange-300 to-yellow-300
+                className="text-2xl sm:text-3xl lg:text-4xl font-bold 
+                bg-blue-500
                             bg-clip-text text-transparent mb-2 sm:mb-4"
               >
                 {projects[0].name}
@@ -779,11 +710,12 @@ const ProjectCountdown = () => {
               {Object.entries(timeLeft).map(([unit, value]) => (
                 <div
                   key={unit}
-                  className="bg-black/90 border-2 border-yellow-500/50 rounded-xl p-3 sm:p-6 text-center
+                  className="bg-black/90 border-2
+                   border-blue-500 rounded-xl p-3 sm:p-6 text-center
                             transform hover:scale-105 transition-all duration-300
-                            hover:border-orange-400/80 hover:shadow-[0_0_30px_rgba(255,165,0,0.2)]"
+                            hover:border-blue-400 hover:shadow-[0_0_70px_rgba(73,92,140,7.25)]"
                 >
-                  <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-yellow-400">
+                  <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-500">
                     {value}
                   </div>
                   <div className="text-xs sm:text-sm text-white/90 capitalize mt-1 sm:mt-2">
@@ -797,7 +729,7 @@ const ProjectCountdown = () => {
           <div className="relative group mt-6 md:mt-0">
             <div
               className="absolute -inset-1
-             bg-gradient-to-r from-yellow-500/50 to-orange-500/50 
+             bg-gradient-to-r from-blue-500/50 to-blue-700/50 
                           rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-500"
             />
             <img
@@ -823,7 +755,7 @@ const SpaceClubLanding = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       setSatelliteY();
-      console.log(scrollY);
+      // console.log(scrollY);
       // Increase sensitivity for faster initial movement
       setScrollPosition(Math.min(scrollY * 4, 2500)); // Increases speed at start, max movement 800px
     };
@@ -836,7 +768,8 @@ const SpaceClubLanding = () => {
   return (
     <div
       id="hero-section"
-      className="bg-black relative min-h-screen
+      className="bg-black
+       relative min-h-screen
       text-white overflow-hidden"
     >
       {/* <div
@@ -880,11 +813,16 @@ const SpaceClubLanding = () => {
         </div>
 
         <div className="absolute bottom-10 w-full text-center animate-bounce">
-          <ChevronDown className="mx-auto h-8 w-8 text-yellow-400" />
+          <ChevronDown className="mx-auto h-8 w-8 text-blue-500" />
         </div>
       </div>
 
-      <div className="container mx-auto px-6 py-20 relative z-10">
+      <motion.div 
+      initial={{ x: -110, opacity: 0, filter: "blur(50px)" }}
+      whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
+      exit={{ x: -110, opacity: 0, filter: "blur(50px)" }}
+      transition={{ duration: 0.5, delay: 0.3 }}
+      className="container mx-auto px-6 py-20 relative z-10">
         <div className="grid md:grid-cols-3 gap-12">
           {[
             {
@@ -906,7 +844,7 @@ const SpaceClubLanding = () => {
             <FeatureCard key={feature.title} {...feature} />
           ))}
         </div>
-      </div>
+      </motion.div>
 
       <Footer />
 

@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       fontFamily:{
         audioWide: ["Audiowide", "cursive"],
-        calibri: ["Calibri", "sans-serif"]
+        calibri: ["Calibri", "sans-serif"],
+        josefin: ["Josefin Sans", "sans-serif"],
       },
       keyframes: {
         'gradient-shift': {
