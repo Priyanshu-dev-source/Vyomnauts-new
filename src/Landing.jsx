@@ -798,7 +798,7 @@ const SpaceClubLanding = () => {
         }}
       >
         <img
-          className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[400px] h-auto"
+          className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[400px] h-auto opacity-[80%]"
           src="/assets/sat12.png"
           alt="Not found"
         />

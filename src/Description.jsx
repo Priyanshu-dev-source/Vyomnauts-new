@@ -17,9 +17,9 @@ const VerticalSpaceCards = () => {
       <div className="relative w-full flex flex-col items-center justify-center min-h-[800px] md:min-h-[700px] lg:min-h-[800px] bg-[url('/assets/halfEarth.jpg')] bg-center bg-cover bg-no-repeat">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         <motion.div
-          initial={{ opacity: 0, y: 10, filter: "blur(10px)" }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          // transition={{ duration: 0.3 }}
+          initial={{ opacity: 0, x: -100, filter: "blur(10px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          transition={{ duration: 0.3 }}
           className="relative z-10 text-white text-center md:min-h-[850px] min-h-[900px] lg:min-h-[1000px] flex items-center justify-center flex-col pb-[250px]"
         >
           <h1 className="flex tracking-wide items-center justify-center sm:gap-2 md:gap-6 text-3xl sm:text-[42px] md:text-[48px] lg:text-[55px] xl:text-[75px] font-audioWide text-yellow-300">
