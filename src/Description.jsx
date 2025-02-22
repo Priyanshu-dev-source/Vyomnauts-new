@@ -18,7 +18,7 @@ const VerticalSpaceCards = () => {
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         <motion.div
           initial={{ opacity: 0, x: -100, filter: "blur(10px)" }}
-          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.3 }}
           className="relative z-10 text-white text-center md:min-h-[850px] min-h-[900px] lg:min-h-[1000px] flex items-center justify-center flex-col pb-[250px]"
         >
