@@ -99,7 +99,7 @@ const VerticalSpaceCards = () => {
           whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 1 }}
           exit={{ x: -300, opacity: 0 }}
-          className="absolute h-[610px] w-[520px] rounded-[20px] top-[169em] left-[180px] "
+          className="absolute h-[670px] w-[580px] rounded-[20px] top-[169em] left-[80px] "
         >
           <img
             style={{ filter: "drop-shadow(6px 6px 5.75rem #2D68C4)" }}
@@ -233,7 +233,7 @@ const VerticalSpaceCards = () => {
 
 
           <motion.div
-            initial={{ y: 300, opacity: 0, filter: "blur(30px)" }}
+            initial={{ y: 110, opacity: 0, filter: "blur(30px)" }}
             whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5 }}
             style={{ filter: "drop-shadow(6px 6px 7.75rem #C1440E)" }}
@@ -248,7 +248,7 @@ const VerticalSpaceCards = () => {
           </motion.div>
 
           <motion.div
-            initial={{ y: 300, opacity: 0, filter: "blur(30px)" }}
+            initial={{ y: 110, opacity: 0, filter: "blur(30px)" }}
             whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5 }}
             className="relative hover:bg-transparent transition duration-300 cursor-pointer h-full w-[230px] right-[20px] bg-[rgba(96,255,96,0.1)] rounded-[20px] border-[2px] border-green-500 flex items-center justify-start flex-col gap-[35px] pt-[20px] "
@@ -262,7 +262,7 @@ const VerticalSpaceCards = () => {
           </motion.div>
 
           <motion.div
-            initial={{ y: 300, opacity: 0, filter: "blur(30px)" }}
+            initial={{ y: 110, opacity: 0, filter: "blur(30px)" }}
             whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5 }}
             className="relative hover:bg-transparent transition duration-300 cursor-pointer h-full w-[230px] right-[10px] bg-[rgba(96,255,96,0.1)] rounded-[20px] border-[2px] border-green-500 flex items-center justify-start flex-col gap-[35px] pt-[20px] "
@@ -276,7 +276,7 @@ const VerticalSpaceCards = () => {
           </motion.div>
 
           <motion.div
-            initial={{ y: 300, opacity: 0, filter: "blur(30px)" }}
+            initial={{ y: 110, opacity: 0, filter: "blur(30px)" }}
             whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5 }}
             className="relative hover:bg-transparent transition duration-300 cursor-pointer h-full w-[230px] left-[5px] bg-[rgba(96,255,96,0.1)] rounded-[20px] border-[2px] border-green-500 flex items-center justify-start flex-col gap-[35px] pt-[20px] "
@@ -290,7 +290,7 @@ const VerticalSpaceCards = () => {
           </motion.div>
 
             <motion.div
-              initial={{ y: 300, opacity: 0, filter: "blur(30px)" }}
+              initial={{ y: 110, opacity: 0, filter: "blur(30px)" }}
               whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
               transition={{ duration: 0.5 }}
               className="relative hover:bg-transparent transition duration-300 cursor-pointer h-full w-[230px] left-[10px] bg-[rgba(96,255,96,0.1)] rounded-[20px] border-[2px] border-green-500 flex items-center justify-start flex-col gap-[35px] pt-[20px] "
