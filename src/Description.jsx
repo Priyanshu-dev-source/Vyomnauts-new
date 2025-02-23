@@ -73,7 +73,7 @@ const VerticalSpaceCards = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           exit={{ x: -300, opacity: 0 }}
-          className="absolute h-[200px] w-[200px] md:h-[550px] md:w-[480px] rounded-[20px] top-[87em] left-[5px] md:top-[109em] md:left-[230px] "
+          className="absolute h-[200px] w-[200px] md:h-[550px] md:w-[480px] rounded-[20px] top-[87em] left-[-5px] md:top-[109em] md:left-[230px] "
         >
           <img
             style={{ filter: "drop-shadow(6px 6px 7.75rem #D4AF37)" }}
@@ -86,7 +86,7 @@ const VerticalSpaceCards = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           exit={{ x: 300, opacity: 0 }}
-          className="absolute h-[250px] w-[250px] md:h-[550px] md:w-[480px] rounded-[20px] top-[98em] left-[200px] md:top-[135em] md:left-[990px] "
+          className="absolute h-[240px] w-[240px] md:h-[550px] md:w-[480px] rounded-[20px] top-[99em] left-[180px] md:top-[135em] md:left-[990px] "
         >
           <img
             style={{ filter: "drop-shadow(6px 6px 7.75rem #D9A066)" }}
@@ -103,7 +103,7 @@ const VerticalSpaceCards = () => {
           whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 1 }}
           exit={{ x: -300, opacity: 0 }}
-          className="absolute h-[320px] w-[320px] md:h-[670px] md:w-[580px] rounded-[20px] top-[117em] left-[-60px] md:top-[169em] md:left-[80px] "
+          className="absolute h-[310px] w-[310px] md:h-[670px] md:w-[580px] rounded-[20px] top-[117em] left-[-60px] md:top-[169em] md:left-[80px] "
         >
           <img
             style={{ filter: "drop-shadow(6px 6px 5.75rem #2D68C4)" }}
@@ -121,7 +121,7 @@ const VerticalSpaceCards = () => {
           }}
           whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.8 }}
-          className="absolute z-[8] h-[220px] w-[160px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer hover:bg-transparent rounded-[20px] top-[74em] left-[20px] md:top-[82em] md:left-[230px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px] "
+          className="absolute z-[8] h-[220px] w-[160px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer hover:bg-transparent rounded-[20px] top-[74em] left-[6px] md:top-[82em] md:left-[230px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px] "
         >
           <div className="text-purple-500 w-full flex bg-transparent items-center justify-center h-[25%] md:h-[40%] group-hover/item:scale-110 transition-transform duration-300">
             <Rocket className="h-10 w-10 md:w-20 md:h-20" />
@@ -141,7 +141,7 @@ const VerticalSpaceCards = () => {
           }}
           whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.8 }}
-          className="absolute md:z-[20] z-[10] h-[220px] w-[160px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer hover:bg-transparent rounded-[20px] top-[86em] left-[240px] md:top-[108em] md:left-[1045px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px]"
+          className="absolute md:z-[20] z-[10] h-[220px] w-[160px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer hover:bg-transparent rounded-[20px] top-[86em] left-[225px] md:top-[108em] md:left-[1045px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px]"
         >
           <div className="text-purple-500 w-full flex bg-transparent items-center justify-center h-[25%] md:h-[40%] group-hover/item:scale-110 transition-transform duration-300">
             <Shield className="h-10 w-10 md:w-20 md:h-20" />
@@ -161,7 +161,7 @@ const VerticalSpaceCards = () => {
           }}
           whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.8 }}
-          className="absolute md:z-[20] z-[10] h-[220px] w-[160px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer hover:bg-transparent rounded-[20px] top-[101em] left-[20px] md:top-[135em] md:left-[230px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px]"
+          className="absolute md:z-[20] z-[10] h-[220px] w-[160px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer hover:bg-transparent rounded-[20px] top-[101em] left-[6px] md:top-[135em] md:left-[230px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px]"
         >
           <div className="text-purple-500 w-full flex bg-transparent items-center justify-center h-[25%] md:h-[40%] group-hover/item:scale-110 transition-transform duration-300">
             <Cpu className="h-10 w-10 md:w-20 md:h-20" />
@@ -181,7 +181,7 @@ const VerticalSpaceCards = () => {
           }}
           whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.8 }}
-          className="absolute md:z-[20] z-[10] h-[220px] w-[160px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer hover:bg-transparent rounded-[20px] top-[113em] left-[240px] md:top-[166em] md:left-[1045px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px] "
+          className="absolute md:z-[20] z-[10] h-[220px] w-[160px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer hover:bg-transparent rounded-[20px] top-[113em] left-[225px] md:top-[166em] md:left-[1045px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px] "
         >
           <div className="text-purple-500 w-full flex bg-transparent items-center justify-center h-[25%] md:h-[40%] group-hover/item:scale-110 transition-transform duration-300">
             <Radio className="h-10 w-10 md:w-20 md:h-20" />
@@ -198,7 +198,7 @@ const VerticalSpaceCards = () => {
           className="relative z-[5] top-[30px] left-[40px] w-full h-[800px] md:h-[1800px] text-center overflow-hidden"
         >
           <motion.svg
-            className="relative md:left-[300px] md:w-[903px] md:h-[1500px] left-[-58px] w-[456px] h-[670px]"
+            className="relative md:left-[300px] md:w-[903px] md:h-[1500px] left-[-73px] w-[456px] h-[670px]"
             width="903"
             height="1500"
             viewBox="0 0 903 2675"
@@ -275,7 +275,7 @@ const VerticalSpaceCards = () => {
             initial={{ y: 110, opacity: 0, filter: "blur(30px)" }}
             whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5 }}
-            className="relative hover:bg-transparent transition duration-300 cursor-pointer h-[210px] bottom-[55px] md:bottom-0 w-[155px] md:h-full md:w-[230px] left-[190px] md:left-0 md:right-[30px] bg-[rgba(96,255,96,0.1)] rounded-[20px] border-[2px] border-green-500 flex items-center justify-start flex-col gap-[35px] md:gap-[35px] pt-[30px] md:pt-[20px]"
+            className="relative hover:bg-transparent transition duration-300 cursor-pointer h-[210px] bottom-[55px] md:bottom-0 w-[155px] md:h-full md:w-[230px] left-[180px] md:left-0 md:right-[30px] bg-[rgba(96,255,96,0.1)] rounded-[20px] border-[2px] border-green-500 flex items-center justify-start flex-col gap-[35px] md:gap-[35px] pt-[30px] md:pt-[20px]"
           >
             <div className="text-green-500 w-full flex bg-transparent items-center justify-center h-[20%] md:h-[40%] group-hover/item:scale-110 transition-transform duration-300">
               <Star className="h-16 w-12 md:w-20 md:h-20" />
@@ -289,7 +289,7 @@ const VerticalSpaceCards = () => {
             initial={{ y: 110, opacity: 0, filter: "blur(30px)" }}
             whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5 }}
-            className="relative hover:bg-transparent transition duration-300 cursor-pointer h-[210px] bottom-[340px] md:bottom-0 w-[155px] md:h-full md:w-[230px] left-[190px] md:left-0 md:right-[30px] bg-[rgba(96,255,96,0.1)] rounded-[20px] border-[2px] border-green-500 flex items-center justify-start flex-col gap-[35px] md:gap-[35px] pt-[30px] md:pt-[20px]"
+            className="relative hover:bg-transparent transition duration-300 cursor-pointer h-[210px] bottom-[340px] md:bottom-0 w-[155px] md:h-full md:w-[230px] left-[180px] md:left-0 md:right-[30px] bg-[rgba(96,255,96,0.1)] rounded-[20px] border-[2px] border-green-500 flex items-center justify-start flex-col gap-[35px] md:gap-[35px] pt-[30px] md:pt-[20px]"
           >
             <div className="text-green-500 w-full flex bg-transparent items-center justify-center h-[20%] md:h-[40%] group-hover/item:scale-110 transition-transform duration-300">
               <Cpu className="h-16 w-12 md:w-20 md:h-20" />
@@ -317,7 +317,7 @@ const VerticalSpaceCards = () => {
             initial={{ y: 110, opacity: 0, filter: "blur(30px)" }}
             whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5 }}
-            className="relative hover:bg-transparent transition duration-300 cursor-pointer h-[210px] bottom-[260px] md:bottom-0 w-[155px] md:h-full md:w-[230px] left-[89px] md:left-0 md:right-[30px] bg-[rgba(96,255,96,0.1)] rounded-[20px] border-[2px] border-green-500 flex items-center justify-start flex-col gap-[35px] md:gap-[35px] pt-[30px] md:pt-[20px] "
+            className="relative hover:bg-transparent transition duration-300 cursor-pointer h-[210px] bottom-[260px] md:bottom-0 w-[155px] md:h-full md:w-[230px] left-[79px] md:left-0 md:right-[30px] bg-[rgba(96,255,96,0.1)] rounded-[20px] border-[2px] border-green-500 flex items-center justify-start flex-col gap-[35px] md:gap-[35px] pt-[30px] md:pt-[20px] "
           >
             <div className="text-green-500 w-full flex bg-transparent items-center justify-center h-[20%] md:h-[40%] group-hover/item:scale-110 transition-transform duration-300">
               <Users className="h-16 w-12 md:w-20 md:h-20" />
