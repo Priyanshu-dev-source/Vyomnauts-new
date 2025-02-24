@@ -1,9 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import logo from "./assets/logo.png";
 
 const Navbar = () => {
+  const downloadPDF = () => {
+    const pdfUrl = "/sample.pdf"; 
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Sample.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  
+
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -53,7 +64,8 @@ const Navbar = () => {
                 Join Us
               </button>
             </Link>
-            <button 
+            <button
+              onClick={downloadPDF} 
               className="px-4 py-2 bg-amber-400 text-black rounded-lg hover:bg-yellow-300 transition-colors"
               aria-label="Sponsor Us"
             >
