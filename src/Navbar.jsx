@@ -5,7 +5,7 @@ import logo from "./assets/logo.png";
 
 const Navbar = () => {
   const downloadPDF = () => {
-    const pdfUrl = "/sample.pdf"; 
+    const pdfUrl = `${window.location.origin}/Sponsor.pdf` 
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "Sample.pdf";
