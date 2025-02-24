@@ -36,6 +36,10 @@ import img25 from "./assets/Team/suryansh.jpg";
 import img26 from "./assets/Team/vaishnaviSri.jpg";
 import img27 from "./assets/Team/vedansh.jpg";
 import img28 from "./assets/Team/Vijay.jpg";
+import img29 from "./assets/Team/Shikha.jpg";
+import img30 from "./assets/Team/img17.jpg";
+import img31 from "./assets/Team/img18.jpg";
+import img32 from "./assets/Team/img19.jpg";
 import VerticalMentorsList from "./MentorCarousel";
 const SocialIcon = ({ Icon, href }) =>
   href ? (
@@ -398,54 +402,54 @@ const AboutUsPage = () => {
             "github": ""
           }
         },
-        // {
-        //   "id": 12,
-        //   "name": "Shikha ",
-        //   "role": "Event manager ",
-        //   "description": "\"Skilled in planning and executing high-impact events with precision and creativity. Expertise in logistics, team coordination, and audience engagement to ensure seamless and memorable experiences.\"",
-        //   "image":`${img9}`,
-        //   "socialLinks": {
-          //     "linkedin": "",
-        //     "twitter": "",
-        //     "github": ""
-        //   }
-        // },
-        // {
-        //   "id": 13,
-        //   "name": "Harsh Vishwakarma",
-        //   "role": "Social Media head",
-        //   "description": " Manages online presence and engagement for outreach. ",
-        //   "image": `${img17}`,
-        //   "socialLinks": {
-        //     "linkedin": "",
-        //     "twitter": "",
-        //     "github": ""
-        //   }
-        // },
-        // {
-        //   "id": 14,
-        //   "name": "Aman Pandey ",
-        //   "role": "Graphic Designer",
-        //   "description": "\"Creates visual content for branding and communication.\"",
-        //   "image": `${img18}`,
-        //   "socialLinks": {
-        //     "linkedin": "",
-        //     "twitter": "",
-        //     "github": ""
-        //   }
-        // },
-        // {
-        //   "id": 15,
-        //   "name": "Harsh Kumar",
-        //   "role": "Graphic Designer",
-        //   "description": "\"Creates visual content for branding and communication.\"",
-        //   "image": `${img19}`,
-        //   "socialLinks": {
-        //     "linkedin": "",
-        //     "twitter": "",
-        //     "github": ""
-        //   }
-        // },
+        {
+          "id": 12,
+          "name": "Shikha ",
+          "role": "Event manager ",
+          "description": "\"Skilled in planning and executing high-impact events with precision and creativity. Expertise in logistics, team coordination, and audience engagement to ensure seamless and memorable experiences.\"",
+          "image":`${img29}`,
+          "socialLinks": {
+              "linkedin": "",
+            "twitter": "",
+            "github": ""
+          }
+        },
+        {
+          "id": 13,
+          "name": "Harsh Vishwakarma",
+          "role": "Social Media head",
+          "description": " Manages online presence and engagement for outreach. ",
+          "image": `${img30}`,
+          "socialLinks": {
+            "linkedin": "",
+            "twitter": "",
+            "github": ""
+          }
+        },
+        {
+          "id": 14,
+          "name": "Aman Pandey ",
+          "role": "Graphic Designer",
+          "description": "\"Creates visual content for branding and communication.\"",
+          "image": `${img31}`,
+          "socialLinks": {
+            "linkedin": "",
+            "twitter": "",
+            "github": ""
+          }
+        },
+        {
+          "id": 15,
+          "name": "Harsh Kumar",
+          "role": "Graphic Designer",
+          "description": "\"Creates visual content for branding and communication.\"",
+          "image": `${img32}`,
+          "socialLinks": {
+            "linkedin": "",
+            "twitter": "",
+            "github": ""
+          }
+        },
       ],
     },
   };
