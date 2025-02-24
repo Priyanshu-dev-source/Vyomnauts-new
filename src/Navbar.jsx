@@ -102,7 +102,8 @@ const Navbar = () => {
                 Join Us
               </button>
               </Link>
-              <button 
+              <button
+                onClick={downloadPDF} 
                 className="px-4 py-2 bg-amber-400 text-black rounded-lg hover:bg-yellow-300 transition-colors"
                 aria-label="Sponsor Us"
               >
