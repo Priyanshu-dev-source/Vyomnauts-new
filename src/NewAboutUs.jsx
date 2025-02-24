@@ -36,7 +36,7 @@ import img25 from "./assets/Team/suryansh.jpg";
 import img26 from "./assets/Team/vaishnaviSri.jpg";
 import img27 from "./assets/Team/vedansh.jpg";
 import img28 from "./assets/Team/Vijay.jpg";
-import img29 from "./assets/Team/Shikha.jpg";
+import img29 from "./assets/Team/shikha.jpg";
 import img30 from "./assets/Team/img17.jpg";
 import img31 from "./assets/Team/img18.jpg";
 import img32 from "./assets/Team/img19.jpg";
