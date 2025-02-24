@@ -818,9 +818,9 @@ const SpaceClubLanding = () => {
       </div>
 
       <motion.div 
-      initial={{ x: -110, opacity: 0, filter: "blur(50px)" }}
+      initial={{ x: 150, opacity: 0, filter: "blur(50px)" }}
       whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
-      exit={{ x: -110, opacity: 0, filter: "blur(50px)" }}
+      exit={{ x: 150, opacity: 0, filter: "blur(50px)" }}
       transition={{ duration: 0.5, delay: 0.3 }}
       className="container mx-auto px-6 py-20 relative z-10">
         <div className="grid md:grid-cols-3 gap-12">

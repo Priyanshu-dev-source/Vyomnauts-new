@@ -56,7 +56,7 @@ const VerticalSpaceCards = () => {
 
         {/*Planets Section*/}
         <motion.div
-          initial={{ x: window.innerWidth < 640 ? 30 : 300, opacity: 0 }}
+          initial={{ x: window.innerWidth < 640 ? 130 : 300, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           exit={{ x: 300, opacity: 0 }}
@@ -69,11 +69,11 @@ const VerticalSpaceCards = () => {
           />
         </motion.div>
         <motion.div
-          initial={{ x: window.innerWidth < 640 ? -30 : -300, opacity: 0 }}
+          initial={{ x: window.innerWidth < 640 ? -130 : -300, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           exit={{ x: -300, opacity: 0 }}
-          className="absolute h-[200px] w-[200px] md:h-[550px] md:w-[480px] rounded-[20px] top-[87em] left-[-5px] md:top-[109em] md:left-[230px] "
+          className="absolute h-[200px] w-[200px] md:h-[550px] md:w-[480px] rounded-[20px] top-[87em] left-[-5px] md:top-[109em] md:left-[190px] "
         >
           <img
             style={{ filter: "drop-shadow(6px 6px 7.75rem #D4AF37)" }}
@@ -82,7 +82,7 @@ const VerticalSpaceCards = () => {
           />
         </motion.div>
         <motion.div
-          initial={{ x: window.innerWidth < 640 ? 30 : 300, opacity: 0 }}
+          initial={{ x: window.innerWidth < 640 ? 130 : 300, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           exit={{ x: 300, opacity: 0 }}
@@ -96,7 +96,7 @@ const VerticalSpaceCards = () => {
         </motion.div>
         <motion.div
           initial={{
-            x: window.innerWidth < 640 ? -30 : -300,
+            x: window.innerWidth < 640 ? -130 : -300,
             opacity: 0,
             filter: "blur(30px)",
           }}
@@ -115,7 +115,7 @@ const VerticalSpaceCards = () => {
         {/*Cards Section*/}
         <motion.div
           initial={{
-            x: window.innerWidth < 640 ? -30 : -300,
+            x: window.innerWidth < 640 ? -130 : -300,
             opacity: 0,
             filter: "blur(30px)",
           }}
@@ -135,7 +135,7 @@ const VerticalSpaceCards = () => {
         </motion.div>
         <motion.div
           initial={{
-            x: window.innerWidth < 640 ? 30 : 300,
+            x: window.innerWidth < 640 ? 130 : 300,
             opacity: 0,
             filter: "blur(30px)",
           }}
@@ -155,7 +155,7 @@ const VerticalSpaceCards = () => {
         </motion.div>
         <motion.div
           initial={{
-            x: window.innerWidth < 640 ? -30 : -300,
+            x: window.innerWidth < 640 ? -130 : -300,
             opacity: 0,
             filter: "blur(30px)",
           }}
@@ -175,7 +175,7 @@ const VerticalSpaceCards = () => {
         </motion.div>
         <motion.div
           initial={{
-            x: window.innerWidth < 640 ? 30 : 300,
+            x: window.innerWidth < 640 ? 130 : 300,
             opacity: 0,
             filter: "blur(30px)",
           }}
@@ -257,7 +257,7 @@ const VerticalSpaceCards = () => {
         </motion.svg>
         <div className="md:flex grid grid-rows-2 md:flex-row flex-col md:items-center md:justify-center md:gap-[30px] w-[345px] h-[700px] md:absolute md:left-[50px] md:bottom-[100px] md:h-[300px] md:w-[1370px]">
           <motion.div
-            initial={{ y: 110, opacity: 0, filter: "blur(30px)" }}
+            initial={{ y: -110, opacity: 0, filter: "blur(30px)" }}
             whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5 }}
             style={{ filter: "drop-shadow(6px 6px 7.75rem #C1440E)" }}
@@ -272,7 +272,7 @@ const VerticalSpaceCards = () => {
           </motion.div>
 
           <motion.div
-            initial={{ y: 110, opacity: 0, filter: "blur(30px)" }}
+            initial={{ y: -110, opacity: 0, filter: "blur(30px)" }}
             whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5 }}
             className="relative hover:bg-transparent transition duration-300 cursor-pointer h-[210px] bottom-[55px] md:bottom-0 w-[155px] md:h-full md:w-[230px] left-[180px] md:left-0 md:right-[30px] bg-[rgba(96,255,96,0.1)] rounded-[20px] border-[2px] border-green-500 flex items-center justify-start flex-col gap-[35px] md:gap-[35px] pt-[30px] md:pt-[20px]"
@@ -286,7 +286,7 @@ const VerticalSpaceCards = () => {
           </motion.div>
 
           <motion.div
-            initial={{ y: 110, opacity: 0, filter: "blur(30px)" }}
+            initial={{ y: -110, opacity: 0, filter: "blur(30px)" }}
             whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5 }}
             className="relative hover:bg-transparent transition duration-300 cursor-pointer h-[210px] bottom-[340px] md:bottom-0 w-[155px] md:h-full md:w-[230px] left-[180px] md:left-0 md:right-[30px] bg-[rgba(96,255,96,0.1)] rounded-[20px] border-[2px] border-green-500 flex items-center justify-start flex-col gap-[35px] md:gap-[35px] pt-[30px] md:pt-[20px]"
@@ -300,7 +300,7 @@ const VerticalSpaceCards = () => {
           </motion.div>
 
           <motion.div
-            initial={{ y: 110, opacity: 0, filter: "blur(30px)" }}
+            initial={{ y: -110, opacity: 0, filter: "blur(30px)" }}
             whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5 }}
             className="relative hover:bg-transparent transition duration-300 cursor-pointer h-[210px] bottom-[550px] md:bottom-0 w-[155px] md:h-full md:w-[230px] left-[1px] md:left-0 md:right-[30px] bg-[rgba(96,255,96,0.1)] rounded-[20px] border-[2px] border-green-500 flex items-center justify-start flex-col gap-[35px] md:gap-[35px] pt-[30px] md:pt-[20px]"
@@ -314,7 +314,7 @@ const VerticalSpaceCards = () => {
           </motion.div>
 
           <motion.div
-            initial={{ y: 110, opacity: 0, filter: "blur(30px)" }}
+            initial={{ y: -110, opacity: 0, filter: "blur(30px)" }}
             whileInView={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.5 }}
             className="relative hover:bg-transparent transition duration-300 cursor-pointer h-[210px] bottom-[260px] md:bottom-0 w-[155px] md:h-full md:w-[230px] left-[79px] md:left-0 md:right-[30px] bg-[rgba(96,255,96,0.1)] rounded-[20px] border-[2px] border-green-500 flex items-center justify-start flex-col gap-[35px] md:gap-[35px] pt-[30px] md:pt-[20px] "

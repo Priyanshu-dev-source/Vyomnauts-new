@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Users, Rocket } from 'lucide-react';
 import img from "./assets/Team/arya.jpg"
 import img1 from "./assets/Team/riashab .jpg"
