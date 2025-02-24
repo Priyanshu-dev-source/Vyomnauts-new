@@ -403,7 +403,7 @@ const AboutUsPage = () => {
           }
         },
         {
-          "id": 12,
+          "id": 27,
           "name": "Shikha ",
           "role": "Event manager ",
           "description": "\"Skilled in planning and executing high-impact events with precision and creativity. Expertise in logistics, team coordination, and audience engagement to ensure seamless and memorable experiences.\"",
@@ -415,7 +415,7 @@ const AboutUsPage = () => {
           }
         },
         {
-          "id": 13,
+          "id": 28,
           "name": "Harsh Vishwakarma",
           "role": "Social Media head",
           "description": " Manages online presence and engagement for outreach. ",
@@ -427,7 +427,7 @@ const AboutUsPage = () => {
           }
         },
         {
-          "id": 14,
+          "id": 29,
           "name": "Aman Pandey ",
           "role": "Graphic Designer",
           "description": "\"Creates visual content for branding and communication.\"",
@@ -439,7 +439,7 @@ const AboutUsPage = () => {
           }
         },
         {
-          "id": 15,
+          "id": 30,
           "name": "Harsh Kumar",
           "role": "Graphic Designer",
           "description": "\"Creates visual content for branding and communication.\"",
