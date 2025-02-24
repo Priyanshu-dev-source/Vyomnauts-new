@@ -204,7 +204,7 @@ As methane-powered rockets take to the skies, they are not just propelling space
       
       if (trimmedLine.startsWith('# ')) {
         formattedContent.push(
-          <h1 key={`h1-${index}`} className="text-4xl font-bold text-yellow-400 mb-8">
+          <h1 key={`h1-${index}`} className="text-4xl font-bold text-green-400 mb-8">
             {trimmedLine.replace('# ', '')}
           </h1>
         );
@@ -218,35 +218,35 @@ As methane-powered rockets take to the skies, they are not just propelling space
           currentSection = [];
         }
         formattedContent.push(
-          <h3 key={`h3-${index}`} className="text-2xl font-bold text-yellow-400 mt-8 mb-4">
+          <h3 key={`h3-${index}`} className="text-2xl font-bold text-green-400 mt-8 mb-4">
             {trimmedLine.replace('### ', '')}
           </h3>
         );
       } else if (trimmedLine.startsWith('**') && trimmedLine.endsWith('**')) {
         formattedContent.push(
-          <h4 key={`h4-${index}`} className="text-xl font-semibold text-yellow-400 mt-6 mb-3">
+          <h4 key={`h4-${index}`} className="text-xl font-semibold text-green-400 mt-6 mb-3">
             {trimmedLine.replace(/\*\*/g, '')}
           </h4>
         );
       } else if (trimmedLine.startsWith('- ')) {
         currentSection.push(
-          <li key={`li-${index}`} className="text-yellow-100/80 ml-6 mb-2 list-disc">
+          <li key={`li-${index}`} className="text-green-100/80 ml-6 mb-2 list-disc">
             {trimmedLine.replace('- ', '')}
           </li>
         );
       } else if (trimmedLine.startsWith('1. ')) {
         currentSection.push(
-          <li key={`li-${index}`} className="text-yellow-100/80 ml-6 mb-2 list-decimal">
+          <li key={`li-${index}`} className="text-green-100/80 ml-6 mb-2 list-decimal">
             {trimmedLine.replace(/^\d+\.\s/, '')}
           </li>
         );
       } else if (trimmedLine === '---') {
         formattedContent.push(
-          <hr key={`hr-${index}`} className="border-yellow-400/20 my-8" />
+          <hr key={`hr-${index}`} className="border-green-400/20 my-8" />
         );
       } else if (trimmedLine) {
         currentSection.push(
-          <p key={`p-${index}`} className="text-yellow-100/80 mb-4 leading-relaxed">
+          <p key={`p-${index}`} className="text-green-100/80 mb-4 leading-relaxed">
             {trimmedLine}
           </p>
         );
@@ -271,8 +271,8 @@ As methane-powered rockets take to the skies, they are not just propelling space
 
   if (selectedBlog) {
     return (
-      <div className="min-h-screen bg-black text-yellow-400">
-        <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-yellow-400/20">
+      <div className="min-h-screen bg-black text-green-400">
+        <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-green-400/20">
           <Navbar />
         </header>
         
@@ -281,7 +281,7 @@ As methane-powered rockets take to the skies, they are not just propelling space
           <div className="flex justify-between items-center mb-8">
             <button 
               onClick={() => setSelectedBlog(null)}
-              className="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors"
+              className="flex items-center space-x-2 text-green-400 hover:text-green-300 transition-colors"
             >
               <ChevronLeft size={20} />
               <span>Back to Articles</span>
@@ -289,7 +289,7 @@ As methane-powered rockets take to the skies, they are not just propelling space
             
             <button 
               onClick={() => setSelectedBlog(null)}
-              className="p-2 rounded-full hover:bg-yellow-400/20 text-yellow-400 transition-colors"
+              className="p-2 rounded-full hover:bg-green-400/20 text-green-400 transition-colors"
               title="Press 'Esc' to exit"
             >
               <X size={24} />
@@ -311,22 +311,22 @@ As methane-powered rockets take to the skies, they are not just propelling space
             {/* Article header */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <span className="inline-block px-4 py-2 bg-yellow-400/20 text-yellow-400 text-sm font-semibold rounded-full">
+                <span className="inline-block px-4 py-2 bg-green-400/20 text-green-400 text-sm font-semibold rounded-full">
                   {selectedBlog.category}
                 </span>
                 
                 <div className="space-y-4">
-                  <h1 className="text-4xl font-bold text-yellow-400 leading-tight">
+                  <h1 className="text-4xl font-bold text-green-400 leading-tight">
                     {selectedBlog.title}
                   </h1>
                   
-                  <div className="flex items-center space-x-6 text-yellow-100/60">
+                  <div className="flex items-center space-x-6 text-green-100/60">
                     <div className="flex items-center space-x-2">
-                      <Calendar size={18} className="text-yellow-400" />
+                      <Calendar size={18} className="text-green-400" />
                       <span>{new Date(selectedBlog.date).toLocaleDateString()}</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Clock size={18} className="text-yellow-400" />
+                      <Clock size={18} className="text-green-400" />
                       <span>{selectedBlog.readTime} read</span>
                     </div>
                   </div>
@@ -334,8 +334,8 @@ As methane-powered rockets take to the skies, they are not just propelling space
               </div>
               
               {/* Article body */}
-              <div className="border-t border-yellow-400/20 pt-8">
-                <div className="prose prose-lg prose-invert prose-yellow">
+              <div className="border-t border-green-400/20 pt-8">
+                <div className="prose prose-lg prose-invert prose-green">
                   {renderContent(selectedBlog.content)}
                 </div>
               </div>
@@ -347,26 +347,26 @@ As methane-powered rockets take to the skies, they are not just propelling space
   }
 
   return (
-    <div className="min-h-screen bg-black text-yellow-400">
-      <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-yellow-400/20">
+    <div className="min-h-screen bg-black text-green-400">
+      <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-green-400/20">
         <Navbar />
       </header>
 
       {/* Search bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="relative">
-          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-yellow-400/60" size={20} />
+        <div className="relative top-[5px] md:top-[30px]">
+          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-green-400" size={20} />
           <input
             type="text"
             placeholder="Search cosmic insights..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-12 pr-4 py-3 bg-black border border-yellow-400/30 rounded-xl 
-                     focus:ring-2 focus:ring-yellow-400 focus:border-transparent 
-                     text-yellow-400 placeholder-yellow-400/50 transition-all"
+            className="w-full pl-12 pr-4 py-3 bg-black border border-green-400/30 rounded-xl 
+                     focus:ring-2 focus:ring-green-400 focus:border-transparent 
+                     text-green-400 placeholder-green-400 transition-all"
           />
           {searchTerm && (
-            <span className="absolute right-4 top-1/2 transform -translate-y-1/2 text-sm text-yellow-400/60">
+            <span className="absolute right-4 top-1/2 transform -translate-y-1/2 text-sm text-green-400">
               {filteredBlogs.length} results
             </span>
           )}
@@ -375,7 +375,7 @@ As methane-powered rockets take to the skies, they are not just propelling space
 
       {/* Blog grid */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <h2 className="text-3xl font-extrabold mb-8 text-yellow-400">
+        <h2 className="text-3xl font-extrabold mb-8 text-green-400">
           Latest Scientific Insights
         </h2>
         
@@ -383,9 +383,9 @@ As methane-powered rockets take to the skies, they are not just propelling space
           {filteredBlogs.map((blog) => (
             <article 
               key={blog.id} 
-              className="bg-black rounded-2xl overflow-hidden border border-yellow-400/30 
-                       hover:border-yellow-400 transform transition-all hover:-translate-y-2 
-                       hover:shadow-2xl hover:shadow-yellow-400/10"
+              className="bg-black rounded-2xl overflow-hidden border border-green-400/30 
+                       hover:border-green-400 transform transition-all hover:-translate-y-2 
+                       shadow-[rgb(74, 222, 128)] hover:shadow-[0_0_50px_rgba(74,222,128,7.25)]"
             >
               <div className="relative">
                 <img
@@ -394,33 +394,33 @@ As methane-powered rockets take to the skies, they are not just propelling space
                   className="w-full h-48 object-cover filter brightness-75"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 bg-yellow-400/20 text-yellow-400 text-sm font-medium rounded-full">
+                  <span className="px-3 py-1 bg-green-400/20 text-green-400 text-sm font-medium rounded-full">
                     {blog.category}
                   </span>
                 </div>
               </div>
               
               <div className="p-6 space-y-4">
-                <h2 className="text-xl font-bold text-yellow-400 hover:text-yellow-300 transition-colors">
+                <h2 className="text-xl font-bold text-green-400 hover:text-green-300 transition-colors">
                   {blog.title}
                 </h2>
-                <p className="text-yellow-100/60 line-clamp-3">
+                <p className="text-green-100/60 line-clamp-3">
                   {blog.excerpt}
                 </p>
-                <div className="flex items-center justify-between text-sm text-yellow-100/60">
+                <div className="flex items-center justify-between text-sm text-green-100/60">
                   <div className="flex items-center space-x-4">
                     <span className="flex items-center">
-                      <Calendar size={16} className="mr-2 text-yellow-400" />
+                      <Calendar size={16} className="mr-2 text-green-400" />
                       {new Date(blog.date).toLocaleDateString()}
                     </span>
                     <span className="flex items-center">
-                      <Clock size={16} className="mr-2 text-yellow-400" />
+                      <Clock size={16} className="mr-2 text-green-400" />
                       {blog.readTime}
                     </span>
                   </div>
                   <button 
                     onClick={() => setSelectedBlog(blog)}
-                    className="flex items-center text-yellow-400 hover:text-yellow-300 font-medium group"
+                    className="flex items-center text-green-400 hover:text-green-300 font-medium group"
                   >
                     Read More
                     <ChevronRight size={16} className="ml-1 group-hover:translate-x-1 transition-transform" />
@@ -432,8 +432,8 @@ As methane-powered rockets take to the skies, they are not just propelling space
         </div>
 
         {filteredBlogs.length === 0 && (
-          <div className="text-center py-16 text-yellow-400/60">
-            <Rocket size={64} className="mx-auto mb-4 text-yellow-400" />
+          <div className="text-center py-16 text-green-400/60">
+            <Rocket size={64} className="mx-auto mb-4 text-green-400" />
             <p className="text-xl">No cosmic insights found. Try a different search.</p>
           </div>
         )}

@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-// import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, ChevronLeft, X, Expand, Youtube } from 'lucide-react';
 import Navbar from './Navbar';
 import img from "./assets/projectmedia/bilkulreport.png";
-import p1 from "./assets/pojects/cansat231.jpg"
+import p1 from "./assets/pojects/cansat231.png"
 import p2 from "./assets/pojects/cansat241.png"
 import p3 from "./assets/pojects/rocekt251.jpeg"
 import BgVideoScroll from './BigVideoScroll';
@@ -87,8 +87,8 @@ const ProjectsSlider = () => {
               )}
               
               {/* Description Section */}
-              <div className="space-y-4 md:flex md:items-center md:justify-center md:pt-[90px]">
-                <p className="text-gray-300 text-center leading-relaxed text-xl">
+              <div className="space-y-4 ">
+                <p className="text-gray-300 leading-relaxed text-xl">
                   {project.description}
                 </p>
               </div>

@@ -74,8 +74,8 @@ const EventsPage = () => {
   );
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gradient-to-r from-slate-700/40 via-gray-900/50 to-blue-900/60">
-      <AnimatedBackground mousePosition={mousePosition} />
+    <div className="min-h-screen relative overflow-hidden bg-black">
+      {/* <AnimatedBackground mousePosition={mousePosition} /> */}
 
       <div className="relative z-10">
         <header className="sticky top-0 z-50 bg-gradient-to-br from-black via-gray-900 to-black border-b border-yellow-400">
@@ -112,16 +112,17 @@ const EventsPage = () => {
         </div>
 
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-20">
-          <h2 className="text-3xl font-extrabold mb-8 text-amber-500">
+          <h2 className="text-5xl font-extrabold mb-8 text-amber-500">
        Our Events
           </h2>
           
           {filteredEvents.length > 0 ? (
-            <div className="space-y-8">
+            <div className="space-y-14">
               {filteredEvents.map((event) => (
                 <article 
                   key={event.id} 
-                  className="w-full bg-gradient-to-br from-black via-gray-900 to-black rounded-2xl overflow-hidden border-2 border-yellow-400 hover:border-yellow-300 transition-all hover:shadow-2xl hover:shadow-yellow-400/20 grid grid-cols-1 md:grid-cols-2"
+                  className="w-full bg-gradient-to-br from-black via-gray-900 to-black rounded-2xl overflow-hidden border-2 border-yellow-400 hover:border-yellow-300 transition-all duration-300 cursor-pointer backdrop-blur-lg
+                    shadow-[rgb(253, 224, 71)] hover:shadow-[0_0_50px_rgba(253,224,71,7.25)] hover:scale-105 grid grid-cols-1 md:grid-cols-2"
                 >
                   <div className="relative group h-[500px] md:h-full"> {/* Fixed height container */}
                     <img
