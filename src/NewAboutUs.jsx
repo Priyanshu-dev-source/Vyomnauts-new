@@ -40,6 +40,7 @@ import img29 from "./assets/Team/shikha.jpg";
 import img30 from "./assets/Team/img17.jpg";
 import img31 from "./assets/Team/img18.jpg";
 import img32 from "./assets/Team/img19.jpg";
+import img33 from "./assets/Team/faiz.jpg";
 import VerticalMentorsList from "./MentorCarousel";
 
 const SocialIcon = ({ Icon, href }) =>
@@ -60,8 +61,8 @@ const AboutUsPage = () => {
 
 
   const teams = {
-    Technical: {
-      name: "Technical Team",
+    HeadEngineer:{
+      name: "Head Engineer",
       members: [
         {
           id: 1,
@@ -70,32 +71,6 @@ const AboutUsPage = () => {
           description:
             " Designing and optimizing rockets for efficient space propulsion. ",
           image: `${img7}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
-        {
-          id: 2,
-          name: "Ritish Katiyar",
-          role: "Design and Simulation Engineer",
-          description:
-            " Develops and tests designs through simulations for accuracy. ",
-          image: `${img1}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
-        {
-          id: 3,
-          name: "Riya Verma ",
-          role: "Radio COMMUNICATION ENGINEER",
-          description:
-            '"Expert in designing and optimizing radio communication systems, ensuring seamless signal transmission and connectivity. Skilled in antenna design, wireless networks, and electromagnetic wave propagation."',
-          image: `${img14}`,
           socialLinks: {
             linkedin: "",
             twitter: "",
@@ -115,45 +90,11 @@ const AboutUsPage = () => {
             github: "",
           },
         },
-        {
-          id: 5,
-          name: "Gaurav Shahi",
-          role: "AIML Engineer",
-          description:
-            '"Specializes in integrating AI/ML with aerospace and robotics systems, enabling autonomous navigation, real-time data processing, and intelligent control for rockets, drones, and robotic missions."',
-          image: `${img10}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
-        {
-          id: 6,
-          name: "Jeetendra Singh ",
-          role: "AIML Engineer",
-          description:
-            '"AI/ML engineer with expertise in enhancing aerospace and robotics systems through intelligent automation. Focuses on machine learning-driven navigation, sensor data analysis, and adaptive control for drones, rockets, and robotic missions."',
-          image: `${img15}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
-        {
-          id: 7,
-          name: "Anshuman Pathak",
-          role: "AI Researcher ",
-          description:
-            '"AI/ML engineer with expertise in enhancing aerospace and robotics systems through intelligent automation. Focuses on machine learning-driven navigation, sensor data analysis, and adaptive control for drones, rockets, and robotic missions."',
-          image: `${img16}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
+      ]
+    },
+    CADEngineer:{
+      name: "CAD Engineer",
+      members: [
         {
           id: 8,
           name: "Anmol Deep Singh ",
@@ -180,6 +121,55 @@ const AboutUsPage = () => {
             github: "",
           },
         },
+      ]
+    },
+    AvionicsEngineer:{
+      name: "Avionics Engineer",
+      members: [
+        {
+          id: 2,
+          name: "Ritish Katiyar",
+          role: "Design and Simulation Engineer",
+          description:
+            " Develops and tests designs through simulations for accuracy. ",
+          image: `${img1}`,
+          socialLinks: {
+            linkedin: "",
+            twitter: "",
+            github: "",
+          },
+        },
+        {
+          id: 31,
+          name: "Faiz",
+          role: "Design and Simulation Engineer",
+          description:
+            " Develops and tests designs through simulations for accuracy. ",
+          image: `${img33}`,
+          socialLinks: {
+            linkedin: "",
+            twitter: "",
+            github: "",
+          },
+        },
+      ]
+    },
+    TelemetryCommunicationEngieer:{
+      name: "Telemetry and Communication Engineer",
+      members: [
+        {
+          id: 3,
+          name: "Riya Verma ",
+          role: "Radio COMMUNICATION ENGINEER",
+          description:
+            '"Expert in designing and optimizing radio communication systems, ensuring seamless signal transmission and connectivity. Skilled in antenna design, wireless networks, and electromagnetic wave propagation."',
+          image: `${img14}`,
+          socialLinks: {
+            linkedin: "",
+            twitter: "",
+            github: "",
+          },
+        },
         {
           id: 10,
           name: "Arya Mishra",
@@ -193,20 +183,24 @@ const AboutUsPage = () => {
             github: "",
           },
         },
+      ]
+    },
+    GCSDeveloper:{
+      name: "GCS Developer",
+      members: [
         {
-          id: 11,
-          name: "Vaishnavi Chaurasiya ",
-          role: "Simulation and Descent Control",
+          id: 5,
+          name: "Gaurav Shahi",
+          role: "AIML Engineer",
           description:
-            '"Specialized in simulation and descent control for aerospace systems. Expertise in trajectory optimization, aerodynamics modeling, and autonomous landing algorithms for rockets, drones, and re-entry vehicles."',
-          image: `${img5}`,
+            '"Specializes in integrating AI/ML with aerospace and robotics systems, enabling autonomous navigation, real-time data processing, and intelligent control for rockets, drones, and robotic missions."',
+          image: `${img10}`,
           socialLinks: {
             linkedin: "",
             twitter: "",
             github: "",
           },
         },
-
         {
           id: 22,
           name: "Anshu ",
@@ -231,6 +225,90 @@ const AboutUsPage = () => {
             linkedin: "",
             twitter: "",
             github: "",
+          },
+        },
+      ]
+    },
+    ControlSystemEngineer:{
+      name: "Control System Engineer",
+      members: [
+        {
+          id: 7,
+          name: "Anshuman Pathak",
+          role: "AI Researcher ",
+          description:
+            '"AI/ML engineer with expertise in enhancing aerospace and robotics systems through intelligent automation. Focuses on machine learning-driven navigation, sensor data analysis, and adaptive control for drones, rockets, and robotic missions."',
+          image: `${img16}`,
+          socialLinks: {
+            linkedin: "",
+            twitter: "",
+            github: "",
+          },
+        },
+        {
+          id: 6,
+          name: "Jeetendra Singh ",
+          role: "AIML Engineer",
+          description:
+            '"AI/ML engineer with expertise in enhancing aerospace and robotics systems through intelligent automation. Focuses on machine learning-driven navigation, sensor data analysis, and adaptive control for drones, rockets, and robotic missions."',
+          image: `${img15}`,
+          socialLinks: {
+            linkedin: "",
+            twitter: "",
+            github: "",
+          },
+        },
+      ]
+    },
+    SimulationEngineer:{
+      name: "Simulation Engineer",
+      members: [
+        {
+          id: 11,
+          name: "Vaishnavi Chaurasiya ",
+          role: "Simulation and Descent Control",
+          description:
+            '"Specialized in simulation and descent control for aerospace systems. Expertise in trajectory optimization, aerodynamics modeling, and autonomous landing algorithms for rockets, drones, and re-entry vehicles."',
+          image: `${img5}`,
+          socialLinks: {
+            linkedin: "",
+            twitter: "",
+            github: "",
+          },
+        },
+      ],
+    },
+    OutReachIntern: {
+      name: "Out Reach Intern",
+      members: [   
+        {
+          "id": 21,
+          "name": "Anushka ",
+          "role": "Outreach Intern",
+          "description": " Ensures safe and controlled descent of the rocket. ",
+          "image": `${img8}`,
+          "socialLinks": {
+            "linkedin": "",
+            "twitter": "",
+            "github": ""
+          }
+        },      
+      ],
+    },
+    Developer: {
+      name: "Developer Team",
+      members: [
+        {
+          id: 14,
+          name: "Priyanshu Kumar",
+          role: "Lead Developer",
+          description:
+            'Driving technical excellence and leading development teams to build innovative solutions.',
+          image: `${img18}`,
+          socialLinks: {
+            linkedin: "https://www.linkedin.com/in/priyanshu-kumar-04ba7a300/",
+            twitter: "",
+            github: "https://github.com/Priyanshu-dev-source",
           },
         },
         {
@@ -274,8 +352,8 @@ const AboutUsPage = () => {
         },
       ],
     },
-    NonTechnical: {
-      name: "Management Team",
+    HeadManagement:{
+      name: "Head Management Team",
       members: [
         {
           id: 12,
@@ -303,19 +381,11 @@ const AboutUsPage = () => {
             github: "",
           },
         },
-        {
-          id: 14,
-          name: "Priyanshu Kumar",
-          role: "Lead Developer",
-          description:
-            'Driving technical excellence and leading development teams to build innovative solutions.',
-          image: `${img18}`,
-          socialLinks: {
-            linkedin: "https://www.linkedin.com/in/priyanshu-kumar-04ba7a300/",
-            twitter: "",
-            github: "https://github.com/Priyanshu-dev-source",
-          },
-        },
+      ],
+    },
+    SocialMedia:{
+      name: "Social Media Team",
+      members: [
         {
           id: 15,
           name: "Vaishnavi Srivastava",
@@ -330,6 +400,23 @@ const AboutUsPage = () => {
           },
         },
         {
+          "id": 28,
+          "name": "Harsh Vishwakarma",
+          "role": "Social Media head",
+          "description": " Manages online presence and engagement for outreach. ",
+          "image": `${img30}`,
+          "socialLinks": {
+            "linkedin": "",
+            "twitter": "",
+            "github": ""
+          }
+        },
+      ],
+    },
+    GrapicsDesigner:{
+      name: "Graphic Designer and Editor Team",
+      members: [
+        {
           id: 16,
           name: "Rishi Yadav",
           role: "Graphic Designer",
@@ -341,94 +428,6 @@ const AboutUsPage = () => {
             twitter: "",
             github: "",
           },
-        },
-        {
-          id: 17,
-          name: "Suhani",
-          role: "Promotional Head",
-          description:
-            '',
-          image: `${img24}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
-        {
-          id: 18,
-          name: "Suryansh Sharan",
-          role: "Event Manager",
-          description:
-            '',
-          image: `${img25}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
-        {
-          id: 19,
-          name: "Akhand",
-          role: "Treasurer",
-          description:
-            '',
-          image: `${img17}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
-        {
-          id: 20,
-          name: "Akash",
-          role: "Video Editor",
-          description:
-          '',
-          image: `${img9}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
-        {
-          "id": 21,
-          "name": "Anushka ",
-          "role": "Outreach Intern",
-          "description": " Ensures safe and controlled descent of the rocket. ",
-          "image": `${img8}`,
-          "socialLinks": {
-            "linkedin": "",
-            "twitter": "",
-            "github": ""
-          }
-        },
-        {
-          "id": 27,
-          "name": "Shikha ",
-          "role": "Event manager ",
-          "description": "\"Skilled in planning and executing high-impact events with precision and creativity. Expertise in logistics, team coordination, and audience engagement to ensure seamless and memorable experiences.\"",
-          "image":`${img29}`,
-          "socialLinks": {
-              "linkedin": "",
-            "twitter": "",
-            "github": ""
-          }
-        },
-        {
-          "id": 28,
-          "name": "Harsh Vishwakarma",
-          "role": "Social Media head",
-          "description": " Manages online presence and engagement for outreach. ",
-          "image": `${img30}`,
-          "socialLinks": {
-            "linkedin": "",
-            "twitter": "",
-            "github": ""
-          }
         },
         {
           "id": 29,
@@ -453,6 +452,85 @@ const AboutUsPage = () => {
             "twitter": "",
             "github": ""
           }
+        },
+        {
+          id: 20,
+          name: "Akash",
+          role: "Video Editor",
+          description:
+          '',
+          image: `${img9}`,
+          socialLinks: {
+            linkedin: "",
+            twitter: "",
+            github: "",
+          },
+        },
+      ],
+    },
+    Treasurer:{
+      name: "Treasurer",
+      members: [
+        {
+          id: 19,
+          name: "Akhand",
+          role: "Treasurer",
+          description:
+            '',
+          image: `${img17}`,
+          socialLinks: {
+            linkedin: "",
+            twitter: "",
+            github: "",
+          },
+        },
+      ],
+    },
+    PromotionalHead:{
+      name: "Promotional Team",
+      members: [
+        {
+          id: 17,
+          name: "Suhani",
+          role: "Promotional Head",
+          description:
+            '',
+          image: `${img24}`,
+          socialLinks: {
+            linkedin: "",
+            twitter: "",
+            github: "",
+          },
+        },
+      ],
+    },
+    EventManeger:{
+      name: "Event Manager Team",
+      members: [
+        {
+          "id": 27,
+          "name": "Shikha ",
+          "role": "Event manager ",
+          "description": "\"Skilled in planning and executing high-impact events with precision and creativity. Expertise in logistics, team coordination, and audience engagement to ensure seamless and memorable experiences.\"",
+          "image":`${img29}`,
+          "socialLinks": {
+              "linkedin": "",
+            "twitter": "",
+            "github": ""
+          }
+        },
+        {
+          id: 18,
+          name: "Suryansh Sharan",
+          role: "Event Manager",
+          description:
+            '',
+          image: `${img25}`,
+          socialLinks: {
+            linkedin: "",
+            twitter: "",
+            github: "",
+          },
         },
       ],
     },

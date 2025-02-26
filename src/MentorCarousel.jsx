@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, Award, Book, Globe } from "lucide-react";
+import { ChevronLeft, ChevronRight, Award, Book, Globe} from "lucide-react";
 import { motion } from "framer-motion";
 import img2 from "./assets/Team/manish.jpg";
 import img3 from "./assets/Team/raghavendra.jpg";
@@ -9,6 +9,7 @@ import img6 from "./assets/Team/Raghuraj.png";
 import img7 from "./assets/Team/AnuragDhawan.jpg";
 
 const VerticalMentorsList = () => {
+
   const mentors = [
     {
       id: 1,

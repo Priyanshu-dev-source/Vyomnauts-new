@@ -602,7 +602,7 @@ const StarsBackground = () => {
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none">
       {/* Enhanced Background Gradient */}
-      <div
+      {/* <div
         className="absolute inset-0
         bg-gradient-to-b from-black via-orange-900/10 to-black 
                    opacity-90 transition-all duration-1000"
@@ -610,7 +610,7 @@ const StarsBackground = () => {
           transform: `translateY(${scrollPosition * 0.1}px)`,
           opacity: 1 - scrollPosition * 0.0003,
         }}
-      />
+      /> */}
     </div>
   );
 };
