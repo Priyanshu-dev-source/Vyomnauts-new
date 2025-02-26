@@ -113,7 +113,7 @@ const ProjectsSlider = () => {
                         whileInView={{opacity:1, x:0, filter: "blur(0px)"}}
                         duration={{duration: 0.3}}
                         whileHover={{scale: 1.02}}
-                        key={idx} className="bg-black/30 rounded-lg cursor-pointer overflow-hidden border hover:shadow-[0_0_50px_rgba(96,165,250,7.25)] transition-all duration-300 border-blue-400/30">
+                        key={idx} className="bg-black/30 hover:bg-blue-400/20 rounded-lg cursor-pointer overflow-hidden border hover:shadow-[0_0_50px_rgba(96,165,250,7.25)] transition-all duration-300 border-blue-400/30">
                           <img 
                             src={item.image} 
                             alt={item.title} 
@@ -150,7 +150,7 @@ const ProjectsSlider = () => {
                         whileInView={{opacity:1, x:0, filter: "blur(0px)"}}
                         duration={{duration: 0.3}}
                         whileHover={{scale: 1.02}}
-                        key={idx} className="bg-black/30 p-6 cursor-pointer rounded-lg border hover:shadow-[0_0_50px_rgba(96,165,250,7.25)] transition-all duration-300 border-blue-400/30">
+                        key={idx} className="bg-black/30 hover:bg-blue-400/20 p-6 cursor-pointer rounded-lg border hover:shadow-[0_0_50px_rgba(96,165,250,7.25)] transition-all duration-300 border-blue-400/30">
                           <div className="flex items-center gap-4">
                             <Youtube className="w-8 h-8 text-red-500" />
                             <div>
