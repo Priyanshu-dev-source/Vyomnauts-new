@@ -509,7 +509,7 @@ const AboutUsPage = () => {
                       <p className="text-xs text-zinc-300 text-center mb line-clamp-4">
                         {member.description}
                       </p>
-                      <div className=" flex gap-2 mt-3">
+                      {/* <div className=" flex gap-2 mt-3">
                         <SocialIcon
                           Icon={Linkedin}
                           href={member.socialLinks.linkedin}
@@ -522,7 +522,7 @@ const AboutUsPage = () => {
                           Icon={Github}
                           href={member.socialLinks.github}
                         />
-                      </div>
+                      </div> */}
                     </div>}
                   </motion.div>
                   <motion.div 
