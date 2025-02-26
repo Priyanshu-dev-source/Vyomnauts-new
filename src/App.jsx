@@ -9,10 +9,21 @@ import EventsPage from './OurEvent';
 import AboutUsPage from './NewAboutUs'
 import AdminLogin from './AdminDashboars';
 import AdminPublishing from './AdminDash';
+import { useState, useEffect } from "react";
 import { JoinUsPage } from './JoinUs';
+// import logo  from './assets/logo.png';
 const App = () => {
+
+
   return (
     <>
+    {/* {loading ?
+      (<div className='h-[100dvh] w-full overflow-hidden bg-black flex justify-center items-center'>
+        <div className='h-[400px] w-[400px] flex justify-center animate-bounceInfinite items-center'>
+          <img src={logo} alt="Loading....." className='w-[300px] h-[300px]'/>
+        </div>
+      </div>) :  
+    ( */}
     <div className=''>
       <Routes>
         <Route path="/" element={<LandingPage/>} />
@@ -25,7 +36,8 @@ const App = () => {
         {/* <Route path="/adminlogin" element={<AdminLogin/>} /> */}
         {/* <Route path="/admindash" element={<AdminPublishing />} /> */}
       </Routes>
-      </div>
+      </div>)
+    {/* }  */}
     </>
   );
 };

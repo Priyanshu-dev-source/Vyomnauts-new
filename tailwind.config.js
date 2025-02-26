@@ -29,11 +29,16 @@ module.exports = {
           '50%': { opacity: '1' }
         }
       },
+      bounceInfinite: {
+        "0%, 100%": { transform: "translateY(0%)", animationTimingFunction: "ease-in-out" },
+        "50%": { transform: "translateY(-20%)", animationTimingFunction: "ease-in-out" },
+      },
       animation: {
         'gradient-shift': 'gradient-shift 15s ease infinite',
         'planet-1': 'planet-1 5s ease-in-out infinite',
         'planet-2': 'planet-2 7s ease-in-out infinite',
-        'twinkle': 'twinkle 3s ease-in-out infinite'
+        'twinkle': 'twinkle 3s ease-in-out infinite',
+        bounceInfinite: "bounceInfinite 1.5s infinite",
       }
     }
   },

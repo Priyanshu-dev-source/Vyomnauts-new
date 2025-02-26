@@ -74,7 +74,7 @@ const VerticalMentorsList = () => {
     },
     {
       id: 5,
-      name: "Dr Manish Kumar",
+      name: "Dr. Manish Kumar",
       title: "Club Ambassador",
       expertise: "Quantum Computing & Artificial Intelligence",
       background:

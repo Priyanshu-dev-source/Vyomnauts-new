@@ -91,19 +91,6 @@ const AboutUsPage = () => {
             github: "",
           },
         },
-        {
-          id: 32,
-          name: "Dev Jaiswal",
-          role: "Avionics Engineer",
-          description:
-            '"Specialist in designing and integrating advanced electronic systems for Cansat and rockets. Expertise in navigation, communication, and control systems for enhanced flight performance."',
-          image: `${img34}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
       ]
     },
     CADEngineer:{
@@ -160,6 +147,19 @@ const AboutUsPage = () => {
           description:
             " Develops and tests designs through simulations for accuracy. ",
           image: `${img33}`,
+          socialLinks: {
+            linkedin: "",
+            twitter: "",
+            github: "",
+          },
+        },
+        {
+          id: 32,
+          name: "Dev Jaiswal",
+          role: "Avionics Engineer",
+          description:
+            '"Specialist in designing and integrating advanced electronic systems for Cansat and rockets. Expertise in navigation, communication, and control systems for enhanced flight performance."',
+          image: `${img34}`,
           socialLinks: {
             linkedin: "",
             twitter: "",
@@ -548,6 +548,37 @@ const AboutUsPage = () => {
         },
       ],
     },
+    Contributer:{
+      name: "Contributers",
+      members: [
+        {
+          id: 33,
+          name: "Anshu ",
+          role: "Contributer",
+          description:
+            '"Specialized in developing advanced Ground Control Systems (GCS) for drones and aerospace applications. Expertise in real-time data visualization, remote monitoring, and autonomous mission control."',
+          image: `${img12}`,
+          socialLinks: {
+            linkedin: "",
+            twitter: "",
+            github: "",
+          },
+        },
+        {
+          id: 34,
+          name: "Yaggya Chopra",
+          role: "Contributer",
+          description:
+            '"Develops and optimizes software for system functionality."',
+          image: `${img23}`,
+          socialLinks: {
+            linkedin: "",
+            twitter: "",
+            github: "",
+          },
+        },
+      ],
+    },
   };
   // const [expandedId, setExpandedId] = useState(null); 
   const [hovering, setHovering] = useState(false);
@@ -585,7 +616,7 @@ const AboutUsPage = () => {
                   whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
                   whileHover={{ scale: 1.2, zIndex: 30 }}
                   transition={{ duration: 0.1 }}
-                  className="relative shadow-[rgb(253, 224, 71)] hover:shadow-[0_0_50px_rgba(253,224,71,7.25)] hover:scale-105 cursor-pointer aspect-square rounded-full overflow-hidden border-2 border-zinc-800 group-hover:border-yellow-400 transition-all duration-300">
+                  className="relative shadow-[rgb(253, 224, 71)] hover:shadow-[0_0_50px_rgba(253,224,71,7.25)] cursor-pointer aspect-square rounded-full overflow-hidden border-2 border-zinc-800 group-hover:border-yellow-400 transition-all duration-300">
                     <img
                       src={member.image}
                       alt={member.name}
