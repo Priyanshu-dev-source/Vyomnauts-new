@@ -42,6 +42,7 @@ import img31 from "./assets/Team/img18.jpg";
 import img32 from "./assets/Team/img19.jpg";
 import img33 from "./assets/Team/faiz.jpg";
 import img34 from "./assets/Team/dev.jpg";
+import img35 from "./assets/Team/arjita.jpg";
 import VerticalMentorsList from "./MentorCarousel";
 
 const SocialIcon = ({ Icon, href }) =>
@@ -216,25 +217,12 @@ const AboutUsPage = () => {
           },
         },
         {
-          id: 22,
-          name: "Anshu ",
-          role: "GCS Developper",
+          id: 35,
+          name: "Arjita",
+          role: "GCS Developer",
           description:
-            '"Specialized in developing advanced Ground Control Systems (GCS) for drones and aerospace applications. Expertise in real-time data visualization, remote monitoring, and autonomous mission control."',
-          image: `${img12}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
-        {
-          id: 23,
-          name: "Yaggya Chopra",
-          role: "GCS Developper",
-          description:
-            '"Develops and optimizes software for system functionality."',
-          image: `${img23}`,
+            '"Specializes in integrating AI/ML with aerospace and robotics systems, enabling autonomous navigation, real-time data processing, and intelligent control for rockets, drones, and robotic missions."',
+          image: `${img35}`,
           socialLinks: {
             linkedin: "",
             twitter: "",
@@ -556,7 +544,7 @@ const AboutUsPage = () => {
           name: "Anshu ",
           role: "Contributer",
           description:
-            '"Specialized in developing advanced Ground Control Systems (GCS) for drones and aerospace applications. Expertise in real-time data visualization, remote monitoring, and autonomous mission control."',
+            '',
           image: `${img12}`,
           socialLinks: {
             linkedin: "",
@@ -569,7 +557,7 @@ const AboutUsPage = () => {
           name: "Yaggya Chopra",
           role: "Contributer",
           description:
-            '"Develops and optimizes software for system functionality."',
+            '',
           image: `${img23}`,
           socialLinks: {
             linkedin: "",
