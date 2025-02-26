@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import logo from "./assets/logo.png";
+// import logo from "./assets/logo.png";
 
 const Navbar = () => {
   const downloadPDF = () => {
@@ -43,9 +43,9 @@ const Navbar = () => {
             className="text-2xl font-bold text-yellow-400 flex items-center space-x-2"
             aria-label="Home"
           >
-            <img src={logo} alt="Vyomnauts Logo" className="h-8 w-8" />
+            {/* <img src={logo} alt="Vyomnauts Logo" className="h-8 w-8" /> */}
             <span className="text-amber-500">
-              PSIT Vyomnauts
+              PSIT VYOMNAUTS
             </span>
           </Link>
 

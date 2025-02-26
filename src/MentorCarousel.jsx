@@ -19,17 +19,16 @@ const VerticalMentorsList = () => {
       background:
         "Dr. Manmohan Shukla, the Group Director at Pranveer Singh Institute of Technology (PSIT), is an esteemed mentor for our space club. With expertise in AI/ML projects and cutting-edge research, he has been instrumental in guiding students through various national and international competitions in technology and innovation. Under his mentorship, students have successfully engaged in groundbreaking projects, enhancing their technical knowledge and problem-solving skills.",
       achievements: [
-        "1. Pioneering Research in Electronics and Communication",
-        "2. Shaping Academic Excellence",
-        "3. Guiding Space and Technology Initiatives",
-        "4. Commitment to Innovation",
-        "5. Fostering a Research-Oriented Environment",
+        "Presented influential international talks on AI/ML-powered skin cancer detection and diagnosis.",
+        "Authored books published at both national and international levels.",
+        "Published groundbreaking research papers and secured patents for a skin cancer detection platform.",
+        "4. Cultivating an AI/ML-driven research ecosystem for innovation and advancement.",
       ],
       image: `${img5}`,
       researchFocus: [
-        "Advanced wireless communication",
-        "Electromagnetic wave propagation",
-        "Antenna design",
+        "Cutting-edge AI/ML initiatives",
+        "Published research papers and patented innovations",
+        "AI/ML-powered skin cancer detection and diagnostic solutions",
       ],
     },
     {
@@ -40,9 +39,9 @@ const VerticalMentorsList = () => {
       background:
         "Dr. Raghvendra Singh, the Director of Academics at Pranveer Singh Institute of Technology (PSIT), is an esteemed mentor for our space club. With expertise in communication and antenna technology, he has been instrumental in guiding students through various national and international competitions in space and robotics. Under his mentorship, students have successfully engaged in innovative projects, advancing their technical knowledge and problem-solving skills.",
       achievements: [
-        "1. Pioneering Research in Electronics and Communication",
-        "2. Shaping Academic Excellence",
-        "3. Guiding Space and Technology Initiatives",
+        "Pioneering Research in Electronics and Communication",
+        "Shaping Academic Excellence",
+        "Guiding Space and Technology Initiatives",
         "4. Commitment to Innovation",
         "5. Fostering a Research-Oriented Environment",
       ],
@@ -51,6 +50,46 @@ const VerticalMentorsList = () => {
         "Advanced wireless communication",
         "Electromagnetic wave propagation",
         "Antenna design",
+      ],
+    },
+    {
+      id: 4,
+      name: "Dr. Raghuraj Singh Suryavanshi",
+      title: "Dean PSIT-SIF",
+      expertise: "Astrophysics & Space Exploration",
+      background:
+        "Dr. Raghuraj Singh Suryavanshi, the Dean of PSIT-SIF at Pranveer Singh Institute of Technology (PSIT), is an esteemed mentor for our space club. A seasoned expert in AI/ML applications and technological advancements, he has been instrumental in guiding students through various national and international competitions in technology and innovation. Under his mentorship, students have successfully engaged in groundbreaking projects, enhancing their technical knowledge and problem-solving skills.",
+      achievements: [
+        " Delivered impactful international talks on AI/ML-driven skin cancer detection and diagnosis.",
+        " Written books published in international and national area.",
+        " Published reasearch papers and patents in of skin cancer detection platform.",
+        "4. Fostering a Research-Oriented on AI/ML driven Environment"
+      ],
+      image: `${img6}`,
+      researchFocus: [
+        "Advanced AI/ML projects",
+        "Research paper and patents",
+        "AI/ML-driven skin cancer detection and diagnosis",
+      ],
+    },
+    {
+      id: 5,
+      name: "Dr Manish Kumar",
+      title: "Club Ambassador",
+      expertise: "Quantum Computing & Artificial Intelligence",
+      background:
+        "Dr. Manish Kumar is a Professor in the Electronics and Communication Engineering (ECE) Department at Pranveer Singh Institute of Technology (PSIT). He holds specialization in Guided Missile Technology from IISc Bangalore, bringing deep technical insights into aerospace and defense systems.As the ambassador of our club, he serves as an inspiration for students, fostering a research-driven mindset and guiding them in space, robotics, and defense technology projects ",
+      achievements: [
+        "AI-Integrated Circuit Design",
+        "Mentored Innovation in Space Technologies",
+        "Industry Collaborations & Patents",
+      ],
+      image: `${img2}`,
+      researchFocus: [
+        "Guided Missile Technology – Specialization from IISc Bangalore, focusing on advanced defense systems.",
+        "Navigation Systems – Expertise in precise tracking and positioning technologies.",
+        "Internet of Things (IoT) – Working on smart and interconnected systems for automation.",
+        "MATLAB Applications – Developing simulations and models for engineering and research",
       ],
     },
     {
@@ -74,47 +113,6 @@ const VerticalMentorsList = () => {
         "Industry-academia collaboration",
         "Entrepreneurship development",
         "Innovation-driven ecosystem building",
-      ],
-    },
-    {
-      id: 4,
-      name: "Dr. Raghuraj Singh Suryavanshi",
-      title: "Dean PSIT-SIF",
-      expertise: "Astrophysics & Space Exploration",
-      background:
-        "Dr. Raghuraj Singh Suryavanshi, the Dean of PSIT-SIF at Pranveer Singh Institute of Technology (PSIT), is an esteemed mentor for our space club. A seasoned expert in AI/ML applications and technological advancements, he has been instrumental in guiding students through various national and international competitions in technology and innovation. Under his mentorship, students have successfully engaged in groundbreaking projects, enhancing their technical knowledge and problem-solving skills.",
-      achievements: [
-        "1. Pioneering Research in Electronics and Communication",
-        "2. Shaping Academic Excellence",
-        "3. Guiding Space and Technology Initiatives",
-        "4. Commitment to Innovation",
-        "5. Fostering a Research-Oriented Environment",
-      ],
-      image: `${img6}`,
-      researchFocus: [
-        "Advanced wireless communication",
-        "Electromagnetic wave propagation",
-        "Antenna design",
-      ],
-    },
-    {
-      id: 5,
-      name: "Dr Manish Kumar",
-      title: "Club Ambassador",
-      expertise: "Quantum Computing & Artificial Intelligence",
-      background:
-        "Dr. Manish Kumar is a Professor in the Electronics and Communication Engineering (ECE) Department at Pranveer Singh Institute of Technology (PSIT). He holds specialization in Guided Missile Technology from IISc Bangalore, bringing deep technical insights into aerospace and defense systems.As the ambassador of our club, he serves as an inspiration for students, fostering a research-driven mindset and guiding them in space, robotics, and defense technology projects ",
-      achievements: [
-        "AI-Integrated Circuit Design",
-        "Mentored Innovation in Space Technologies",
-        "Industry Collaborations & Patents",
-      ],
-      image: `${img2}`,
-      researchFocus: [
-        "Guided Missile Technology – Specialization from IISc Bangalore, focusing on advanced defense systems.",
-        "Navigation Systems – Expertise in precise tracking and positioning technologies.",
-        "Internet of Things (IoT) – Working on smart and interconnected systems for automation.",
-        "MATLAB Applications – Developing simulations and models for engineering and research",
       ],
     },
     {

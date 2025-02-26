@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 // import { useState, useEffect} from "react";
 import { useInView } from "react-intersection-observer";
 import { Rocket, Shield, Cpu, Radio, Users, Star } from "lucide-react";
+import logo from "./assets/logo.png";
 
 const VerticalSpaceCards = () => {
-
   const { ref: firstRef, inView } = useInView({
     threshold: 0.2,
   });
@@ -17,26 +17,32 @@ const VerticalSpaceCards = () => {
     <>
       <div className="relative w-full flex flex-col items-center justify-center min-h-[800px] md:min-h-[700px] lg:min-h-[800px] bg-[url('/assets/halfEarth.jpg')] bg-center bg-cover bg-no-repeat">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-        <div
-          className="relative z-10 text-white text-center md:min-h-[850px] min-h-[900px] lg:min-h-[1000px] flex items-center justify-center flex-col pb-[250px]"
-        > <div className="flex tracking-wide items-center justify-center sm:gap-2 md:gap-6">
+        <div className="absolute top-[80px] md:top-[5vw] flex items-center justify-center h-[15vw] w-[15vw] max-h-[210px] max-w-[210px] min-h-[130px] min-w-[130px]">
+          <img className="h-full w-full object-contain" src={logo} alt="" />
+        </div>
+
+        {/* <div className="absolute h-[210px] w-[210px] top-[80px] flex items-center justify-center">
+            <img className="h-full w-full object-contain" src={logo} alt="" />
+          </div> */}
+        <div className="relative top-[20px] z-10 text-white text-center md:min-h-[850px] min-h-[900px] lg:min-h-[1000px] flex items-center justify-center flex-col pb-[250px]">
+          <div className="flex tracking-wide items-center justify-center sm:gap-2 md:gap-6">
             <h1 className="text-3xl sm:text-[42px] md:text-[48px] lg:text-[55px] xl:text-[75px] font-audioWide text-yellow-300">
               Welcome to
             </h1>
-              <img
-                className="relative bottom-[10px] sm:bottom-[20px] sm:left-[-4px] left-[10px] mb-[30px] w-[150px] sm:w-[180px] md:w-[200px] lg:w-[220px] xl:w-[250px] h-auto"
-                src="/assets/logoo.png"
-                alt="Not found"
-              />
-        </div>
+            <img
+              className="relative bottom-[10px] sm:bottom-[20px] sm:left-[-4px] left-[10px] mb-[30px] w-[150px] sm:w-[180px] md:w-[200px] lg:w-[220px] xl:w-[250px] h-auto"
+              src="/assets/logoo.png"
+              alt="Not found"
+            />
+          </div>
           <h1 className="text-3xl sm:text-[42px] md:text-[48px] lg:text-[55px] xl:text-[75px] font-audioWide text-yellow-300">
             Vyomnauts
           </h1>
-          <p className="relative transition-all w-[220px] md:w-full text-center duration-500 top-[100px] md:tracking-[15px] md:top-[130px] text-2xl sm:text-[22px] md:text-[28px] lg:text-[35px] xl:text-[30px] font-audioWide text-yellow-300">
-            FROM CLASSROOM TO COSMOS 
+          <p className="relative transition-all w-[280px] md:w-full text-center duration-500 top-[100px] md:tracking-[15px] md:top-[140px] text-2xl sm:text-[22px] md:text-[28px] lg:text-[35px] xl:text-[30px] font-audioWide text-yellow-300">
+            FROM CLASSROOM TO THE COSMOS
           </p>
         </div>
-        <div className="max-w-[90%] h-[150px] md:max-w-[900px] relative z-10 bottom-[450px] md:bottom-[350px] lg:bottom-[280px] mx-auto">
+        <div className="max-w-[90%] h-[150px] md:max-w-[900px] relative z-10 bottom-[400px] md:bottom-[300px] lg:bottom-[240px] mx-auto">
           <p
             className="text-[16px] md:pt-0 pt-[200px] text-yellow-300 sm:text-lg md:text-xl lg:text-2xl xl:text-[22px] tracking-wider font-extralight text-center font-audioWide"
             style={{ lineHeight: window.innerWidth < 640 ? "35px" : "45px" }}
@@ -217,9 +223,10 @@ const VerticalSpaceCards = () => {
           >
             <motion.path
               className="z-[3]"
-              d={window.innerWidth < 640 
-                ? "M449.5 0V572 M449.5 572H330 M449.5 572V1233.5 M449.5 1233.5H570 M449.5 1233.5V1937.5 M449.5 1937.5H330 M449.5 1937.5V2670H570" 
-                : "M449.5 0V572M449.5 572H0.5M449.5 572V1233.5M449.5 1233.5H903M449.5 1233.5V1937.5M449.5 1937.5H0.5M449.5 1937.5V2670H903"
+              d={
+                window.innerWidth < 640
+                  ? "M449.5 0V572 M449.5 572H330 M449.5 572V1233.5 M449.5 1233.5H570 M449.5 1233.5V1937.5 M449.5 1937.5H330 M449.5 1937.5V2670H570"
+                  : "M449.5 0V572M449.5 572H0.5M449.5 572V1233.5M449.5 1233.5H903M449.5 1233.5V1937.5M449.5 1937.5H0.5M449.5 1937.5V2670H903"
               }
               stroke="#994ED7"
               strokeWidth={window.innerWidth < 640 ? "7" : "4"}
@@ -245,7 +252,6 @@ const VerticalSpaceCards = () => {
         className="relative z-[5] top-[5px] left-[20px] md:left-[40px] w-full h-[900px] md:h-[800px] text-center overflow-hidden"
         style={{ left: window.innerWidth > 400 ? "40px" : "20px" }}
       >
-        
         <motion.svg
           className="relative none md:flex md:w-[1650px] md:h-[650px] h-[450px] w-[400px] left-[-300px] md:left-[180px]"
           // style={{ display:window.innerWidth < 720 ? "none" : "flex" }}
