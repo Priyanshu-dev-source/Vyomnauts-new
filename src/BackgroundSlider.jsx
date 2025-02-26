@@ -1,16 +1,16 @@
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronRight, ChevronLeft, X, Expand, Youtube } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { ChevronRight, Youtube } from 'lucide-react';
 import Navbar from './Navbar';
 import img from "./assets/projectmedia/bilkulreport.png";
 import p1 from "./assets/pojects/cansat231.png"
 import p2 from "./assets/pojects/cansat241.png"
-import p3 from "./assets/pojects/rocekt251.jpeg"
+import p3 from "./assets/pojects/rocekt251.png"
 import BgVideoScroll from './BigVideoScroll';
 const ProjectsSlider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [showCarousel, setShowCarousel] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
+  // const [showCarousel, setShowCarousel] = useState(false);
+  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -58,52 +58,62 @@ const ProjectsSlider = () => {
 ];
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-x-hidden">
       <BgVideoScroll />
       <div className="relative z-10"> {/* This wrapper ensures content stays above video */}
         <Navbar />
         <div className="container mx-auto px-4 py-16 space-y-24"></div>
         {projects.map((project, index) => (
-          <div key={index} className="space-y-12">
+          <div key={index} className="space-y-12 p-[15px] md:p-[30px]">
             {/* Project Header at top */}
-            <div className="text-center space-y-4">
+            <div className="text-center space-y-4 ">
               <span className={`px-3 py-1 text-sm rounded-full inline-block ${
                 project.status === 'Completed' ? 'bg-[#FFD700]/20 text-[#FFD700]' : 'bg-blue-500/20 text-blue-400'
               }`}>
                 {project.status}
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-blue-300">
+              <h2 className="text-3xl md:text-4xl font-audioWide font-bold text-blue-300">
                 {project.title}
               </h2>
             </div>
 
             {/* Video and Description in parallel */}
-            <div className="grid md:grid-cols-2 gap-8 items-start bg-black/30 rounded-lg overflow-hidden border border-[#FFD700]/20 mx-4">
+            <motion.div 
+            initial={{ opacity: 0, x: -100,  filter: "blur(20px)" }}
+            whileInView={{ opacity: 1, x: 0,  filter: "blur(0px)" }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.02 }}
+            className="shadow-[rgb(96, 165, 250)] hover:bg-blue-400/20 hover:shadow-[0_0_50px_rgba(96,165,250,7.25)] transition-all duration-300 cursor-pointer grid md:grid-cols-2 gap-8 items-start p-[10px] bg-black/30 rounded-lg overflow-hidden border border-blue-400/30 mx-4">
               {/* Video Section */}
               {project.image && (
-                <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-blue-100 my-2 mx-1">
-                    <img src={project.image} alt="" className='w-full h-full object-cover' />
+                <div style={{ filter: "drop-shadow(6px 6px 1.75rem #FFFFFF)" }} className="relative w-full aspect-video rounded-lg overflow-hidden my-2 mx-1">
+                    <img src={project.image} height={"550px"} width={"600px"} alt="" className=' object-cover' />
                 </div>
               )}
               
               {/* Description Section */}
-              <div className="space-y-4 ">
-                <p className="text-gray-300 leading-relaxed text-xl">
+              <div className="space-y-4 h-full md:w-[90%] flex items-center justify-center italic">
+                <p className="text-gray-300 leading-relaxed text-[16px] md:text-[20px] text-center">
                   {project.description}
                 </p>
               </div>
-            </div>
+            </motion.div>
 
             {/* Coverage Section - Media and YouTube side by side */}
             {(project.mediaLinks.length > 0 || project.youtubeLinks.length > 0) && (
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 p-[20px] gap-8 ">
                 {/* Media Coverage */}
                 {project.mediaLinks.length > 0 && (
                   <div className="space-y-6">
-                    <h3 className="text-2xl font-bold text-blue-300">Media Coverage</h3>
+                    <h3 className="text-4xl font-bold text-blue-300 font-audioWide">Media Coverage</h3>
                     <div className="space-y-6">
                       {project.mediaLinks.map((item, idx) => (
-                        <div key={idx} className="bg-black/30 rounded-lg overflow-hidden border border-[#FFD700]/20">
+                        <motion.div
+                        initial={{opacity: 0, x: -100, filter: "blur(20px)"}}
+                        whileInView={{opacity:1, x:0, filter: "blur(0px)"}}
+                        duration={{duration: 0.3}}
+                        whileHover={{scale: 1.02}}
+                        key={idx} className="bg-black/30 rounded-lg cursor-pointer overflow-hidden border hover:shadow-[0_0_50px_rgba(96,165,250,7.25)] transition-all duration-300 border-blue-400/30">
                           <img 
                             src={item.image} 
                             alt={item.title} 
@@ -111,19 +121,19 @@ const ProjectsSlider = () => {
                           />
                           <div className="p-6">
                             <h4 className="text-blue-300 font-medium text-lg mb-2">{item.title}</h4>
-                            <p className="text-gray-400 text-sm">{item.source}</p>
-                            <p className="text-gray-500 text-sm mb-4">{item.date}</p>
+                            <p className="text-gray-300 text-sm">{item.source}</p>
+                            <p className="text-gray-400 text-sm mb-4">{item.date}</p>
                             <a 
                               href={item.url} 
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="text-[#FFD700]/80 hover:text-[#FFD700] inline-flex items-center gap-2"
+                              className="text-blue-300 hover:text-blue-400 inline-flex items-center gap-2"
                             >
                               Read More
                               <ChevronRight className="w-4 h-4" />
                             </a>
                           </div>
-                        </div>
+                        </motion.div>
                       ))}
                     </div>
                   </div>
@@ -132,10 +142,15 @@ const ProjectsSlider = () => {
                 {/* YouTube Videos */}
                 {project.youtubeLinks.length > 0 && (
                   <div className="space-y-6">
-                    <h3 className="text-2xl font-bold text-blue-300">Video Coverage</h3>
+                    <h3 className="text-4xl font-bold text-blue-300 font-audioWide">Video Coverage</h3>
                     <div className="space-y-6">
                       {project.youtubeLinks.map((video, idx) => (
-                        <div key={idx} className="bg-black/30 p-6 rounded-lg border border-[#FFD700]/20">
+                        <motion.div 
+                        initial={{opacity: 0, x: 100, filter: "blur(20px)"}}
+                        whileInView={{opacity:1, x:0, filter: "blur(0px)"}}
+                        duration={{duration: 0.3}}
+                        whileHover={{scale: 1.02}}
+                        key={idx} className="bg-black/30 p-6 cursor-pointer rounded-lg border hover:shadow-[0_0_50px_rgba(96,165,250,7.25)] transition-all duration-300 border-blue-400/30">
                           <div className="flex items-center gap-4">
                             <Youtube className="w-8 h-8 text-red-500" />
                             <div>
@@ -144,14 +159,14 @@ const ProjectsSlider = () => {
                                 href={video.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-[#FFD700]/80 hover:text-[#FFD700] inline-flex items-center gap-2"
+                                className="text-blue-300 hover:text-blue-400 inline-flex items-center gap-2"
                               >
                                 Watch Video
                                 <ChevronRight className="w-4 h-4" />
                               </a>
                             </div>
                           </div>
-                        </div>
+                        </motion.div>
                       ))}
                     </div>
                   </div>

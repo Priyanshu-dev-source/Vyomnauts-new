@@ -38,7 +38,7 @@ const VerticalSpaceCards = () => {
         </div>
         <div className="max-w-[90%] h-[150px] md:max-w-[900px] relative z-10 bottom-[450px] md:bottom-[350px] lg:bottom-[280px] mx-auto">
           <p
-            className="text-[16px] md:pt-0 pt-[200px] text-yellow-300 sm:text-lg md:text-xl lg:text-2xl xl:text-[22px] tracking-wide font-extralight text-center font-audioWide"
+            className="text-[16px] md:pt-0 pt-[200px] text-yellow-300 sm:text-lg md:text-xl lg:text-2xl xl:text-[22px] tracking-wider font-extralight text-center font-audioWide"
             style={{ lineHeight: window.innerWidth < 640 ? "35px" : "45px" }}
           >
             PSIT Vyomnauts Club is a hub for space enthusiasts, fostering
@@ -125,7 +125,7 @@ const VerticalSpaceCards = () => {
           transition={{ duration: 0.8 }}
           className="backdrop-blur-lg
                     shadow-[rgb(168, 85, 247)] hover:shadow-[0_0_50px_rgba(168,85,247,7.25)]
-                    transition-all duration-500 hover:z-[50] md:hover:w-[315px] md:hover:h-[415px] hover:h-[215px] hover:w-[145px] absolute z-[8] h-[210px] w-[140px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer rounded-[20px] top-[74em] left-[23px] md:top-[82em] md:left-[230px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px] "
+                    transition-all duration-500 hover:z-[50] md:hover:w-[315px] md:hover:h-[415px] hover:h-[215px] hover:w-[145px] absolute z-[8] h-[210px] w-[140px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer rounded-[20px] top-[74em] left-[33px] md:top-[82em] md:left-[230px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px] "
         >
           <div className="text-purple-500 w-full flex bg-transparent items-center justify-center h-[25%] md:h-[40%] group-hover/item:scale-110 transition-transform duration-300">
             <Rocket className="h-10 w-10 md:w-20 md:h-20" />
@@ -147,7 +147,7 @@ const VerticalSpaceCards = () => {
           transition={{ duration: 0.8 }}
           className="backdrop-blur-lg
                     shadow-[rgb(168, 85, 247)] hover:shadow-[0_0_50px_rgba(168,85,247,7.25)]
-                    transition-all duration-500 hover:z-[50] md:hover:w-[315px] md:hover:h-[415px] hover:h-[215px] hover:w-[145px] absolute md:z-[20] z-[10] h-[210px] w-[140px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer rounded-[20px] top-[85em] left-[227px] md:top-[108em] md:left-[1045px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px]"
+                    transition-all duration-500 hover:z-[50] md:hover:w-[315px] md:hover:h-[415px] hover:h-[215px] hover:w-[145px] absolute md:z-[20] z-[10] h-[210px] w-[140px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer rounded-[20px] top-[85em] left-[215px] md:top-[108em] md:left-[1045px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px]"
         >
           <div className="text-purple-500 w-full flex bg-transparent items-center justify-center h-[25%] md:h-[40%] group-hover/item:scale-110 transition-transform duration-300">
             <Shield className="h-10 w-10 md:w-20 md:h-20" />
@@ -169,7 +169,7 @@ const VerticalSpaceCards = () => {
           transition={{ duration: 0.8 }}
           className="backdrop-blur-lg
                     shadow-[rgb(168, 85, 247)] hover:shadow-[0_0_50px_rgba(168,85,247,7.25)]
-                    transition-all duration-500 hover:z-[50] md:hover:w-[315px] md:hover:h-[415px] hover:h-[215px] hover:w-[145px] absolute md:z-[20] z-[10] h-[210px] w-[140px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer rounded-[20px] top-[100em] left-[23px] md:top-[135em] md:left-[230px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px]"
+                    transition-all duration-500 hover:z-[50] md:hover:w-[315px] md:hover:h-[415px] hover:h-[215px] hover:w-[145px] absolute md:z-[20] z-[10] h-[210px] w-[140px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer rounded-[20px] top-[100em] left-[33px] md:top-[135em] md:left-[230px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px]"
         >
           <div className="text-purple-500 w-full flex bg-transparent items-center justify-center h-[25%] md:h-[40%] group-hover/item:scale-110 transition-transform duration-300">
             <Cpu className="h-10 w-10 md:w-20 md:h-20" />
@@ -191,7 +191,7 @@ const VerticalSpaceCards = () => {
           transition={{ duration: 0.8 }}
           className="backdrop-blur-lg
                     shadow-[rgb(168, 85, 247)] hover:shadow-[0_0_50px_rgba(168,85,247,7.25)]
-                    transition-all duration-500 hover:z-[50] md:hover:w-[315px] md:hover:h-[415px] hover:h-[215px] hover:w-[145px] absolute md:z-[20] z-[10] h-[210px] w-[145px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer rounded-[20px] top-[113em] left-[227px] md:top-[166em] md:left-[1045px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px] "
+                    transition-all duration-500 hover:z-[50] md:hover:w-[315px] md:hover:h-[415px] hover:h-[215px] hover:w-[145px] absolute md:z-[20] z-[10] h-[210px] w-[145px] md:h-[410px] md:w-[310px] bg-[rgba(208,87,255,0.1)] cursor-pointer rounded-[20px] top-[113em] left-[215px] md:top-[166em] md:left-[1045px] border-[2px] border-purple-500 flex items-center justify-start flex-col gap-[8px] md:gap-[15px] pt-[20px] "
         >
           <div className="text-purple-500 w-full flex bg-transparent items-center justify-center h-[25%] md:h-[40%] group-hover/item:scale-110 transition-transform duration-300">
             <Radio className="h-12 w-12 md:w-20 md:h-20" />
@@ -233,7 +233,7 @@ const VerticalSpaceCards = () => {
         </div>
 
         {/*Why Choose Us */}
-        <div className="relative top-[140px] left-[5px] md:left-[20px]">
+        <div className="relative top-[140px] left-[-9px] md:left-[20px]">
           <h2 className="text-[35px] md:text-6xl font-bold text-green-500 flex justify-center items-center gap-2 md:gap-3">
             <Star className="pt-[8px] md:pt-0 h-10 w-10 md:w-14 md:h-14" />
             Why Choose Us?

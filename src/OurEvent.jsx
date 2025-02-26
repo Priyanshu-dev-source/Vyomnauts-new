@@ -90,7 +90,7 @@ const EventsPage = () => {
               placeholder="Search events by name or location..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-12 pr-4 py-3 bg-gradient-to-br from-black via-gray-900 to-black border-2 border-yellow-400 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:border-transparent text-yellow-400 placeholder-yellow-600 transition-all"
+              className="w-full pl-12 pr-4 py-3 bg-gradient-to-br from-black via-gray-900 to-black border border-yellow-400 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:border-transparent text-yellow-400 placeholder-yellow-600 transition-all"
             />
           </div>
 
@@ -102,7 +102,7 @@ const EventsPage = () => {
                 className={`px-4 py-2 rounded-full text-sm transition-all ${
                   selectedCategory === category 
                     ? 'bg-amber-500 text-black font-bold' 
-                    : 'bg-black text-amber-500 border-2 border-yellow-400 hover:bg-yellow-400 hover:text-black'
+                    : 'bg-black text-amber-500 border border-yellow-400 hover:bg-yellow-400 hover:text-black'
                 }`}
               >
                 {category}
@@ -121,8 +121,8 @@ const EventsPage = () => {
               {filteredEvents.map((event) => (
                 <article 
                   key={event.id} 
-                  className="w-full bg-gradient-to-br from-black via-gray-900 to-black rounded-2xl overflow-hidden border-2 border-yellow-400 hover:border-yellow-300 transition-all duration-300 cursor-pointer backdrop-blur-lg
-                    shadow-[rgb(253, 224, 71)] hover:shadow-[0_0_50px_rgba(253,224,71,7.25)] hover:scale-105 grid grid-cols-1 md:grid-cols-2"
+                  className="w-full bg-gradient-to-br from-black via-gray-900 to-black rounded-2xl overflow-hidden border border-yellow-400 hover:border-yellow-300 transition-all duration-300 cursor-pointer backdrop-blur-lg
+                    shadow-[rgb(253, 224, 71)] hover:shadow-[0_0_50px_rgba(253,224,71,7.25)] hover:scale-[102%] grid grid-cols-1 md:grid-cols-2"
                 >
                   <div className="relative group h-[500px] md:h-full"> {/* Fixed height container */}
                     <img

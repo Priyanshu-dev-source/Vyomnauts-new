@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Star,
   Award,
   Globe,
   Rocket,
   Linkedin,
-  Instagram,
   Twitter,
   Github,
 } from "lucide-react";
+import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import img from "./assets/Team/arya.jpg";
 import img1 from "./assets/Team/riashab .jpg";
@@ -41,6 +41,7 @@ import img30 from "./assets/Team/img17.jpg";
 import img31 from "./assets/Team/img18.jpg";
 import img32 from "./assets/Team/img19.jpg";
 import VerticalMentorsList from "./MentorCarousel";
+
 const SocialIcon = ({ Icon, href }) =>
   href ? (
     <a
@@ -52,8 +53,11 @@ const SocialIcon = ({ Icon, href }) =>
       <Icon size={20} />
     </a>
   ) : null;
+
+
 const AboutUsPage = () => {
   const [hoveredMember, setHoveredMember] = useState(null);
+
 
   const teams = {
     Technical: {
@@ -307,9 +311,9 @@ const AboutUsPage = () => {
             'Driving technical excellence and leading development teams to build innovative solutions.',
           image: `${img18}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/priyanshu-kumar-04ba7a300/",
             twitter: "",
-            github: "",
+            github: "https://github.com/Priyanshu-dev-source",
           },
         },
         {
@@ -453,8 +457,10 @@ const AboutUsPage = () => {
       ],
     },
   };
-
+  // const [expandedId, setExpandedId] = useState(null); 
+  const [hovering, setHovering] = useState(false);
   return (
+    <>
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-zinc-100">
       <Navbar />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -472,7 +478,8 @@ const AboutUsPage = () => {
             <h2 className="text-2xl font-bold text-zinc-100 mb-8 border-l-4 border-yellow-400 pl-4">
               {team.name}
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <div  
+              className="transition-all duration-300 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
               {team.members.map((member) => (
                 <div
                   key={member.id}
@@ -480,23 +487,29 @@ const AboutUsPage = () => {
                   onMouseEnter={() => setHoveredMember(member.id)}
                   onMouseLeave={() => setHoveredMember(null)}
                 >
-                  <div className="relative aspect-square rounded-full overflow-hidden border-2 border-zinc-800 group-hover:border-yellow-400 transition-all duration-300">
+                  
+                <motion.div 
+                  initial={{ opacity: 0 , scale: 1.2, filter: "blur(10px)"}}  
+                  whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                  whileHover={{ scale: 1.2, zIndex: 30 }}
+                  transition={{ duration: 0.1 }}
+                  className="relative shadow-[rgb(253, 224, 71)] hover:shadow-[0_0_50px_rgba(253,224,71,7.25)] hover:scale-105 cursor-pointer aspect-square rounded-full overflow-hidden border-2 border-zinc-800 group-hover:border-yellow-400 transition-all duration-300">
                     <img
                       src={member.image}
                       alt={member.name}
                       className="w-full h-full object-cover"
                     />
-                    <div
+                    {hovering && <div
                       className={`absolute inset-0 bg-gradient-to-b from-black/90 to-black/95 backdrop-blur-sm flex flex-col items-center justify-center p-4 transition-all duration-300 ${
                         hoveredMember === member.id
                           ? "opacity-100"
-                          : "opacity-0"
+                          : "opacity-0 "
                       }`}
                     >
-                      <p className="text-xs text-zinc-300 text-center mb-3 line-clamp-4">
+                      <p className="text-xs text-zinc-300 text-center mb line-clamp-4">
                         {member.description}
                       </p>
-                      <div className="flex gap-4">
+                      <div className=" flex gap-2 mt-3">
                         <SocialIcon
                           Icon={Linkedin}
                           href={member.socialLinks.linkedin}
@@ -510,26 +523,48 @@ const AboutUsPage = () => {
                           href={member.socialLinks.github}
                         />
                       </div>
-                    </div>
-                  </div>
-                  <div className="text-center mt-3">
-                    <h3 className="text-sm font-semibold text-zinc-100">
-                      {member.name}
-                    </h3>
-                    <p className="text-xs text-zinc-400 mt-1">{member.role}</p>
-                  </div>
+                    </div>}
+                  </motion.div>
+                  <motion.div 
+                    onHoverStart={()=>setHovering(true)}
+                    onHoverEnd={()=>setHovering(false)}
+                    className=" flex items-center justify-between flex-col text-center mt-3">
+                      <h3 className="text-sm font-semibold text-zinc-100">
+                        {member.name}
+                      </h3>
+                      <p className="text-xs text-zinc-400 mt-1">{member.role}</p>
+                        <div className=" flex gap-4 mt-3">
+                          <SocialIcon
+                            Icon={Linkedin}
+                            href={member.socialLinks.linkedin}
+                          />
+                          <SocialIcon
+                            Icon={Twitter}
+                            href={member.socialLinks.twitter}
+                          />
+                          <SocialIcon
+                            Icon={Github}
+                            href={member.socialLinks.github}
+                          />
+                        </div>
+                  </motion.div>
                 </div>
               ))}
             </div>
           </div>
         ))}
 
-        <div className="bg-gradient-to-br from-zinc-900 to-black py-16 mt-16 rounded-xl border border-zinc-800">
+        <motion.div
+        initial={{ opacity: 0, x: -150 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        duration={{ transition: 0.5 }}
+        className="shadow-[rgb(253, 224, 71)] hover:shadow-[0_0_50px_rgba(253,224,71,7.25)] hover:scale-[102%] transition-all duration-300 bg-gradient-to-br from-zinc-900 to-black py-16 mt-16 rounded-xl border border-zinc-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-extrabold mb-12 bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent">
               Our Core Values
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div 
+            className="grid md:grid-cols-3 gap-8">
               {[
                 {
                   icon: (
@@ -556,22 +591,27 @@ const AboutUsPage = () => {
                     "Maintaining the highest standards of scientific rigor and ethical research practices.",
                 },
               ].map((value, index) => (
-                <div
+                <motion.div
+                initial={{opacity: 0, filter: "blur(20px)", scale: 1.1}}
+                whileInView={{opacity: 1, filter: "blur(0px)", scale: 1}}
+                whileHover={{scale:1.1}}
+                duration={{transition:0.3}}
                   key={index}
-                  className="bg-zinc-900/50 backdrop-blur-sm rounded-2xl p-8 hover:bg-zinc-800/50 transition-all border border-zinc-800 hover:border-yellow-400/50"
+                  className="bg-zinc-900/50 backdrop-blur-sm rounded-2xl transition-all duration-300 p-8 hover:bg-zinc-800/50 cursor-pointer border border-zinc-800 hover:border-yellow-400/50"
                 >
                   {value.icon}
                   <h3 className="text-xl font-bold text-zinc-100 mb-4">
                     {value.title}
                   </h3>
                   <p className="text-zinc-400">{value.description}</p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
+    </>
   );
 };
 

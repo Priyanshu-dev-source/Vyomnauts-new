@@ -747,7 +747,7 @@ const ProjectCountdown = () => {
 
 // Main Component
 const SpaceClubLanding = () => {
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const [satelliteY, setSatelliteY] = useState(0);
