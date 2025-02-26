@@ -94,7 +94,7 @@ const VerticalMentorsList = () => {
     },
     {
       id: 3,
-      name: "Dr. Anurag Dhawan",
+      name: "Mr. Anurag Dhawan",
       title: "CEO PSIT-SIF",
       expertise: "Astrophysics & Space Exploration",
       background:

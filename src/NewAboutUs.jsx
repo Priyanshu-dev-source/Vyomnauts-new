@@ -41,6 +41,7 @@ import img30 from "./assets/Team/img17.jpg";
 import img31 from "./assets/Team/img18.jpg";
 import img32 from "./assets/Team/img19.jpg";
 import img33 from "./assets/Team/faiz.jpg";
+import img34 from "./assets/Team/dev.jpg";
 import VerticalMentorsList from "./MentorCarousel";
 
 const SocialIcon = ({ Icon, href }) =>
@@ -84,6 +85,19 @@ const AboutUsPage = () => {
           description:
             '"Specialist in designing and integrating advanced electronic systems for Cansat and rockets. Expertise in navigation, communication, and control systems for enhanced flight performance."',
           image: `${img11}`,
+          socialLinks: {
+            linkedin: "",
+            twitter: "",
+            github: "",
+          },
+        },
+        {
+          id: 32,
+          name: "Dev Jaiswal",
+          role: "Avionics Engineer",
+          description:
+            '"Specialist in designing and integrating advanced electronic systems for Cansat and rockets. Expertise in navigation, communication, and control systems for enhanced flight performance."',
+          image: `${img34}`,
           socialLinks: {
             linkedin: "",
             twitter: "",
