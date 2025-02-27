@@ -162,9 +162,9 @@ const AboutUsPage = () => {
             '"Specialist in designing and integrating advanced electronic systems for Cansat and rockets. Expertise in navigation, communication, and control systems for enhanced flight performance."',
           image: `${img34}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/dev-jaiswal-771a83344/",
             twitter: "",
-            github: "",
+            github: "https://github.com/DEADPOOLDEVJAISWAL",
           },
         },
       ]
@@ -396,7 +396,7 @@ const AboutUsPage = () => {
             '',
           image: `${img26}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/vaibhavi-srivastava-8a8682293/",
             twitter: "",
             github: "",
           },
