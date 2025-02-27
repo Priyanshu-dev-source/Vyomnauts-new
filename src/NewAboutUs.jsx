@@ -26,12 +26,12 @@ import img15 from "./assets/Team/jitendra.jpg";
 import img16 from "./assets/Team/anshuman.jpg";
 import img17 from "./assets/Team/akhand.jpg";
 import img18 from "./assets/Team/Priyanshu.jpg";
-import img19 from "./assets/Team/Rishi.png";
+import img19 from "./assets/Team/rishi.jpg";
 import img20 from "./assets/Team/img20.jpg";
 import img21 from "./assets/Team/img21.jpg";
 import img22 from "./assets/Team/adi.jpg";
 import img23 from "./assets/Team/rename.jpg";
-import img24 from "./assets/Team/suhani.jpg";
+import img24 from "./assets/Team/suhani.png";
 import img25 from "./assets/Team/suryansh.jpg";
 import img26 from "./assets/Team/vaishnaviSri.jpg";
 import img27 from "./assets/Team/vedansh.jpg";
@@ -74,7 +74,7 @@ const AboutUsPage = () => {
             " Designing and optimizing rockets for efficient space propulsion. ",
           image: `${img7}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/ssrvsparsh/",
             twitter: "",
             github: "",
           },
@@ -87,9 +87,9 @@ const AboutUsPage = () => {
             '"Specialist in designing and integrating advanced electronic systems for Cansat and rockets. Expertise in navigation, communication, and control systems for enhanced flight performance."',
           image: `${img11}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/tech-arcanist/",
             twitter: "",
-            github: "",
+            github: "https://github.com/TechArcanist",
           },
         },
       ]
@@ -105,7 +105,7 @@ const AboutUsPage = () => {
             " Creates detailed 3D models for design and manufacturing. ",
           image: `${img13}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "http://www.linkedin.com/in/anmol-deep-singh-09a3952a3",
             twitter: "",
             github: "",
           },
@@ -118,7 +118,7 @@ const AboutUsPage = () => {
             ' "Specialized in designing and optimizing onboard computer systems for aerospace and robotics. Expertise in real-time data processing, autonomous control, and mission-critical computing for rockets, drones, and satellites."',
           image: `${img6}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/rahul-kumar-a73533261",
             twitter: "",
             github: "",
           },
@@ -149,7 +149,7 @@ const AboutUsPage = () => {
             " Develops and tests designs through simulations for accuracy. ",
           image: `${img33}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/mohd-faiz-710661353/",
             twitter: "",
             github: "",
           },
@@ -180,7 +180,7 @@ const AboutUsPage = () => {
             '"Expert in designing and optimizing radio communication systems, ensuring seamless signal transmission and connectivity. Skilled in antenna design, wireless networks, and electromagnetic wave propagation."',
           image: `${img14}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/riya-verma-641230317",
             twitter: "",
             github: "",
           },
@@ -211,7 +211,7 @@ const AboutUsPage = () => {
             '"Specializes in integrating AI/ML with aerospace and robotics systems, enabling autonomous navigation, real-time data processing, and intelligent control for rockets, drones, and robotic missions."',
           image: `${img10}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/gaurav-shahi-90a23229b",
             twitter: "",
             github: "",
           },
@@ -242,7 +242,7 @@ const AboutUsPage = () => {
             '"AI/ML engineer with expertise in enhancing aerospace and robotics systems through intelligent automation. Focuses on machine learning-driven navigation, sensor data analysis, and adaptive control for drones, rockets, and robotic missions."',
           image: `${img16}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "http://www.linkedin.com/in/the-anshuman-pathak",
             twitter: "",
             github: "",
           },
@@ -273,7 +273,7 @@ const AboutUsPage = () => {
             '"Specialized in simulation and descent control for aerospace systems. Expertise in trajectory optimization, aerodynamics modeling, and autonomous landing algorithms for rockets, drones, and re-entry vehicles."',
           image: `${img5}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/vaishnavi-chaurasiya-19917024a",
             twitter: "",
             github: "",
           },
@@ -290,7 +290,7 @@ const AboutUsPage = () => {
           "description": " Ensures safe and controlled descent of the rocket. ",
           "image": `${img8}`,
           "socialLinks": {
-            "linkedin": "",
+            "linkedin": "https://www.linkedin.com/in/anushka-v-shukla/",
             "twitter": "",
             "github": ""
           }
@@ -321,9 +321,9 @@ const AboutUsPage = () => {
             '"Designs and maintains the website for online presence."',
           image: `${img22}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/aditya-srivastava-07752527b/",
             twitter: "",
-            github: "",
+            github: "https://github.com/addysrii",
           },
         },
         {
@@ -378,7 +378,7 @@ const AboutUsPage = () => {
             '',
           image: `${img27}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/vedansh-gupta-a9b4a4212/",
             twitter: "",
             github: "",
           },
@@ -390,7 +390,7 @@ const AboutUsPage = () => {
       members: [
         {
           id: 15,
-          name: "Vaishnavi Srivastava",
+          name: "Vaibhavi Srivastava",
           role: "Social Media Head",
           description:
             '',
@@ -426,7 +426,7 @@ const AboutUsPage = () => {
             '',
           image: `${img19}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/rishi-yadav-726b27304/",
             twitter: "",
             github: "",
           },
@@ -493,15 +493,15 @@ const AboutUsPage = () => {
       members: [
         {
           id: 17,
-          name: "Suhani",
+          name: "Suhani Sharma",
           role: "Promotional Head",
           description:
             '',
           image: `${img24}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/suhani-sharma-46a959291/",
             twitter: "",
-            github: "",
+            github: "https://github.com/Shawn7-Swartz",
           },
         },
       ],
@@ -516,7 +516,7 @@ const AboutUsPage = () => {
           "description": "\"Skilled in planning and executing high-impact events with precision and creativity. Expertise in logistics, team coordination, and audience engagement to ensure seamless and memorable experiences.\"",
           "image":`${img29}`,
           "socialLinks": {
-              "linkedin": "",
+              "linkedin": "http://www.linkedin.com/in/shikha2006",
             "twitter": "",
             "github": ""
           }
@@ -529,7 +529,7 @@ const AboutUsPage = () => {
             '',
           image: `${img25}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/suryanshsharan",
             twitter: "",
             github: "",
           },

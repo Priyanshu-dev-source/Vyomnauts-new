@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, Award, Book, Globe} from "lucide-react";
+import { ChevronLeft, ChevronRight, Award, Book, Globe, Linkedin, Twitter, Github,} from "lucide-react";
 import { motion } from "framer-motion";
 import img2 from "./assets/Team/manish.jpg";
 import img3 from "./assets/Team/raghavendra.jpg";
@@ -9,6 +9,18 @@ import img6 from "./assets/Team/Raghuraj.png";
 import img7 from "./assets/Team/AnuragDhawan.jpg";
 
 const VerticalMentorsList = () => {
+
+  const SocialIcon = ({ Icon, href }) =>
+    href ? (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-zinc-200 hover:text-yellow-400 transition-colors"
+      >
+        <Icon size={30} />
+      </a>
+    ) : null;
 
   const mentors = [
     {
@@ -30,6 +42,9 @@ const VerticalMentorsList = () => {
         "Published research papers and patented innovations",
         "AI/ML-powered skin cancer detection and diagnostic solutions",
       ],
+      links:[
+        "https://www.psit.ac.in/institute/functionaries-details/2/Dr.-Man-Mohan-Shukla"
+      ]
     },
     {
       id: 2,
@@ -51,6 +66,9 @@ const VerticalMentorsList = () => {
         "Electromagnetic wave propagation",
         "Antenna design",
       ],
+      links:[
+        "https://www.linkedin.com/in/raghvendra-singh-3a137a72/"
+      ]
     },
     {
       id: 4,
@@ -71,6 +89,9 @@ const VerticalMentorsList = () => {
         "Research paper and patents",
         "AI/ML-driven skin cancer detection and diagnosis",
       ],
+      links:[
+        "https://www.linkedin.com/in/raghuraj-suryavanshi-30914ba3/"
+      ]
     },
     {
       id: 5,
@@ -91,6 +112,9 @@ const VerticalMentorsList = () => {
         "Internet of Things (IoT) – Working on smart and interconnected systems for automation.",
         "MATLAB Applications – Developing simulations and models for engineering and research",
       ],
+      links:[
+        "https://www.linkedin.com/in/manish-kumar-2368581a/"
+      ]
     },
     {
       id: 3,
@@ -114,6 +138,9 @@ const VerticalMentorsList = () => {
         "Entrepreneurship development",
         "Innovation-driven ecosystem building",
       ],
+      links:[
+        "https://www.linkedin.com/in/anurag-dhawan-7857b911",
+      ]
     },
     {
       id: 6,
@@ -136,6 +163,9 @@ const VerticalMentorsList = () => {
         "Advanced Aerospace Systems",
         "Innovative Space Education & Mentorship",
       ],
+      links:[
+        "https://www.linkedin.com/in/sandeep-kumar-khare-26993516b"
+      ]
     },
   ];
 
@@ -167,9 +197,17 @@ const VerticalMentorsList = () => {
                 {/* Mentor Details */}
                 <div className="sm:w-2/3 space-y-4">
                   <div>
-                    <h2 className="text-2xl font-bold bg-blue-400 bg-clip-text text-transparent">
-                      {mentor.name}
-                    </h2>
+                    <div className="flex items-center justify-between md:gap-2 gap-[30px]">
+                      <h2 className="text-2xl font-bold bg-blue-400 bg-clip-text text-transparent">
+                        {mentor.name}
+                      </h2>
+                      <div className="flex gap-4 mt-3">
+                            <SocialIcon
+                              Icon={Linkedin}
+                              href={mentor.links}
+                            />
+                        </div>
+                    </div>
                     <h3 className="text-lg text-indigo-300">{mentor.title}</h3>
                   </div>
 
