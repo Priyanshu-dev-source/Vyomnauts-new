@@ -470,8 +470,8 @@ const AboutUsPage = () => {
         },
       ],
     },
-    Treasurer:{
-      name: "Treasurer",
+    TreasurerPromotional:{
+      name: "Treasurer and Promotional Team",
       members: [
         {
           id: 19,
@@ -486,11 +486,6 @@ const AboutUsPage = () => {
             github: "",
           },
         },
-      ],
-    },
-    PromotionalHead:{
-      name: "Promotional Team",
-      members: [
         {
           id: 17,
           name: "Suhani Sharma",
@@ -590,7 +585,7 @@ const AboutUsPage = () => {
               {team.name}
             </h2>
             <div  
-              className="transition-all duration-300 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+              className="transition-all duration-300 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
               {team.members.map((member) => (
                 <div
                   key={member.id}
