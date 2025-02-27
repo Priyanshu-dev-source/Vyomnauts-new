@@ -536,13 +536,13 @@ const AboutUsPage = () => {
         },
       ],
     },
-    Contributer:{
-      name: "Contributers",
+    Contributor:{
+      name: "Contributors",
       members: [
         {
           id: 33,
           name: "Anshu ",
-          role: "Contributer",
+          role: "Contributor",
           description:
             '',
           image: `${img12}`,
@@ -555,7 +555,7 @@ const AboutUsPage = () => {
         {
           id: 34,
           name: "Yaggya Chopra",
-          role: "Contributer",
+          role: "Contributor",
           description:
             '',
           image: `${img23}`,
