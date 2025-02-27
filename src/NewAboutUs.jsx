@@ -255,9 +255,9 @@ const AboutUsPage = () => {
             '"AI/ML engineer with expertise in enhancing aerospace and robotics systems through intelligent automation. Focuses on machine learning-driven navigation, sensor data analysis, and adaptive control for drones, rockets, and robotic missions."',
           image: `${img15}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/jitendra-singh-179089284/",
             twitter: "",
-            github: "",
+            github: "https://github.com/Jitenndra03",
           },
         },
       ]
@@ -463,7 +463,7 @@ const AboutUsPage = () => {
           '',
           image: `${img9}`,
           socialLinks: {
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/akash-srivastava-baa256279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             twitter: "",
             github: "",
           },
@@ -526,7 +526,7 @@ const AboutUsPage = () => {
           socialLinks: {
             linkedin: "https://www.linkedin.com/in/suryanshsharan",
             twitter: "",
-            github: "",
+            github: "https://github.com/Suryansh-Sharan",
           },
         },
       ],
