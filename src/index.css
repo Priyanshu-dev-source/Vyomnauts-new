@@ -3,3 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}

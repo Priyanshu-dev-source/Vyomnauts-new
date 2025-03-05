@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Search, Calendar, Clock, ChevronRight, Rocket, ChevronLeft, X } from 'lucide-react';
 import Navbar from './Navbar';
 import img1 from "./assets/blogs/img1.jpg"
@@ -354,7 +354,7 @@ As methane-powered rockets take to the skies, they are not just propelling space
 
       {/* Search bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="relative top-[5px] md:top-[30px]">
+        <div className="relative top-[25px] md:top-[30px]">
           <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-green-400" size={20} />
           <input
             type="text"

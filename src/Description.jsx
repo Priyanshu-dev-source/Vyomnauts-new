@@ -68,7 +68,7 @@ const VerticalSpaceCards = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           exit={{ x: 300, opacity: 0 }}
-          className="absolute md:h-[400px] md:w-[350px] rounded-[20px] top-[73em] left-[230px] md:top-[79em] md:left-[1030px] "
+          className="absolute md:h-[400px] md:w-[350px] rounded-[20px] top-[73em] left-[200px] md:top-[79em] md:left-[1030px] "
         >
           <img
             style={{ filter: "drop-shadow(6px 6px 7.75rem #C1440E)" }}
@@ -81,7 +81,7 @@ const VerticalSpaceCards = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           exit={{ x: -300, opacity: 0 }}
-          className="absolute h-[200px] w-[200px] md:h-[550px] md:w-[480px] rounded-[20px] top-[87em] left-[-5px] md:top-[109em] md:left-[190px] "
+          className="absolute h-[200px] w-[180px] md:h-[550px] md:w-[480px] rounded-[20px] top-[87em] left-[0px] md:top-[109em] md:left-[190px] "
         >
           <img
             style={{ filter: "drop-shadow(6px 6px 7.75rem #D4AF37)" }}
@@ -123,7 +123,7 @@ const VerticalSpaceCards = () => {
         {/*Cards Section*/}
         <motion.div
           initial={{
-            x: window.innerWidth < 640 ? -130 : -300,
+            x: window.innerWidth < 640 ? -230 : -300,
             opacity: 0,
             filter: "blur(30px)",
           }}
@@ -145,7 +145,7 @@ const VerticalSpaceCards = () => {
         </motion.div>
         <motion.div
           initial={{
-            x: window.innerWidth < 640 ? 130 : 300,
+            x: window.innerWidth < 640 ? 230 : 300,
             opacity: 0,
             filter: "blur(30px)",
           }}
@@ -167,7 +167,7 @@ const VerticalSpaceCards = () => {
         </motion.div>
         <motion.div
           initial={{
-            x: window.innerWidth < 640 ? -130 : -300,
+            x: window.innerWidth < 640 ? -230 : -300,
             opacity: 0,
             filter: "blur(30px)",
           }}
@@ -189,7 +189,7 @@ const VerticalSpaceCards = () => {
         </motion.div>
         <motion.div
           initial={{
-            x: window.innerWidth < 640 ? 130 : 300,
+            x: window.innerWidth < 640 ? 230 : 300,
             opacity: 0,
             filter: "blur(30px)",
           }}
