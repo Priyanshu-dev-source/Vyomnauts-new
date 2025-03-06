@@ -125,7 +125,7 @@ const VerticalSpaceCards = () => {
         {/*Cards Section*/}
         <motion.div
           initial={{
-            x: window.innerWidth < 640 ? -150 : -300,
+            x: window.innerWidth < 640 ? -130 : -300,
             opacity: 0,
             filter: "blur(30px)",
           }}
@@ -147,7 +147,7 @@ const VerticalSpaceCards = () => {
         </motion.div>
         <motion.div
           initial={{
-            x: window.innerWidth < 640 ? 150 : 300,
+            x: window.innerWidth < 640 ? 130 : 300,
             opacity: 0,
             filter: "blur(30px)",
           }}
@@ -169,7 +169,7 @@ const VerticalSpaceCards = () => {
         </motion.div>
         <motion.div
           initial={{
-            x: window.innerWidth < 640 ? -150 : -300,
+            x: window.innerWidth < 640 ? -130 : -300,
             opacity: 0,
             filter: "blur(30px)",
           }}
@@ -191,7 +191,7 @@ const VerticalSpaceCards = () => {
         </motion.div>
         <motion.div
           initial={{
-            x: window.innerWidth < 640 ? 150 : 300,
+            x: window.innerWidth < 640 ? 130 : 300,
             opacity: 0,
             filter: "blur(30px)",
           }}

@@ -79,7 +79,7 @@ const App = () => {
 
   return (
     <Suspense fallback={<LoadingScreen />}>
-      {!isLoaded || !minimumTimeElapsed ? (
+      {!isLoaded && !minimumTimeElapsed ? (
         <LoadingScreen />
       ) : (
         <Routes>
