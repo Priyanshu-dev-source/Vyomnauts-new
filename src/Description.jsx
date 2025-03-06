@@ -17,7 +17,7 @@ const VerticalSpaceCards = () => {
 
   return (
     <>
-      <div className="relative w-full flex flex-col items-center justify-center min-h-[800px] md:min-h-[700px] lg:min-h-[800px] bg-[url('/assets/earth.jpg')] bg-center bg-cover bg-no-repeat">
+      <div className="relative w-full flex flex-col items-center justify-center min-h-[800px] md:min-h-[700px] lg:min-h-[800px] bg-[url('/assets/earth.webp')] bg-center bg-cover bg-no-repeat">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         <div className="absolute top-[80px] md:top-[5vw] flex items-center justify-center h-[15vw] w-[15vw] max-h-[210px] max-w-[210px] min-h-[130px] min-w-[130px]">
           <img className="h-full w-full object-contain" src={logo} alt="PSIT" />
