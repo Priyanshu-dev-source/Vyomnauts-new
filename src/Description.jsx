@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Rocket, Shield, Cpu, Radio, Users, Star } from "lucide-react";
 import logo from "./assets/logo.png";
+import vyom from "/assets/logoMin.png";
+// import earth from "/assets/earth.jpg";
 
 const VerticalSpaceCards = () => {
   const { ref: firstRef, inView } = useInView({
@@ -15,10 +17,10 @@ const VerticalSpaceCards = () => {
 
   return (
     <>
-      <div className="relative w-full flex flex-col items-center justify-center min-h-[800px] md:min-h-[700px] lg:min-h-[800px] bg-[url('/assets/halfEarth.jpg')] bg-center bg-cover bg-no-repeat">
+      <div className="relative w-full flex flex-col items-center justify-center min-h-[800px] md:min-h-[700px] lg:min-h-[800px] bg-[url('/assets/earth.jpg')] bg-center bg-cover bg-no-repeat">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         <div className="absolute top-[80px] md:top-[5vw] flex items-center justify-center h-[15vw] w-[15vw] max-h-[210px] max-w-[210px] min-h-[130px] min-w-[130px]">
-          <img className="h-full w-full object-contain" src={logo} alt="" />
+          <img className="h-full w-full object-contain" src={logo} alt="PSIT" />
         </div>
 
         {/* <div className="absolute h-[210px] w-[210px] top-[80px] flex items-center justify-center">
@@ -31,7 +33,7 @@ const VerticalSpaceCards = () => {
             </h1>
             <img
               className="relative bottom-[10px] sm:bottom-[20px] sm:left-[-4px] left-[10px] mb-[30px] w-[150px] sm:w-[180px] md:w-[200px] lg:w-[220px] xl:w-[250px] h-auto"
-              src="/assets/logoo.png"
+              src={vyom}
               alt="Not found"
             />
           </div>
@@ -68,7 +70,7 @@ const VerticalSpaceCards = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           exit={{ x: 300, opacity: 0 }}
-          className="absolute md:h-[400px] md:w-[350px] rounded-[20px] top-[73em] left-[200px] md:top-[79em] md:left-[1030px] "
+          className="absolute md:h-[400px] md:w-[350px] rounded-[20px] top-[73em] left-[210px] md:top-[79em] md:left-[1030px] "
         >
           <img
             style={{ filter: "drop-shadow(6px 6px 7.75rem #C1440E)" }}
