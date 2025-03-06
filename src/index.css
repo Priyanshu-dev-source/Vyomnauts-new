@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,18 +7,18 @@ body::-webkit-scrollbar {
     display: none;  /* Safari and Chrome */
 }
 
-@font-face {
+/* @font-face {
     font-family: 'audioWide';
     src: url('/assets/audiowide-v20-latin-regular.woff2') format('woff2'),
          url('/assets/audiowide-v20-latin-regular.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
-  }
+  } */
   
-  @font-face {
+  /* @font-face {
     font-family: 'audioWide';
     src: url('/assets/audiowide-v20-latin-regular.woff2') format('woff2'),
          url('/assets/audiowide-v20-latin-regular.woff2') format('woff');
     font-weight: bold;
     font-style: normal;
-  }
+  } */
