@@ -60,8 +60,8 @@ const JoinUsPage = lazy(() => import('./JoinUs'));
 
 // Loading Screen Component
 const LoadingScreen = () => (
-  <div className='md:h-dvh md:w-full h-[1990px] w-[450px] md:w-svh overflow-hidden bg-black flex justify-center items-center'>
-           <img src={logo} alt="Loading....." className='absolute md:right-[630px] right-[110px] md:bottom-[180px] bottom-[320px] h-[180px] w-[180px] md:w-[300px] animate-bounceInfinite md:h-[300px]'/>
+  <div className='h-dvh w-full md:w-svh overflow-hidden bg-black flex justify-center items-center'>
+           <img src={logo} alt="Loading....." className= 'h-[180px] w-[180px] md:w-[300px] animate-bounceInfinite md:h-[300px]'/>
        </div>
 );
 

@@ -60,7 +60,7 @@ module.exports = {
         'planet-1': 'planet-1 5s ease-in-out infinite',
         'planet-2': 'planet-2 7s ease-in-out infinite',
         'twinkle': 'twinkle 3s ease-in-out infinite',
-        bounceInfinite: "bounceInfinite 3s infinite",
+        bounceInfinite: "bounceInfinite 2.5s infinite",
       }
     }
   },
