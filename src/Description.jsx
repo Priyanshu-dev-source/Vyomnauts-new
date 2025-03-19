@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import JSConfetti from "js-confetti";
+import JsConfetti from "js-confetti";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { Rocket, Shield, Cpu, Radio, Users, Star } from "lucide-react";
@@ -9,13 +9,6 @@ import vyom from "/assets/logoMin.png";
 
 const VerticalSpaceCards = () => {
   const [popUp, setPopUp] = useState(true);
-  const [jsConfetti, setJsConfetti] = useState(null);
-
-  useEffect(() => {
-    import("js-confetti").then((module) => {
-      setJsConfetti(new module.default());
-    });
-  }, []);
 
   const { ref: firstRef, inView } = useInView({
     threshold: 0.2,
@@ -25,36 +18,22 @@ const VerticalSpaceCards = () => {
     threshold: 0.2,
   });
 
-  // const jsConfetti = new JSConfetti();
-  // let confettiInterval;
-
-  // useEffect(() => {
-  //   if (popUp) {
-  //     confettiInterval = setInterval(() => {
-  //       jsConfetti.addConfetti({
-  //         confettiColors: ["#FFD700", "#FFFFFF", "#FFA500"],
-  //         confettiRadius: 6,
-  //         confettiNumber: 100,
-  //       });
-  //     }, 1000); // Show confetti every 1 second
-  //   }
-
-  //   return () => clearInterval(confettiInterval); // Clear confetti when popup closes
-  // }, [popUp]);
+  const jsConfettiModule = new JsConfetti();
+  let confettiInterval;
 
   useEffect(() => {
-    if (popUp && jsConfetti) {
-      const interval = setInterval(() => {
-        jsConfetti.addConfetti({
+    if (popUp) {
+      confettiInterval = setInterval(() => {
+        jsConfettiModule.addConfetti({
           confettiColors: ["#FFD700", "#FFFFFF", "#FFA500"],
           confettiRadius: 6,
           confettiNumber: 100,
         });
-      }, 1000);
-
-      return () => clearInterval(interval);
+      }, 1000); // Show confetti every 1 second
     }
-  }, [popUp, jsConfetti]);
+
+    return () => clearInterval(confettiInterval); // Clear confetti when popup closes
+  }, [popUp]);
 
   return (
     <>
