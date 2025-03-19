@@ -22,8 +22,8 @@ const VerticalSpaceCards = () => {
       <div className="relative w-full flex flex-col items-center justify-center min-h-[800px] md:min-h-[700px] lg:min-h-[800px] bg-[url('/assets/earth.webp')] bg-center bg-cover bg-no-repeat">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
           {popUp && (
-            <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-50">
-              <div className={`absolute border-[2px] border-white cursor-pointer hover:scale-[105%] top-[140px] md:top-[20px] left-[10px] md:left-[450px] h-[500px] w-[330px] md:h-[690px] md:w-[620px] bg-black z-40 transition-all duration-300 overflow-hidden`}>
+            <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-50 flex justify-center items-center">
+              <div className={`absolute border-[2px] border-white cursor-pointer hover:scale-[105%] h-[500px] w-[330px] md:h-[690px] md:w-[620px] bg-black z-40 transition-all duration-300 overflow-hidden`}>
                 <button
                   onClick={() => {
                     setPopUp(false);
