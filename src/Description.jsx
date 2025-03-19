@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import JSConfetti from "js-confetti";
+import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { Rocket, Shield, Cpu, Radio, Users, Star } from "lucide-react";
 import logo from "./assets/logo.png";
@@ -16,6 +17,23 @@ const VerticalSpaceCards = () => {
   const { ref: secondRef, inView: chooseView } = useInView({
     threshold: 0.2,
   });
+
+  const jsConfetti = new JSConfetti();
+  let confettiInterval;
+
+  useEffect(() => {
+    if (popUp) {
+      confettiInterval = setInterval(() => {
+        jsConfetti.addConfetti({
+          confettiColors: ["#FFD700", "#FFFFFF", "#FFA500"],
+          confettiRadius: 6,
+          confettiNumber: 100,
+        });
+      }, 1000); // Show confetti every 1 second
+    }
+
+    return () => clearInterval(confettiInterval); // Clear confetti when popup closes
+  }, [popUp]);
 
   return (
     <>
