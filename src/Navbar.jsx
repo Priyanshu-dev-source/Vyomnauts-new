@@ -8,7 +8,7 @@ const Navbar = () => {
     const pdfUrl = `${window.location.origin}/Sponsor.pdf` 
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "Sample.pdf";
+    link.download = "Sponsor.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -126,6 +126,7 @@ const NavLinks = () => (
       <DropdownItem to="/events" text="Our Events" />
     </NavDropdown>
     <NavItem to="/about" text="About Us" />
+    <NavItem to="/emagazine" text="Emagazine" />
   </ul>
 );
 
@@ -138,6 +139,7 @@ const MobileNavLinks = () => (
       <MobileDropdownItem to="/events" text="Our Events" />
     </MobileDropdown>
     <MobileNavItem to="/about" text="About Us" />
+    <MobileNavItem to="/emagazine" text="Emagazine" />
   </ul>
 );
 

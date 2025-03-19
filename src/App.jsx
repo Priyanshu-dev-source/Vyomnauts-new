@@ -57,6 +57,7 @@ const BlogListingPage = lazy(() => import('./Blogs'));
 const EventsPage = lazy(() => import('./OurEvent'));
 const AboutUsPage = lazy(() => import('./NewAboutUs'));
 const JoinUsPage = lazy(() => import('./JoinUs'));
+const Emagazine = lazy(() => import('./Emagazine'));
 
 // Loading Screen Component
 const LoadingScreen = () => (
@@ -89,6 +90,7 @@ const App = () => {
           <Route path="/blogs" element={<BlogListingPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/join" element={<JoinUsPage />} />
+          <Route path="/emagazine" element={<Emagazine />} />
         </Routes>
       )}
     </Suspense>

@@ -53,7 +53,47 @@ module.exports = {
             transform: 'translateY(0) rotate(360deg) scale(8.2)',
             opacity: 0
           } 
-        }
+        },
+        'moveLeft' : {
+          '0%':{
+              transform: "translateX(0px) translateY(0px) rotate(180deg) scale(0.8)",
+              opacity : "1"
+          },
+          '100%':{
+              transform: "translateX(-490px) translateY(300px) rotate(360deg) scale(0.1)",
+              opacity: "0"    
+          }
+        },
+        'moveRight' : {
+          '0%':{
+              transform: "translateX(0px) translateY(0px) rotate(180deg) scale(0.8)",
+              opacity : "1"
+          },
+          '100%':{
+              transform: "translateX(490px) translateY(300px) rotate(360deg) scale(0.1)",
+              opacity: "0"    
+          }
+        },
+        'moveHeadUp' : {
+          '0%' : {
+              transform : "translateY(0px) scale(0.8)",
+              opacity : "1"
+          },
+          '100%' : {
+            transform : "translateY(-90px) scale(0.7)",
+            opacity : "0"
+          }
+        },
+        'moveHeadDown' : {
+          '0%' : {
+              transform : "translateY(0px) scale(0.8)",
+              opacity : "1"
+          },
+          '100%' : {
+            transform : "translateY(90px) scale(0.7)",
+            opacity : "0"
+          }
+        },
       },
       animation: {
         'gradient-shift': 'gradient-shift 15s ease infinite',
@@ -61,6 +101,12 @@ module.exports = {
         'planet-2': 'planet-2 7s ease-in-out infinite',
         'twinkle': 'twinkle 3s ease-in-out infinite',
         bounceInfinite: "bounceInfinite 2.5s infinite",
+        moveLeft : "moveLeft 0.5s linear forwards",
+        moveRight : "moveRight 0.5s linear forwards",
+        moveHeadUp : "moveHeadUp 0.5s linear forwards",
+        moveHeadDown : "moveHeadDown 0.5s linear forwards",
+       
+
       }
     }
   },

@@ -611,6 +611,7 @@ const StarsBackground = () => {
           opacity: 1 - scrollPosition * 0.0003,
         }}
       /> */}
+      
     </div>
   );
 };
@@ -772,30 +773,14 @@ const SpaceClubLanding = () => {
        relative min-h-screen
       text-white overflow-hidden"
     >
-      {/* <div
-        id="satellite"
-        className="z-10 absolute right-[-400px] top-[200px] transition-transform duration-100 ease-linear"
-        style={{
-          transform: `translateX(${-scrollPosition * 0.8}px) translateY(${
-            scrollPosition * 0.15
-          }px)`,
-        }}
-      >
-        <img
-          height={"400px"}
-          width={"400px"}
-          src="/assets/sat.png"
-          alt="Not found"
-        />
-      </div> */}
       <div
         id="satellite"
         className="z-10 absolute right-[-400px] top-[200px] transition-transform duration-100 ease-linear"
         style={{
           transform: `translateX(${-scrollPosition * 0.8}px) translateY(${
             scrollPosition * 0.15
-          }px)`,
-        }}
+            }px)`,
+          }}
       >
         <img
           className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[400px] h-auto opacity-[80%]"
@@ -804,7 +789,7 @@ const SpaceClubLanding = () => {
         />
       </div>
 
-      <StarsBackground />
+      {/* <StarsBackground /> */}
       <Navbar />
       <VerticalSpaceCards />
       <div className="min-h-screen flex flex-col items-center justify-center relative z-10 mt-20">

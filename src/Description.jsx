@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-// import { useState, useEffect} from "react";
+import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { Rocket, Shield, Cpu, Radio, Users, Star } from "lucide-react";
 import logo from "./assets/logo.png";
@@ -7,6 +7,8 @@ import vyom from "/assets/logoMin.png";
 // import earth from "/assets/earth.jpg";
 
 const VerticalSpaceCards = () => {
+  const [popUp, setPopUp] = useState(true);
+
   const { ref: firstRef, inView } = useInView({
     threshold: 0.2,
   });
@@ -19,6 +21,31 @@ const VerticalSpaceCards = () => {
     <>
       <div className="relative w-full flex flex-col items-center justify-center min-h-[800px] md:min-h-[700px] lg:min-h-[800px] bg-[url('/assets/earth.webp')] bg-center bg-cover bg-no-repeat">
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+          {popUp && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-50">
+              <div className={`absolute border-[2px] border-white cursor-pointer hover:scale-[105%] top-[140px] md:top-[20px] left-[10px] md:left-[450px] h-[500px] w-[330px] md:h-[690px] md:w-[620px] bg-black z-40 transition-all duration-300 overflow-hidden`}>
+                <button
+                  onClick={() => {
+                    setPopUp(false);
+
+                  }}
+                  className="absolute right-0 h-[70px] w-[70px] float-right flex items-center justify-center"
+                >
+                  <svg
+                    className="relative hover:drop-shadow-[0_0_10px_rgba(255,255,255,1)] transition-all duration-300 hover:scale-[130%]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="50px"
+                    viewBox="0 -960 960 960"
+                    width="50px"
+                    fill="#FFFFFF"
+                  >
+                    <path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+                  </svg>
+                </button>
+                <img src="/assets/touchdown.jpg" className="w-full h-full onbect-cover" alt="" />
+              </div>
+          </div>
+          )}
         <div className="absolute top-[80px] md:top-[5vw] flex items-center justify-center h-[15vw] w-[15vw] max-h-[210px] max-w-[210px] min-h-[130px] min-w-[130px]">
           <img className="h-full w-full object-contain" src={logo} alt="PSIT" />
         </div>
