@@ -25,7 +25,7 @@ const VerticalSpaceCards = () => {
     if (popUp) {
       confettiInterval = setInterval(() => {
         jsConfettiModule.addConfetti({
-          confettiColors: ["#FFD700", "#FFFFFF", "#FFA500"],
+          confettiColors: ["#FFD700", "#FFFFFF", "#FFA500", "#FF4500", "#32CD32", "#1E90FF", "#FF69B4", "#8A2BE2"],
           confettiRadius: 6,
           confettiNumber: 100,
         });
@@ -41,7 +41,7 @@ const VerticalSpaceCards = () => {
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
           {popUp && (
             <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-50 flex justify-center items-center">
-              <div className={`absolute border-[2px] border-white cursor-pointer hover:scale-[105%] h-[500px] w-[360px] md:h-[690px] md:w-[620px] bg-black z-40 transition-all duration-300 overflow-hidden`}>
+              <div className={`absolute border-[1px] border-white cursor-pointer hover:scale-[105%] h-[500px] w-[360px] md:h-[690px] md:w-[580px] bg-black z-40 transition-all duration-300 overflow-hidden`}>
                 <button
                   onClick={() => {
                     setPopUp(false);
