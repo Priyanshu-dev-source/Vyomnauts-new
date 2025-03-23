@@ -12,7 +12,7 @@ const Emagazine = lazy(() => import('./Emagazine'));
 
 const LoadingScreen = () => (
   <div className='h-dvh w-full md:w-svh overflow-hidden bg-black flex justify-center items-center'>
-    <img src={logo} alt="Loading....." className= 'relative h-[180px] w-[180px] md:w-[300px] top-[80px] animate-bounceInfinite md:h-[300px]'/>
+    <img src={logo} alt="Loading....." className= 'h-[180px] w-[180px] md:w-[300px] animate-bounceInfinite md:h-[300px]'/>
   </div>
 );
 
