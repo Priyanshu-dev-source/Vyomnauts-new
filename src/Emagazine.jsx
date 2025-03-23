@@ -39,35 +39,43 @@ const Emagazine = () => {
   const GaganSeriesMagazine = [
     {
       id: 1,
-      title: "Gagan Rocket 1",
+      title: "Gagan Vol 1",
       descp: "Hello, this is the first edition.",
-      image: "/assets/cover1.jpg",
-      pdfLink: "prac1.pdf",
-      pdfName: "Gagan Rocket 1"
+      image: "/assets/gagan1.png",
+      pdfLink: "GaganVol1.pdf",
+      pdfName: "Gagan Vol 1"
     },
     {
       id: 2,
-      title: "Gagan Rocket 2",
+      title: "Gagan Vol 2",
       descp: "Hello, this is the second edition.",
-      image: "/assets/cover2.jpg",
-      pdfLink: "prac2.pdf",
-      pdfName: "Gagan Rocket 2"
+      image: "/assets/gagan2.png",
+      pdfLink: "GaganVol2.pdf",
+      pdfName: "Gagan Vol 2"
     },
     {
       id: 3,
-      title: "Gagan Rocket 3",
+      title: "Gagan Vol 3",
       descp: "Hello, this is the third edition.",
-      image: "/assets/cover3.jpg",
-      pdfLink: "prac3.pdf",
-      pdfName: "Gagan Rocket 3"   
+      image: "/assets/gagan3.png",
+      pdfLink: "GaganVol3.pdf",
+      pdfName: "Gagan Vol 3"   
     },
     {
       id: 4,
-      title: "Gagan Rocket 4",
+      title: "Gagan Vol 4",
       descp: "Hello, this is the fourth edition.",
-      image: "/assets/cover4.jpg",
-      pdfLink: "",
-      pdfName: "Gagan Rocket 4" 
+      image: "/assets/gagan4.png",
+      pdfLink: "GaganVol4.pdf",
+      pdfName: "Gagan Vol 4" 
+    },
+    {
+      id: 5,
+      title: "Gagan Vol 5",
+      descp: "Hello, this is the fourth edition.",
+      image: "/assets/gagan5.png",
+      pdfLink: "GaganVol5.pdf",
+      pdfName: "Gagan Vol 5" 
     },
   ];
 
