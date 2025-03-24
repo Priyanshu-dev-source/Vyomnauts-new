@@ -64,7 +64,7 @@ const VerticalSpaceCards = () => {
               </div>
           </div>
           )}
-        <div className="absolute top-[80px] md:top-[5vw] bg-red-300 flex items-center justify-center h-[15vw] w-[15vw] max-h-[210px] max-w-[210px] min-h-[130px] min-w-[130px]">
+        <div className="absolute top-[80px] md:top-[5vw] flex items-center justify-center h-[15vw] w-[15vw] max-h-[210px] max-w-[210px] min-h-[130px] min-w-[130px]">
           <img loading="lazy" className="h-full w-full object-contain" src={logo} alt="PSIT" />
         </div>
 
