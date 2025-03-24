@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { Rocket, Shield, Cpu, Radio, Users, Star } from "lucide-react";
 import logo from "./assets/logo.png";
-import vyom from "/assets/logoMin.png";
+import vyom from "/assets/newLogo.png";
 // import earth from "/assets/earth.jpg";
 
 const VerticalSpaceCards = () => {
@@ -41,7 +41,7 @@ const VerticalSpaceCards = () => {
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
           {popUp && (
             <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-50 flex justify-center items-center">
-              <div className={`absolute border-[1px] border-white cursor-pointer hover:scale-[105%] h-[500px] w-[360px] md:h-[690px] md:w-[580px] bg-black z-40 transition-all duration-300 overflow-hidden`}>
+              <div className={`absolute border-[1px] border-white cursor-pointer hover:shadow-[0_0_50px_rgba(96,165,250,7.25)] hover:scale-[101%] h-[500px] w-[360px] md:h-[690px] md:w-[580px] bg-black z-40 transition-all duration-300 overflow-hidden`}>
                 <button
                   onClick={() => {
                     setPopUp(false);
@@ -60,17 +60,17 @@ const VerticalSpaceCards = () => {
                     <path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
                   </svg>
                 </button>
-                <img src="/assets/touchdown.jpg" className="w-full h-full onbect-cover" alt="" />
+                <img loading="lazy" src="/assets/touchdown.jpg" className="w-full h-full object-cover" alt="" />
               </div>
           </div>
           )}
         <div className="absolute top-[80px] md:top-[5vw] flex items-center justify-center h-[15vw] w-[15vw] max-h-[210px] max-w-[210px] min-h-[130px] min-w-[130px]">
-          <img className="h-full w-full object-contain" src={logo} alt="PSIT" />
+          <img loading="lazy" className="h-full w-full object-contain" src={logo} alt="PSIT" />
         </div>
 
-        {/* <div className="absolute h-[210px] w-[210px] top-[80px] flex items-center justify-center">
+        <div className="absolute h-[210px] w-[210px] top-[80px] flex items-center justify-center">
             <img className="h-full w-full object-contain" src={logo} alt="" />
-          </div> */}
+          </div>
         <div className="relative top-[20px] z-10 text-white text-center md:min-h-[850px] min-h-[900px] lg:min-h-[1000px] flex items-center justify-center flex-col pb-[250px]">
           <div className="flex tracking-wide items-center justify-center sm:gap-2 md:gap-6">
             <h1 className="text-3xl sm:text-[42px] md:text-[48px] lg:text-[55px] xl:text-[75px] font-audioWide text-yellow-300">
@@ -79,6 +79,7 @@ const VerticalSpaceCards = () => {
             <img
               className="relative bottom-[10px] sm:bottom-[20px] sm:left-[-4px] left-[10px] mb-[30px] w-[150px] sm:w-[180px] md:w-[200px] lg:w-[220px] xl:w-[250px] h-auto"
               src={vyom}
+              loading="lazy"
               alt="Not found"
             />
           </div>

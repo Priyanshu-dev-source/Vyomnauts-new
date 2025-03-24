@@ -21,7 +21,7 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const minLoadTime = setTimeout(() => setIsLoading(false), 3000); 
+    const minLoadTime = setTimeout(() => setIsLoading(false), 1800); 
     return () => clearTimeout(minLoadTime);
   }, []);
 
@@ -45,5 +45,3 @@ const App = () => {
 };
 
 export default App;
-
-

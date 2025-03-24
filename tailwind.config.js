@@ -29,7 +29,7 @@ module.exports = {
           '50%': { opacity: '1' }
         },
 
-        'bounceInfinite': {
+        'bounceInfiniteFrame': {
           '0%' : {
             transform: 'translateY(0)',
             opacity: 1
@@ -101,7 +101,7 @@ module.exports = {
         'planet-1': 'planet-1 5s ease-in-out infinite',
         'planet-2': 'planet-2 7s ease-in-out infinite',
         'twinkle': 'twinkle 3s ease-in-out infinite',
-        'bounceInfinite': "bounceInfinite 2s infinite",
+        'bounceInfinite': "bounceInfiniteFrame 2s infinite",
         moveLeft : "moveLeft 0.5s linear forwards",
         moveRight : "moveRight 0.5s linear forwards",
         moveHeadUp : "moveHeadUp 0.5s linear forwards",
