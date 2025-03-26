@@ -24,7 +24,7 @@ const BlogListingPage = () => {
   const blogs = [
     {
       id: 1,
-      title: "The Ultimate Free Energy Generator By - Samraddhi Nigam",
+      title: "The Ultimate Free Energy Generator - By Samraddhi Nigam",
       excerpt: "The solar wind, a constant stream of charged particles from the Sun, offers a sustainable energy source in space. By using solar sails or rotating turbines, we can convert its kinetic energy into electricity, providing a reliable and renewable power solution for satellites and space stations.",
       content: `**The Ultimate Free Energy Generator**  
 

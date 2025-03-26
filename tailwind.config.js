@@ -95,6 +95,16 @@ module.exports = {
             opacity : "0"
           }
         },
+        'boxPopUp' : {
+          '0%' : {
+            transform : "scale(0.2)",
+            opacity : "0"
+          },
+          '100%' : {
+            transform : "scale(1)",
+            opacity : "1"
+          }
+        }
       },
       animation: {
         'gradient-shift': 'gradient-shift 15s ease infinite',
@@ -102,6 +112,7 @@ module.exports = {
         'planet-2': 'planet-2 7s ease-in-out infinite',
         'twinkle': 'twinkle 3s ease-in-out infinite',
         'bounceInfinite': "bounceInfiniteFrame 2s infinite",
+        'boxPopUp': "boxPopUp 1s linear forwards",
         moveLeft : "moveLeft 0.5s linear forwards",
         moveRight : "moveRight 0.5s linear forwards",
         moveHeadUp : "moveHeadUp 0.5s linear forwards",

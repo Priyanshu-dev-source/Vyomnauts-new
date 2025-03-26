@@ -79,14 +79,14 @@ const VerticalMentorsList = () => {
         "Dr. Raghuraj Singh Suryavanshi, the Dean of PSIT-SIF at Pranveer Singh Institute of Technology (PSIT), is an esteemed mentor for our space club. A seasoned expert in AI/ML applications and technological advancements, he has been instrumental in guiding students through various national and international competitions in technology and innovation. Under his mentorship, students have successfully engaged in groundbreaking projects, enhancing their technical knowledge and problem-solving skills.",
       achievements: [
         " Delivered impactful international talks on AI/ML-driven skin cancer detection and diagnosis.",
-        " Written books published in international and national area.",
-        " Published reasearch papers and patents in of skin cancer detection platform.",
+        " Authored books published at international and national levels.",
+        " Published research papers and secured patents for a skin cancer detection platform.",
         "4. Fostering a Research-Oriented on AI/ML driven Environment"
       ],
       image: `${img6}`,
       researchFocus: [
         "Advanced AI/ML projects",
-        "Research paper and patents",
+        "Research papers and patents",
         "AI/ML-driven skin cancer detection and diagnosis",
       ],
       links:[
@@ -99,7 +99,7 @@ const VerticalMentorsList = () => {
       title: "Club Ambassador",
       expertise: "Quantum Computing & Artificial Intelligence",
       background:
-        "Dr. Manish Kumar is a Professor in the Electronics and Communication Engineering (ECE) Department at Pranveer Singh Institute of Technology (PSIT). He holds specialization in Guided Missile Technology from IISc Bangalore, bringing deep technical insights into aerospace and defense systems.As the ambassador of our club, he serves as an inspiration for students, fostering a research-driven mindset and guiding them in space, robotics, and defense technology projects ",
+        "Dr. Manish Kumar is a Professor in the Electronics and Communication Engineering (ECE) Department at Pranveer Singh Institute of Technology (PSIT). He holds specialization in Guided Missile Technology from IISc Bangalore, bringing deep technical insights into aerospace and defense systems.As the club ambassador, he inspires students, fosters a research-driven mindset, and guides them in space, robotics, and defense technology projects. ",
       achievements: [
         "AI-Integrated Circuit Design",
         "Mentored Innovation in Space Technologies",
@@ -122,7 +122,7 @@ const VerticalMentorsList = () => {
       title: "CEO PSIT-SIF",
       expertise: "Astrophysics & Space Exploration",
       background:
-        "Mr. Anurag Dhawan, CEO at PSIT SIF and Industry Expert for Vyomnauts Club, fosters investor connections, builds strategic relationships, and empowers students by guiding them through incubation, helping them transform ideas into successful startups.",
+        "Mr. Anurag Dhawan, CEO at PSIT-SIF and an industry expert for Vyomnauts Club, fosters investor connections, builds strategic relationships, and empowers students by guiding them through incubation, helping transform ideas into successful startups.",
       achievements: [
         "1. Mentored 150+ startups.",
         "2. Hosted conferences & conclaves.",
@@ -136,7 +136,7 @@ const VerticalMentorsList = () => {
         "Investor relations & fundraising",
         "Industry-academia collaboration",
         "Entrepreneurship development",
-        "Innovation-driven ecosystem building",
+        "Building an innovation-driven ecosystem",
       ],
       links:[
         "https://www.linkedin.com/in/anurag-dhawan-7857b911",
@@ -148,7 +148,7 @@ const VerticalMentorsList = () => {
       title: "Club Ambassador",
       expertise: "Extraterrestrial Life & Planetary Sciences",
       background:
-        "Sandeep Sir is a guiding force to our space journey, bringing in unmatched energy and dedication to each project. They inspire us, being our torchbearer, and motivate us to reach new heights by pushing boundaries of innovation and excellence. His commitment and enthusiasm guide us through every challenge as he motivates us to greatness in the space exploration field. Their mentorship is truly the cornerstone of our success. ",
+        "Sandeep Sir is a guiding force to our space journey, bringing in unmatched energy and dedication to each project. He inspires us as our torchbearer, motivating us to reach new heights by pushing the boundaries of innovation and excellence. His commitment and enthusiasm guide us through every challenge as he motivates us to greatness in the space exploration field. His mentorship is truly the cornerstone of our success. ",
       achievements: [
         "Leadership in Space Projects",
         "Inspiring Innovation in Aerospace",

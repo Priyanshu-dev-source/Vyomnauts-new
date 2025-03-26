@@ -126,7 +126,7 @@ const NavLinks = () => (
       <DropdownItem to="/events" text="Our Events" />
     </NavDropdown>
     <NavItem to="/about" text="About Us" />
-    <NavItem to="/emagazine" text="Emagazine" />
+    <NavItem to="/emagazine" text="E-Magazine" />
   </ul>
 );
 
@@ -139,7 +139,7 @@ const MobileNavLinks = () => (
       <MobileDropdownItem to="/events" text="Our Events" />
     </MobileDropdown>
     <MobileNavItem to="/about" text="About Us" />
-    <MobileNavItem to="/emagazine" text="Emagazine" />
+    <MobileNavItem to="/emagazine" text="E-Magazine" />
   </ul>
 );
 

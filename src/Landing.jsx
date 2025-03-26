@@ -655,7 +655,7 @@ const ProjectCountdown = () => {
     {
       name: "Rocketry India 2025",
       description:
-        "Experience our next-generation Rocket 'Trishul' designed to launch on 18th April 2025",
+        "Experience our next-generation rocket, 'Trishul,' designed to launch on April 18, 2025.",
       date: new Date(2025, 3, 18),
       image: img,
     },
@@ -813,17 +813,17 @@ const SpaceClubLanding = () => {
             {
               Icon: Telescope,
               title: "Observation",
-              text: "Access to advanced telescopes and imaging equipment for deep space observation",
+              text: "Access to advanced telescopes and imaging equipment for deep-space observation.",
             },
             {
               Icon: Star,
               title: "Research",
-              text: "Participate in groundbreaking astronomical research projects and discoveries",
+              text: "Participate in groundbreaking astronomical research projects and make discoveries.",
             },
             {
               Icon: Satellite,
               title: "Technology",
-              text: "Learn about cutting-edge space technology and satellite systems",
+              text: "Learn about the cutting-edge space technology and satellite systems.",
             },
           ].map((feature) => (
             <FeatureCard key={feature.title} {...feature} />

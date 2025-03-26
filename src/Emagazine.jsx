@@ -1,35 +1,41 @@
 import Navbar from "./Navbar";
 import { ChevronRight, ChevronLeft } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+
+
+// const Success = () => {
+//   return (
+//     <>
+//       <div className="fixed inset-0 backdrop-blur-md bg-black bg-opacity-30 z-30 flex items-center justify-center">
+//       </div>
+//       <div className="absolute animate-boxPopUp cursor-pointer shadow-[rgb(96, 165, 250)] hover:shadow-[0_0_50px_rgba(96,165,250,7.25)] transition-all duration-200 top-[230px] left-[470px] border-2 border-blue-500 bg-clip-padding p-6 z-40 h-[300px] w-[600px] rounded-[20px] bg-blue-500 bg-opacity-20 flex items-center justify-between flex-col">
+//         <h1 className="font-audioWide text-[29px] text-blue-500">THANKS FOR DOWNLOADING</h1>
+//         <svg
+//       className="relative w-44 h-44 animate-bounce top-[10px]"
+//       viewBox="0 0 100 100"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       {/* Outer Circle */}
+//       <circle
+//         cx="50"
+//         cy="50"
+//         r="40"
+//         className="stroke-cyan-400 stroke-[3.84] fill-none"
+//       />
+
+//       {/* Check Mark */}
+//       <path
+//         className="fill-blue-600"
+//         d="M73.3 33.5c-2.3-2.3-6.1-2.3-8.4 0L44.5 53.9l-9.4-9.4c-2.3-2.3-6.1-2.3-8.4 0-1.1 1.1-1.7 2.6-1.7 4.2s.6 3.1 1.7 4.2l13.6 13.6c1.1 1.1 2.6 1.7 4.2 1.7s3.1-.6 4.2-1.7L73.2 42c1.1-1.1 1.7-2.6 1.7-4.2s-.5-3.1-1.6-4.3z"
+//       />
+//     </svg>
+//       </div>
+//     </>
+//   );
+// };
+
 
 const Emagazine = () => {
-
-  useEffect(() => {
-    document.addEventListener("DOMContentLoaded", function () {
-      let startX = 0;
-      let endX = 0;
-  
-      document.addEventListener("touchstart", function (e) {
-          startX = e.touches[0].clientX;
-      });
-  
-      document.addEventListener("touchend", function (e) {
-          endX = e.changedTouches[0].clientX;
-          handleSwipe();
-      });
-  
-      function handleSwipe() {
-          let diffX = endX - startX;
-          if (diffX > 50) {
-              moveRightCard()
-            } else if (diffX < -50) {
-              moveLeftCard()
-          }
-      }
-  });
-  }, [])
-
-  
   const [leftAnimate, setLeftAnimate] = useState(false);
   const [rightAnimate, setRightAnimate] = useState(false);
   const [headUpAnimate, setHeadUpAnimate] = useState(false);
@@ -80,6 +86,8 @@ const Emagazine = () => {
   ];
 
   const downloadPDF = () => {
+
+
     const pdfUrl = `${window.location.origin}/${GaganSeriesMagazine[currentIndex].pdfLink}`;
     
     if (!pdfUrl) {
@@ -93,6 +101,10 @@ const Emagazine = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+
+    setTimeout(() => {
+      
+    }, 2000);
   };
   
   const moveLeftCard = () => {
@@ -122,11 +134,13 @@ const Emagazine = () => {
   };
 
   return (
+    <>
     <div className="min-h-screen w-full text-white bg-black overflow-hidden">
       <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-green-400/20">
         <Navbar />
       </header>
       <main className="h-screen w-full flex items-center justify-center flex-col">
+        {/* <Success/> */}
         <div
           className={`absolute ml-[30px] md:ml-[50px] md:h-[60px] h-[40px] w-full md:border-l-8 border-l-2 border-blue-400 mt-[-580px] md:mt-[-520px] flex justify-start items-center`}
         >
@@ -169,6 +183,7 @@ const Emagazine = () => {
         </div>
       </main>
     </div>
+  </>
   );
 };
 

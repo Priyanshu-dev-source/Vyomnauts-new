@@ -67,10 +67,6 @@ const VerticalSpaceCards = () => {
         <div className="absolute top-[80px] md:top-[5vw] flex items-center justify-center h-[15vw] w-[15vw] max-h-[210px] max-w-[210px] min-h-[130px] min-w-[130px]">
           <img loading="lazy" className="h-full w-full object-contain" src={logo} alt="PSIT" />
         </div>
-
-        {/* <div className="absolute h-[210px] w-[210px] bg-red-300 top-[80px] flex items-center justify-center">
-            <img className="h-full w-full object-contain" src={logo} alt="" />
-          </div> */}
         <div className="relative top-[20px] z-10 text-white text-center md:min-h-[850px] min-h-[900px] lg:min-h-[1000px] flex items-center justify-center flex-col pb-[250px]">
           <div className="flex tracking-wide items-center justify-center sm:gap-2 md:gap-6">
             <h1 className="text-3xl sm:text-[42px] md:text-[48px] lg:text-[55px] xl:text-[75px] font-audioWide text-yellow-300">
@@ -382,7 +378,7 @@ const VerticalSpaceCards = () => {
               <Shield className="h-16 w-12 md:w-20 md:h-20" />
             </div>
             <p className="text-[14px] md:text-[15px] md:tracking-wider font-audioWide text-center font-light md:font-semibold text-white w-[140px] md:w-[180px]">
-              Contribution to India space ecosystem.
+              Contribution to India's space ecosystem.
             </p>
           </motion.div>
 

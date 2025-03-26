@@ -22,7 +22,7 @@ const ProjectsSlider = () => {
 
   const projects = [{
     title: 'CanSat 2023-24',
-    description: "PSIT Vyomnauts, as PSIT Cosmonauts, successfully designed, launched, and soft-landed Abhaycharan at IN-SPACe CanSat 2024, organized by the Astronautical Society of India and IN-SPACe in collaboration with ISRO. Competing against 84 top colleges, including IIT Bombay, IIT Madras, and BITS Pilani, we qualified all five rounds and launched in the presence of ISRO Chairman Shri S. Somanath, securing a top rank.",
+    description: "PSIT Vyomnauts, as PSIT Cosmonauts, successfully designed, launched, and soft-landed 'Abhaycharan' at IN-SPACe CanSat 2024, organized by the Astronautical Society of India and IN-SPACe in collaboration with ISRO. Competing against 84 top colleges, including IIT Bombay, IIT Madras, and BITS Pilani, we qualified all five rounds and launched in the presence of ISRO Chairman Shri S. Somanath, securing a top rank.",
     status: 'Completed',
     mediaLinks: [
       { 
@@ -35,13 +35,13 @@ const ProjectsSlider = () => {
     ],
     youtubeLinks: [
       { title: "Project Achievement", url: "https://youtu.be/o-clHa2XTLk?si=xZO2vwdK75DAqti6" },
-      { title: "Recognition by DD gujrati", url: "https://www.youtube.com/live/AUc1juXQ5n0?si=38cB3ZWCywiZj-aP" },
+      { title: "Recognition by DD Gujarati", url: "https://www.youtube.com/live/AUc1juXQ5n0?si=38cB3ZWCywiZj-aP" },
     ],
    image : p1
   },
   {
     title: 'CanSat 2024-25',
-    description: "PSIT Vyomnauts is thrilled to participate in IN-SPACe CanSat 2024-25, a competition that fuels our passion for aerospace innovation. This year, we continue our journey with Rohini Sat, a milestone from our past successes. With unwavering determination, we have successfully qualified the Preliminary Design Review (PDR) and are now preparing for the Critical Design Review (CDR), aiming to set new benchmarks in CanSat design and space exploration.",
+    description: "PSIT Vyomnauts is thrilled to participate in IN-SPACe CanSat 2024-25, a competition that fuels our passion for aerospace innovation. This year, we continue our journey with Rohini Sat, a milestone from our past successes. With unwavering determination, we have successfully qualified the Preliminary Design Review (PDR) and are now preparing for the Critical Design Review (CDR), aiming to set new benchmarks in CanSat design and aerospace exploration..",
     status: 'Ongoing',
     mediaLinks: [],
     youtubeLinks: [],
@@ -49,7 +49,7 @@ const ProjectsSlider = () => {
   },
   {
     title: 'Rocketry 2024-25',
-    description: "The thrill of rocketry is set to soar as PSIT Vyomnauts gears up for Rocketry 2024-25, organized by IN-SPACe and ISRO, with Team Sudarshan and its cutting-edge rocket, Trishul. A symbol of innovation, precision, and engineering excellence, Trishul represents our dedication to advancing rocketry technology. Competing in India’s first-ever rocketry competition, our team has successfully qualified two rounds and is now preparing for the Mission Readiness Review (MRR). With rigorous testing and refinement, we aim to push the boundaries of propulsion, aerodynamics, and advanced rocket design, making history with every launch.",
+    description: "The thrill of rocketry is set to soar as PSIT Vyomnauts gear up for Rocketry 2024-25, organized by IN-SPACe and ISRO, with Team Sudarshan and its cutting-edge rocket, Trishul. A symbol of innovation, precision, and engineering excellence, Trishul represents our dedication to advancing rocketry technology. Competing in India’s first-ever rocketry competition, our team has successfully qualified two rounds and is now preparing for the Mission Readiness Review (MRR). With rigorous testing and refinement, we aim to push the boundaries of propulsion, aerodynamics, and advanced rocket design, making history with every launch.",
     status: 'Ongoing',
     mediaLinks: [],
     youtubeLinks: [],

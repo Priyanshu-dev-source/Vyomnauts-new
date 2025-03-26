@@ -175,7 +175,7 @@ const AboutUsPage = () => {
         {
           id: 3,
           name: "Riya Verma ",
-          role: "Radio COMMUNICATION ENGINEER",
+          role: "Radio Communication Engineer",
           description:
             '"Expert in designing and optimizing radio communication systems, ensuring seamless signal transmission and connectivity. Skilled in antenna design, wireless networks, and electromagnetic wave propagation."',
           image: `${img14}`,
@@ -281,7 +281,7 @@ const AboutUsPage = () => {
       ],
     },
     OutReachIntern: {
-      name: "Out Reach Intern",
+      name: "Outreach Intern",
       members: [   
         {
           "id": 21,
@@ -339,19 +339,19 @@ const AboutUsPage = () => {
             github: "",
           },
         },
-        {
-          id: 26,
-          name: "Tanishq Mishra",
-          role: "Developer",
-          description:
-            '"Designs and maintains the website for online presence."',
-          image: `${img21}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
+        // {
+        //   id: 26,
+        //   name: "Tanishq Mishra",
+        //   role: "Developer",
+        //   description:
+        //     '"Designs and maintains the website for online presence."',
+        //   image: `${img21}`,
+        //   socialLinks: {
+        //     linkedin: "",
+        //     twitter: "",
+        //     github: "",
+        //   },
+        // },
       ],
     },
     HeadManagement:{
@@ -404,7 +404,7 @@ const AboutUsPage = () => {
         {
           "id": 28,
           "name": "Harsh Vishwakarma",
-          "role": "Social Media head",
+          "role": "Social Media Head",
           "description": " Manages online presence and engagement for outreach. ",
           "image": `${img30}`,
           "socialLinks": {
@@ -678,7 +678,7 @@ const AboutUsPage = () => {
                   ),
                   title: "Innovation",
                   description:
-                    "Continuously pushing the boundaries of scientific discovery and technological advancement.",
+                    "We continuously push the boundaries of scientific discovery and technological advancement.",
                 },
                 {
                   icon: (
@@ -694,7 +694,7 @@ const AboutUsPage = () => {
                   ),
                   title: "Excellence",
                   description:
-                    "Maintaining the highest standards of scientific rigor and ethical research practices.",
+                    "We uphold the highest standards of scientific rigor and ethical research practices.",
                 },
               ].map((value, index) => (
                 <motion.div

@@ -21,9 +21,11 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const minLoadTime = setTimeout(() => setIsLoading(false), 1800); 
+    const minLoadTime = setTimeout(() => setIsLoading(false), 4000); 
     return () => clearTimeout(minLoadTime);
   }, []);
+  
+  console.log(document.body.innerText);
 
   return (
     <Suspense fallback={<LoadingScreen />}>
