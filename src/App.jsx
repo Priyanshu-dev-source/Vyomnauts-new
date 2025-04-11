@@ -1,6 +1,6 @@
 import { Suspense, lazy, useEffect, useState } from "react";
 import { Routes, Route } from 'react-router-dom';
-import logo from './assets/logo.png';
+import logo from '/assets/logo.png';
 
 const LandingPage = lazy(() => import('./Landing'));
 const ProjectSlider = lazy(() => import('./BackgroundSlider'));

@@ -3,7 +3,7 @@ import JsConfetti from "js-confetti";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { Rocket, Shield, Cpu, Radio, Users, Star } from "lucide-react";
-import logo from "./assets/logo.png";
+import logo from "/assets/logo.png";
 import vyom from "/assets/newLogo.png";
 // import earth from "/assets/earth.jpg";
 
