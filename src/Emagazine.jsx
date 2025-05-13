@@ -83,6 +83,14 @@ const Emagazine = () => {
       pdfLink: "GaganVol5.pdf",
       pdfName: "Gagan Vol 5" 
     },
+    {
+      id: 6,
+      title: "Gagan Vol 6",
+      descp: "Hello, this is the fourth edition.",
+      image: "/assets/gagan6.png",
+      pdfLink: "GaganVol6.pdf",
+      pdfName: "Gagan Vol 5" 
+    },
   ];
 
   const downloadPDF = () => {

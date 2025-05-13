@@ -8,7 +8,7 @@ import vyom from "/assets/newLogo.png";
 // import earth from "/assets/earth.jpg";
 
 const VerticalSpaceCards = () => {
-  const [popUp, setPopUp] = useState(true);
+  const [popUp, setPopUp] = useState(false);
 
   const { ref: firstRef, inView } = useInView({
     threshold: 0.2,

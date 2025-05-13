@@ -185,19 +185,19 @@ const AboutUsPage = () => {
             github: "",
           },
         },
-        {
-          id: 10,
-          name: "Arya Mishra",
-          role: "Sensor Subsystem Engineer",
-          description:
-            '"Expert in developing and integrating advanced sensor subsystems for aerospace and robotics. Specializes in precision data acquisition, signal processing, and real-time environmental sensing for rockets, drones, and autonomous systems."',
-          image: `${img}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
+        // {
+        //   id: 10,
+        //   name: "Arya Mishra",
+        //   role: "Sensor Subsystem Engineer",
+        //   description:
+        //     '"Expert in developing and integrating advanced sensor subsystems for aerospace and robotics. Specializes in precision data acquisition, signal processing, and real-time environmental sensing for rockets, drones, and autonomous systems."',
+        //   image: `${img}`,
+        //   socialLinks: {
+        //     linkedin: "",
+        //     twitter: "",
+        //     github: "",
+        //   },
+        // },
       ]
     },
     GCSDeveloper:{
@@ -231,6 +231,63 @@ const AboutUsPage = () => {
         },
       ]
     },
+    Developer: {
+      name: "Developer Team",
+      members: [
+        {
+          id: 14,
+          name: "Priyanshu Kumar",
+          role: "Head Developer",
+          description:
+            'Driving technical excellence and leading development teams to build innovative solutions.',
+          image: `${img18}`,
+          socialLinks: {
+            linkedin: "https://www.linkedin.com/in/priyanshu-kumar-04ba7a300/",
+            twitter: "",
+            github: "https://github.com/Priyanshu-dev-source",
+          },
+        },
+        {
+          id: 24,
+          name: "Aditya Srivastava",
+          role: "Developer",
+          description:
+            '"Designs and maintains the website for online presence."',
+          image: `${img22}`,
+          socialLinks: {
+            linkedin: "https://www.linkedin.com/in/aditya-srivastava-07752527b/",
+            twitter: "",
+            github: "https://github.com/addysrii",
+          },
+        },
+        // {
+        //   id: 25,
+        //   name: "Shubham Verma ",
+        //   role: "Developer",
+        //   description:
+        //     '"Designs and maintains the website for online presence."',
+        //   image: `${img20}`,
+        //   socialLinks: {
+        //     linkedin: "",
+        //     twitter: "",
+        //     github: "",
+        //   },
+        // },
+        // {
+        //   id: 26,
+        //   name: "Tanishq Mishra",
+        //   role: "Developer",
+        //   description:
+        //     '"Designs and maintains the website for online presence."',
+        //   image: `${img21}`,
+        //   socialLinks: {
+        //     linkedin: "",
+        //     twitter: "",
+        //     github: "",
+        //   },
+        // },
+      ],
+    },
     ControlSystemEngineer:{
       name: "Control System Engineer",
       members: [
@@ -247,46 +304,46 @@ const AboutUsPage = () => {
             github: "",
           },
         },
-        {
-          id: 6,
-          name: "Jeetendra Singh ",
-          role: "AIML Engineer",
-          description:
-            '"AI/ML engineer with expertise in enhancing aerospace and robotics systems through intelligent automation. Focuses on machine learning-driven navigation, sensor data analysis, and adaptive control for drones, rockets, and robotic missions."',
-          image: `${img15}`,
-          socialLinks: {
-            linkedin: "https://www.linkedin.com/in/jitendra-singh-179089284/",
-            twitter: "",
-            github: "https://github.com/Jitenndra03",
-          },
-        },
+        // {
+        //   id: 6,
+        //   name: "Jeetendra Singh ",
+        //   role: "AIML Engineer",
+        //   description:
+        //     '"AI/ML engineer with expertise in enhancing aerospace and robotics systems through intelligent automation. Focuses on machine learning-driven navigation, sensor data analysis, and adaptive control for drones, rockets, and robotic missions."',
+        //   image: `${img15}`,
+        //   socialLinks: {
+        //     linkedin: "https://www.linkedin.com/in/jitendra-singh-179089284/",
+        //     twitter: "",
+        //     github: "https://github.com/Jitenndra03",
+        //   },
+        // },
       ]
     },
-    SimulationEngineer:{
-      name: "Simulation Engineer",
-      members: [
-        {
-          id: 11,
-          name: "Vaishnavi Chaurasiya ",
-          role: "Simulation and Descent Control",
-          description:
-            '"Specialized in simulation and descent control for aerospace systems. Expertise in trajectory optimization, aerodynamics modeling, and autonomous landing algorithms for rockets, drones, and re-entry vehicles."',
-          image: `${img5}`,
-          socialLinks: {
-            linkedin: "https://www.linkedin.com/in/vaishnavi-chaurasiya-19917024a",
-            twitter: "",
-            github: "",
-          },
-        },
-      ],
-    },
+    // SimulationEngineer:{
+    //   name: "Simulation Engineer",
+    //   members: [
+    //     {
+    //       id: 11,
+    //       name: "Vaishnavi Chaurasiya ",
+    //       role: "Simulation and Descent Control",
+    //       description:
+    //         '"Specialized in simulation and descent control for aerospace systems. Expertise in trajectory optimization, aerodynamics modeling, and autonomous landing algorithms for rockets, drones, and re-entry vehicles."',
+    //       image: `${img5}`,
+    //       socialLinks: {
+      //         linkedin: "https://www.linkedin.com/in/vaishnavi-chaurasiya-19917024a",
+      //         twitter: "",
+      //         github: "",
+      //       },
+      //     },
+      //   ],
+      // },
     OutReachIntern: {
-      name: "Outreach Intern",
+      name: "Descent Control Engineer ",
       members: [   
         {
           "id": 21,
           "name": "Anushka ",
-          "role": "Outreach Intern",
+          "role": "Descent Control Engineer ",
           "description": " Ensures safe and controlled descent of the rocket. ",
           "image": `${img8}`,
           "socialLinks": {
@@ -297,42 +354,16 @@ const AboutUsPage = () => {
         },      
       ],
     },
-    Developer: {
-      name: "Developer Team",
+    HeadManagement:{
+      name: "Head Management Team",
       members: [
         {
-          id: 14,
-          name: "Priyanshu Kumar",
-          role: "Lead Developer",
+          id: 10,
+          name: "Arya Mishra",
+          role: "Sensor Subsystem Engineer",
           description:
-            'Driving technical excellence and leading development teams to build innovative solutions.',
-          image: `${img18}`,
-          socialLinks: {
-            linkedin: "https://www.linkedin.com/in/priyanshu-kumar-04ba7a300/",
-            twitter: "",
-            github: "https://github.com/Priyanshu-dev-source",
-          },
-        },
-        {
-          id: 24,
-          name: "Aditya Srivastava",
-          role: "Head Developer",
-          description:
-            '"Designs and maintains the website for online presence."',
-          image: `${img22}`,
-          socialLinks: {
-            linkedin: "https://www.linkedin.com/in/aditya-srivastava-07752527b/",
-            twitter: "",
-            github: "https://github.com/addysrii",
-          },
-        },
-        {
-          id: 25,
-          name: "Shubham Verma ",
-          role: "Developer",
-          description:
-            '"Designs and maintains the website for online presence."',
-          image: `${img20}`,
+            '"Expert in developing and integrating advanced sensor subsystems for aerospace and robotics. Specializes in precision data acquisition, signal processing, and real-time environmental sensing for rockets, drones, and autonomous systems."',
+          image: `${img}`,
           socialLinks: {
             linkedin: "",
             twitter: "",
@@ -340,83 +371,65 @@ const AboutUsPage = () => {
           },
         },
         // {
-        //   id: 26,
-        //   name: "Tanishq Mishra",
-        //   role: "Developer",
+        //   id: 12,
+        //   name: "Vijay Verma",
+        //   role: "President",
         //   description:
-        //     '"Designs and maintains the website for online presence."',
-        //   image: `${img21}`,
+        //     '',
+        //   image: `${img28}`,
         //   socialLinks: {
         //     linkedin: "",
         //     twitter: "",
         //     github: "",
         //   },
         // },
+        // {
+        //   id: 13,
+        //   name: "Vedansh Gupta",
+        //   role: "Vice President",
+        //   description:
+        //     '',
+        //   image: `${img27}`,
+        //   socialLinks: {
+        //     linkedin: "https://www.linkedin.com/in/vedansh-gupta-a9b4a4212/",
+        //     twitter: "",
+        //     github: "",
+        //   },
+        // },
       ],
     },
-    HeadManagement:{
-      name: "Head Management Team",
-      members: [
-        {
-          id: 12,
-          name: "Vijay Verma",
-          role: "President",
-          description:
-            '',
-          image: `${img28}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
-        {
-          id: 13,
-          name: "Vedansh Gupta",
-          role: "Vice President",
-          description:
-            '',
-          image: `${img27}`,
-          socialLinks: {
-            linkedin: "https://www.linkedin.com/in/vedansh-gupta-a9b4a4212/",
-            twitter: "",
-            github: "",
-          },
-        },
-      ],
-    },
-    SocialMedia:{
-      name: "Social Media Team",
-      members: [
-        {
-          id: 15,
-          name: "Vaibhavi Srivastava",
-          role: "Social Media Head",
-          description:
-            '',
-          image: `${img26}`,
-          socialLinks: {
-            linkedin: "https://www.linkedin.com/in/vaibhavi-srivastava-8a8682293/",
-            twitter: "",
-            github: "",
-          },
-        },
-        {
-          "id": 28,
-          "name": "Harsh Vishwakarma",
-          "role": "Social Media Head",
-          "description": " Manages online presence and engagement for outreach. ",
-          "image": `${img30}`,
-          "socialLinks": {
-            "linkedin": "",
-            "twitter": "",
-            "github": ""
-          }
-        },
-      ],
-    },
+    // SocialMedia:{
+    //   name: "Social Media Team",
+    //   members: [
+    //     {
+    //       id: 15,
+    //       name: "Vaibhavi Srivastava",
+    //       role: "Social Media Head",
+    //       description:
+    //         '',
+    //       image: `${img26}`,
+    //       socialLinks: {
+    //         linkedin: "https://www.linkedin.com/in/vaibhavi-srivastava-8a8682293/",
+    //         twitter: "",
+    //         github: "",
+    //       },
+    //     },
+    //     {
+    //       "id": 28,
+    //       "name": "Harsh Vishwakarma",
+    //       "role": "Social Media Head",
+    //       "description": " Manages online presence and engagement for outreach. ",
+    //       "image": `${img30}`,
+    //       "socialLinks": {
+    //         "linkedin": "",
+    //         "twitter": "",
+    //         "github": ""
+    //       }
+    //     },
+    //   ],
+    // },
     GrapicsDesigner:{
-      name: "Graphic Designer and Editor Team",
+      name: "Graphic Designer",
       members: [
         {
           id: 16,
@@ -443,125 +456,125 @@ const AboutUsPage = () => {
             "github": ""
           }
         },
-        {
-          "id": 30,
-          "name": "Harsh Kumar",
-          "role": "Graphic Designer",
-          "description": "\"Creates visual content for branding and communication.\"",
-          "image": `${img32}`,
-          "socialLinks": {
-            "linkedin": "",
-            "twitter": "",
-            "github": ""
-          }
-        },
-        {
-          id: 20,
-          name: "Akash",
-          role: "Video Editor",
-          description:
-          '',
-          image: `${img9}`,
-          socialLinks: {
-            linkedin: "https://www.linkedin.com/in/akash-srivastava-baa256279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            twitter: "",
-            github: "",
-          },
-        },
+        // {
+        //   "id": 30,
+        //   "name": "Harsh Kumar",
+        //   "role": "Graphic Designer",
+        //   "description": "\"Creates visual content for branding and communication.\"",
+        //   "image": `${img32}`,
+        //   "socialLinks": {
+        //     "linkedin": "",
+        //     "twitter": "",
+        //     "github": ""
+        //   }
+        // },
+        // {
+        //   id: 20,
+        //   name: "Akash",
+        //   role: "Video Editor",
+        //   description:
+        //   '',
+        //   image: `${img9}`,
+        //   socialLinks: {
+        //     linkedin: "https://www.linkedin.com/in/akash-srivastava-baa256279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        //     twitter: "",
+        //     github: "",
+        //   },
+        // },
       ],
     },
-    TreasurerPromotional:{
-      name: "Treasurer and Promotional Team",
-      members: [
-        {
-          id: 19,
-          name: "Akhand",
-          role: "Treasurer",
-          description:
-            '',
-          image: `${img17}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
-        {
-          id: 17,
-          name: "Suhani Sharma",
-          role: "Promotional Head",
-          description:
-            '',
-          image: `${img24}`,
-          socialLinks: {
-            linkedin: "https://www.linkedin.com/in/suhani-sharma-46a959291/",
-            twitter: "",
-            github: "https://github.com/Shawn7-Swartz",
-          },
-        },
-      ],
-    },
-    EventManeger:{
-      name: "Event Manager Team",
-      members: [
-        {
-          "id": 27,
-          "name": "Shikha ",
-          "role": "Event manager ",
-          "description": "\"Skilled in planning and executing high-impact events with precision and creativity. Expertise in logistics, team coordination, and audience engagement to ensure seamless and memorable experiences.\"",
-          "image":`${img29}`,
-          "socialLinks": {
-              "linkedin": "http://www.linkedin.com/in/shikha2006",
-            "twitter": "",
-            "github": ""
-          }
-        },
-        {
-          id: 18,
-          name: "Suryansh Sharan",
-          role: "Event Manager",
-          description:
-            '',
-          image: `${img25}`,
-          socialLinks: {
-            linkedin: "https://www.linkedin.com/in/suryanshsharan",
-            twitter: "",
-            github: "https://github.com/Suryansh-Sharan",
-          },
-        },
-      ],
-    },
-    Contributor:{
-      name: "Contributors",
-      members: [
-        {
-          id: 33,
-          name: "Anshu ",
-          role: "Contributor",
-          description:
-            '',
-          image: `${img12}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
-        {
-          id: 34,
-          name: "Yaggya Chopra",
-          role: "Contributor",
-          description:
-            '',
-          image: `${img23}`,
-          socialLinks: {
-            linkedin: "",
-            twitter: "",
-            github: "",
-          },
-        },
-      ],
-    },
+    // TreasurerPromotional:{
+    //   name: "Treasurer and Promotional Team",
+    //   members: [
+    //     {
+    //       id: 19,
+    //       name: "Akhand",
+    //       role: "Treasurer",
+    //       description:
+    //         '',
+    //       image: `${img17}`,
+    //       socialLinks: {
+    //         linkedin: "",
+    //         twitter: "",
+    //         github: "",
+    //       },
+    //     },
+    //     {
+    //       id: 17,
+    //       name: "Suhani Sharma",
+    //       role: "Promotional Head",
+    //       description:
+    //         '',
+    //       image: `${img24}`,
+    //       socialLinks: {
+    //         linkedin: "https://www.linkedin.com/in/suhani-sharma-46a959291/",
+    //         twitter: "",
+    //         github: "https://github.com/Shawn7-Swartz",
+    //       },
+    //     },
+    //   ],
+    // },
+    // EventManeger:{
+    //   name: "Event Manager Team",
+    //   members: [
+    //     {
+    //       "id": 27,
+    //       "name": "Shikha ",
+    //       "role": "Event manager ",
+    //       "description": "\"Skilled in planning and executing high-impact events with precision and creativity. Expertise in logistics, team coordination, and audience engagement to ensure seamless and memorable experiences.\"",
+    //       "image":`${img29}`,
+    //       "socialLinks": {
+    //           "linkedin": "http://www.linkedin.com/in/shikha2006",
+    //         "twitter": "",
+    //         "github": ""
+    //       }
+    //     },
+    //     {
+    //       id: 18,
+    //       name: "Suryansh Sharan",
+    //       role: "Event Manager",
+    //       description:
+    //         '',
+    //       image: `${img25}`,
+    //       socialLinks: {
+    //         linkedin: "https://www.linkedin.com/in/suryanshsharan",
+    //         twitter: "",
+    //         github: "https://github.com/Suryansh-Sharan",
+    //       },
+    //     },
+    //   ],
+    // },
+    // Contributor:{
+    //   name: "Contributors",
+    //   members: [
+    //     {
+    //       id: 33,
+    //       name: "Anshu ",
+    //       role: "Contributor",
+    //       description:
+    //         '',
+    //       image: `${img12}`,
+    //       socialLinks: {
+    //         linkedin: "",
+    //         twitter: "",
+    //         github: "",
+    //       },
+    //     },
+    //     {
+    //       id: 34,
+    //       name: "Yaggya Chopra",
+    //       role: "Contributor",
+    //       description:
+    //         '',
+    //       image: `${img23}`,
+    //       socialLinks: {
+    //         linkedin: "",
+    //         twitter: "",
+    //         github: "",
+    //       },
+    //     },
+    //   ],
+    // },
   };
   // const [expandedId, setExpandedId] = useState(null); 
   const [hovering, setHovering] = useState(false);
