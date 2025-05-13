@@ -398,36 +398,36 @@ const AboutUsPage = () => {
         // },
       ],
     },
-    // SocialMedia:{
-    //   name: "Social Media Team",
-    //   members: [
-    //     {
-    //       id: 15,
-    //       name: "Vaibhavi Srivastava",
-    //       role: "Social Media Head",
-    //       description:
-    //         '',
-    //       image: `${img26}`,
-    //       socialLinks: {
-    //         linkedin: "https://www.linkedin.com/in/vaibhavi-srivastava-8a8682293/",
-    //         twitter: "",
-    //         github: "",
-    //       },
-    //     },
-    //     {
-    //       "id": 28,
-    //       "name": "Harsh Vishwakarma",
-    //       "role": "Social Media Head",
-    //       "description": " Manages online presence and engagement for outreach. ",
-    //       "image": `${img30}`,
-    //       "socialLinks": {
-    //         "linkedin": "",
-    //         "twitter": "",
-    //         "github": ""
-    //       }
-    //     },
-    //   ],
-    // },
+    SocialMedia:{
+      name: "Social Media Team",
+      members: [
+        {
+          id: 15,
+          name: "Vaibhavi Srivastava",
+          role: "Social Media Head",
+          description:
+            '',
+          image: `${img26}`,
+          socialLinks: {
+            linkedin: "https://www.linkedin.com/in/vaibhavi-srivastava-8a8682293/",
+            twitter: "",
+            github: "",
+          },
+        },
+        {
+          "id": 28,
+          "name": "Harsh Vishwakarma",
+          "role": "Social Media Head",
+          "description": " Manages online presence and engagement for outreach. ",
+          "image": `${img30}`,
+          "socialLinks": {
+            "linkedin": "",
+            "twitter": "",
+            "github": ""
+          }
+        },
+      ],
+    },
     GrapicsDesigner:{
       name: "Graphic Designer",
       members: [
@@ -514,36 +514,36 @@ const AboutUsPage = () => {
     //     },
     //   ],
     // },
-    // EventManeger:{
-    //   name: "Event Manager Team",
-    //   members: [
-    //     {
-    //       "id": 27,
-    //       "name": "Shikha ",
-    //       "role": "Event manager ",
-    //       "description": "\"Skilled in planning and executing high-impact events with precision and creativity. Expertise in logistics, team coordination, and audience engagement to ensure seamless and memorable experiences.\"",
-    //       "image":`${img29}`,
-    //       "socialLinks": {
-    //           "linkedin": "http://www.linkedin.com/in/shikha2006",
-    //         "twitter": "",
-    //         "github": ""
-    //       }
-    //     },
-    //     {
-    //       id: 18,
-    //       name: "Suryansh Sharan",
-    //       role: "Event Manager",
-    //       description:
-    //         '',
-    //       image: `${img25}`,
-    //       socialLinks: {
-    //         linkedin: "https://www.linkedin.com/in/suryanshsharan",
-    //         twitter: "",
-    //         github: "https://github.com/Suryansh-Sharan",
-    //       },
-    //     },
-    //   ],
-    // },
+    EventManeger:{
+      name: "Event Manager",
+      members: [
+        {
+          "id": 27,
+          "name": "Shikha ",
+          "role": "Event Coordinator ",
+          "description": "\"Skilled in planning and executing high-impact events with precision and creativity. Expertise in logistics, team coordination, and audience engagement to ensure seamless and memorable experiences.\"",
+          "image":`${img29}`,
+          "socialLinks": {
+              "linkedin": "http://www.linkedin.com/in/shikha2006",
+            "twitter": "",
+            "github": ""
+          }
+        },
+        // {
+        //   id: 18,
+        //   name: "Suryansh Sharan",
+        //   role: "Event Manager",
+        //   description:
+        //     '',
+        //   image: `${img25}`,
+        //   socialLinks: {
+        //     linkedin: "https://www.linkedin.com/in/suryanshsharan",
+        //     twitter: "",
+        //     github: "https://github.com/Suryansh-Sharan",
+        //   },
+        // },
+      ],
+    },
     // Contributor:{
     //   name: "Contributors",
     //   members: [
